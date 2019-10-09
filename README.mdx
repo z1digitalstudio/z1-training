@@ -19,20 +19,11 @@ After that, you can run the project in dev mode:
 yarn start
 ```
 
-## Scripts
-
-- `yarn start`. Starts the project in dev mode. You can find it at <http://localhost:3000>.
-- `yarn build`. Builds the project. Output will be stored in the `build` folder.
-- `yarn lint`. Checks the project for linting errors.
-- `yarn lint:fix`. Checks the project for linting errors and attempts to fix them. Also runs prettier.
-- `yarn docz:start`. Starts the docz docs in dev mode. You can find them at <http://localhost:3001>.
-
 ## Project structure
 
 ### Configuration files
 
 - **config**
-  - `doczrc.config.js`. Docz config.
   - `postcss.config.js`. PostCSS config.
   - `webpack.common.js`. Webpack common config.
   - `webpack.config.babel.js`. Webpack main config file. If you run webpack using the CLI you should point to this configuration file and use the `--env` parameter.
@@ -47,12 +38,6 @@ yarn start
 ### Source code and assets
 
 - **src**
-  - **assets**. Contains all the assets of the project.
-    - **fonts**
-    - **icons**
-    - **images**
-  - **api**. All the code that is related to API calls. For example, if we need to communicate with an endpoint to send some data, we should abstract the http call inside this folder.
-  - **context**. Context components that store the Application State. For example, we could create a Context to store data related to the Employee entity and, along with it, some hooks to access it from the UI.
   - **styles**. SASS styles.
     - **lib**. Folder that includes some external libraries that don't have a NPM package.
     - `_fonts.scss`. Fonts used in the project.
@@ -62,68 +47,7 @@ yarn start
     - `_transitions.scss`. [INJECTED] Transitions that can be used inside all components.
     - `_variables.scss`. [INJECTED] Variables that can be used inside all components. **CSS Variables don't belong here!**
     - `global.scss`. Global styles. For example, CSS variables should be defined here.
-  - **ui**
-    - **components**. React components that can access the Application State.
-    - **toolkit**. React components that can't access the Application State. The design system should be implemented using toolkit components. As an example, the `Button` component belongs here.
-    - **routes**. React components that use React Router to define the routes of the application.
   - `App.tsx`. Component that represents the app.
   - `index.tsx`. Entry point of the entire application. Mounts the App and imports the global styles.
 - **public**. Here you can include files that won't be transformed in the build pipeline, with the exception of the `index.html`, which acts as a template.
   - `index.html`
-
-## Project rules
-
-Before starting to work in the project, you should know that there are some rules:
-
-### For every component, a folder must be created.
-
-Every component should have its own folder, and inside the folder, the file structure should look like this:
-
-- **component**
-  - `Component.mdx`. Docs of the component.
-  - `Component.module.scss`. Styles of the component.
-  - `Component.tsx`. React component.
-
-`Component.tsx` should be similar to this template:
-
-```tsx
-import React from 'react';
-import styles from './Component.module.scss';
-
-export interface ComponentProps {
-  ...
-}
-
-function Component(props: ComponentProps) {
-  return <div className={styles.component} {...props} />;
-}
-
-export default Component;
-```
-
-There is only one exception to this rule: **If you create a composable component, you may choose whether to include more than one React Component in the same file or create other `Component.tsx` file at the same level.**
-
-### Toolkit components cannot access Application State directly.
-
-Toolkit components are related to the Design System so they should only render UI based on the external data they receive using `props` or a toolkit related `Context`.
-
-### Hooks as a way to access Application State.
-
-If one of your components need to access to a part of the Application State, a hook must be created for it.
-That hook should be put in the **context** folder along with its `Context`.
-
-### Class components, only when necessary.
-
-There are some use cases that cannot be implemented with hooks.
-If you have doubts, you can go check the [React Hooks docs](https://reactjs.org/docs/hooks-faq.html#how-do-lifecycle-methods-correspond-to-hooks).
-
-## Toolkit development
-
-If you only need to work with the toolkit, this is the recommended way to do it:
-
-- Launch the `yarn docz:start` script.
-- Make sure a `Component.mdx` file exists for the toolkit components you need to edit.
-- Open the `Component` page in the docs.
-- It's ready! You can start making modifications to the component. Remember to update de MDX file whenever you create a new variant.
-
-[Introduction to Docz](https://www.docz.site/docs/introduction)
