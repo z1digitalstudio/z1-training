@@ -1,0 +1,95 @@
+@include font-face(
+  $openSans,
+  $openSans-path + 'Light',
+  $light-weight,
+  null,
+  ttf
+);
+@include font-face(
+  $openSans,
+  $openSans-path + 'Regular',
+  $normal-weight,
+  null,
+  ttf
+);
+
+@include font-face($openSans, $openSans-path + 'Bold', $bold-weight, null, ttf);
+
+@include font-face(
+  $openSans,
+  $openSans-path + 'LightItalic',
+  $light-weight,
+  italic,
+  ttf
+);
+@include font-face(
+  $openSans,
+  $openSans-path + 'RegularItalic',
+  $medium-weight,
+  italic,
+  ttf
+);
+@include font-face(
+  $openSans,
+  $openSans-path + 'SemiBold',
+  $medium-weight,
+  null,
+  ttf
+);
+@include font-face(
+  $openSans,
+  $openSans-path + 'BoldItalic',
+  $bold-weight,
+  italic,
+  ttf
+);
+
+@include font-face($neoSans, $neoSans-path + 'Light', $light-weight, null, otf);
+@include font-face(
+  $neoSans,
+  $neoSans-path + 'Regular',
+  $normal-weight,
+  null,
+  otf
+);
+
+@include font-face(
+  $neoSans,
+  $neoSans-path + 'Italic',
+  $normal-weight,
+  italic,
+  otf
+);
+
+@include font-face($neoSans, $neoSans-path + 'Bold', $bold-weight, null, otf);
+
+@include font-face(
+  $neoSans,
+  $neoSans-path + 'LightItalic',
+  $light-weight,
+  italic,
+  otf
+);
+
+@include font-face(
+  $neoSans,
+  $neoSans-path + 'Medium',
+  $medium-weight,
+  null,
+  otf
+);
+
+@include font-face(
+  $neoSans,
+  $neoSans-path + 'MediumItalic',
+  $medium-weight,
+  italic,
+  otf
+);
+@include font-face(
+  $neoSans,
+  $neoSans-path + 'BoldItalic',
+  $bold-weight,
+  italic,
+  otf
+);

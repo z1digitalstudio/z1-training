@@ -1,0 +1,109 @@
+{
+  "name": "fluence",
+  "version": "0.0.1",
+  "author": {
+    "name": "Z1",
+    "email": "hola@z1.digital"
+  },
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --config=./config/webpack.config.babel.js --env=dev",
+    "build": "mkdir build; webpack --config=./config/webpack.config.babel.js --env=production",
+    "lint": "eslint src/**/*.{ts,tsx} config/**/*.js",
+    "lint:fix": "eslint --fix src/**/*.{ts,tsx} config/**/*.js",
+    "prelint:fix": "prettier --write {src,config}/**/*.{ts,tsx,js,json,scss,mdx}",
+    "docz:start": "docz dev --port=3001 --config ./config/doczrc.config.js",
+    "docz:build": "docz build --config ./config/doczrc.config.js",
+    "docz:deploy": "yarn docz:build",
+    "typecheck": "tsc --noEmit",
+    "deploy": "yarn build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && yarn typecheck"
+    }
+  },
+  "lint-staged": {
+    "config/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "src/**/*.{ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "{src,config}/**/*.{ts,tsx,js,json,scss,mdx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "classnames": "^2.2.6",
+    "framer-motion": "^1.5.0",
+    "minireset.css": "^0.0.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "sass-mq": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/register": "^7.4.4",
+    "@hot-loader/react-dom": "^16.8.6",
+    "@nice-labs/typed-css-modules": "^1.2.1",
+    "@svgr/webpack": "^4.3.1",
+    "@types/array-move": "^2.0.0",
+    "@types/classnames": "^2.2.9",
+    "@types/file-saver": "^2.0.1",
+    "@types/jest": "^24.0.15",
+    "@types/json-schema": "^7.0.3",
+    "@types/node": "^12.0.10",
+    "@types/react": "^16.8.22",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/webpack": "^4.4.34",
+    "@types/webpack-dev-server": "^3.1.6",
+    "@types/webpack-merge": "^4.1.5",
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "autoprefixer": "^9.6.0",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.3",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.0.0",
+    "eslint": "^5.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "file-loader": "^4.0.0",
+    "fork-ts-checker-webpack-plugin": "^1.3.7",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.0.0",
+    "image-webpack-loader": "^5.0.0",
+    "lint-staged": "^9.0.2",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-pxtorem": "^4.0.1",
+    "prettier": "^1.18.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.3.0",
+    "ts-loader": "^6.0.4",
+    "ts-node": "^8.3.0",
+    "tsconfig-paths": "^3.8.0",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.2",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-chunk-hash": "^0.6.0",
+    "webpack-cleanup-plugin": "^0.5.1",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
+  }
+}
