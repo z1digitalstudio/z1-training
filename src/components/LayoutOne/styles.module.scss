@@ -6,4 +6,69 @@
   width: 100%;
   height: 500px;
   background-color: var(--gray-300);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Header*/
+
+.header {
+  display: flex;
+}
+.logo {
+  flex-grow: 0;
+}
+.button {
+  flex-grow: 0;
+}
+.header ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header nav {
+  flex-grow: 1;
+}
+
+/*Main content*/
+.contentNav {
+  display: flex;
+  width: 33.3%;
+  flex-direction: column;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  h4 {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid grey;
+  }
+}
+
+/*Footer*/
+main {
+  content: 'Holi';
+  border-bottom: 1px solid grey;
+}
+
+.footerNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerNavElem {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+}
+
+.footerBottom ul {
+  display: flex;
 }
