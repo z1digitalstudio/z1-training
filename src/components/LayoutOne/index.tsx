@@ -1,6 +1,8 @@
 import React from 'react';
 import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
+import { ReactComponent as CloseIcon } from './close.svg';
+import pandaUrl from './panda.jpg';
 
 export function LayoutOne() {
   return (
@@ -9,12 +11,8 @@ export function LayoutOne() {
         <div className={`${globalStyles.contentWrapper} ${styles.header}`}>
           <div className={styles.logo}>
             <a href="#">
-              <img
-                src="img/tofulogobn.png"
-                alt="Tofu logo"
-                height="100"
-                width="100"
-              />
+              <CloseIcon />
+              <img src={pandaUrl} alt="Tofu logo" height="100" width="100" />
             </a>
           </div>
           <nav>
