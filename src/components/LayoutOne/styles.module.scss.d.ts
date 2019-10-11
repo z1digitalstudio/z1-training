@@ -9,14 +9,15 @@
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
     "background": string;
-    "button": string;
     "contentNav": string;
+    "contentNavWrapper": string;
     "footerBottom": string;
     "footerNav": string;
     "footerNavElem": string;
     "header": string;
+    "iconLink": string;
+    "loginButton": string;
     "logo": string;
-    "title": string;
     [name: string]: string;
 }
 declare const locals: ILocals;
