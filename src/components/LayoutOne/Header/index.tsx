@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './styles.module.scss';
 import TofuLogoUrl from './tofulogobn.png';
 import { ReactComponent as CaretDown } from './caret-down-solid.svg';
+import globalStyles from '@/styles/global.scss';
 
 export function Header() {
   return (
