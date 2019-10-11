@@ -2,16 +2,6 @@ main,
 footer {
   color: var(--gray-600);
 }
-
-.background {
-  height: 500px;
-  background-color: var(--gray-300);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Header*/
 
 .logo {
@@ -62,26 +52,6 @@ footer {
 }
 
 /*Main content*/
-
-.background {
-  margin-bottom: 60px;
-
-  h1 {
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 0.44px;
-    margin-bottom: 16px;
-    line-height: 56px;
-  }
-
-  h3 {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0.44px;
-    line-height: 32px;
-  }
-}
-
 section {
   display: flex;
   flex-wrap: wrap;

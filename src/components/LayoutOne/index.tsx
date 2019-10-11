@@ -3,6 +3,7 @@ import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
 import TofuLogoUrl from './tofulogobn.png';
 import { ReactComponent as CaretDown } from './caret-down-solid.svg';
+import { Jumbotron } from '@/components/LayoutOne/Jumbotron';
 
 export function LayoutOne() {
   return (
@@ -36,11 +37,7 @@ export function LayoutOne() {
         <button className={styles.loginButton}>Login</button>
       </header>
       <main>
-        <div className={styles.background}>
-          <h1>Tofu Site Map</h1>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        </div>
-
+        <Jumbotron />
         <section className={globalStyles.contentWrapper}>
           <h4>Homepage</h4>
           <div className={styles.contentNavWrapper}>
