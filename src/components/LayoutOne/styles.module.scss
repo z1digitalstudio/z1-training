@@ -2,54 +2,6 @@ main,
 footer {
   color: var(--gray-600);
 }
-/* Header*/
-
-.logo {
-  width: 58px;
-}
-
-.header {
-  display: flex;
-  padding: 5px 0;
-  align-items: center;
-
-  nav {
-    flex-grow: 1;
-  }
-
-  ul {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .iconLink {
-    display: flex;
-  }
-
-  .iconLink > svg {
-    width: 12px;
-    margin-left: 10px;
-  }
-
-  li a {
-    text-decoration: none;
-    color: var(--black);
-    font-weight: 500;
-    font-size: 0.94em;
-  }
-}
-
-.loginButton {
-  flex-grow: 0;
-  width: 70px;
-  height: 40px;
-  background-color: var(--gray-200);
-  border-radius: 20px;
-  border: none;
-  font-size: 0.875em;
-  color: var(--black);
-  font-weight: 500;
-}
 
 /*Main content*/
 section {
@@ -107,10 +59,11 @@ main {
     text-transform: uppercase;
     padding-bottom: 1em;
   }
-
-  a:not(:last-child) {
+  a {
     font-size: 0.875em;
     letter-spacing: 0.44px;
+  }
+  a:not(:last-child) {
     padding-bottom: 1em;
   }
 }
