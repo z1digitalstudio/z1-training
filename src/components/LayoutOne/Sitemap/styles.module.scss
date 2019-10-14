@@ -4,7 +4,7 @@ section {
 
   .title {
     width: 100%;
-    padding-bottom: 1em;
+    padding-bottom: 16px;
     border-bottom: 1px solid var(--gray-300);
   }
 
@@ -20,13 +20,13 @@ section {
     letter-spacing: 0.44px;
 
     .elementTitle {
-      font-size: 1.25em;
+      font-size: 20px;
       font-weight: 500;
-      padding-bottom: 1.15em;
+      padding-bottom: 16px;
     }
 
     a {
-      padding-bottom: 1em;
+      padding-bottom: 16px;
     }
   }
 }
@@ -44,11 +44,11 @@ main {
     }
 
     .title {
-      margin-bottom: 3em;
+      margin-bottom: 30px;
     }
   }
 
   main {
-    padding-bottom: 2em;
+    padding-bottom: 60px;
   }
 }
