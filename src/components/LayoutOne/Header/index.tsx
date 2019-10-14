@@ -10,22 +10,30 @@ export function Header() {
       <a className={styles.logo} href="#">
         <img src={TofuLogoUrl} alt="Tofu logo" />
       </a>
-      <nav className={styles.navBar}>
-        <ul>
+      <nav className={styles.navContainer}>
+        <ul className={styles.navBar}>
           <li>
-            <a href="#">Why Tofu</a>
+            <a href="#" className={styles.element}>
+              Why Tofu
+            </a>
           </li>
           <li>
-            <a href="#">Overview</a>
+            <a href="#" className={styles.element}>
+              Overview
+            </a>
           </li>
           <li>
-            <a href="#">Solutions</a>
+            <a href="#" className={styles.element}>
+              Solutions
+            </a>
           </li>
           <li>
-            <a href="#">Pricing</a>
+            <a href="#" className={styles.element}>
+              Pricing
+            </a>
           </li>
           <li>
-            <a href="#" className={styles.iconLink}>
+            <a href="#" className={`${styles.iconLink} ${styles.element}`}>
               <span>More</span>
               <CaretDown />
             </a>

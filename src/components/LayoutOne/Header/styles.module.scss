@@ -3,23 +3,26 @@
   padding: 5px 0;
   align-items: center;
 }
+
 .logo {
   width: 58px;
 }
 
-.navBar {
+.navContainer {
   flex-grow: 1;
 
-  ul {
+  .navBar {
     display: flex;
     justify-content: space-evenly;
   }
-  li a {
+
+  .element {
     text-decoration: none;
     color: var(--black);
     font-weight: 500;
     font-size: 0.94em;
   }
+
   .iconLink {
     display: flex;
   }
