@@ -67,6 +67,9 @@
 
     .hamburgerMenu {
       display: flex;
+      border: none;
+      color: var(--gray-700);
+      background-color: white;
     }
 
     .hamburgerMenu > svg {
