@@ -14,6 +14,7 @@ interface ILocals {
     "nav": string;
     "navElement": string;
     "navTitle": string;
+    "rights": string;
     [name: string]: string;
 }
 declare const locals: ILocals;

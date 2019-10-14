@@ -39,7 +39,9 @@ export function Footer() {
         </nav>
       </div>
       <div className={styles.infoBottom}>
-        <div>© 2019 Tofu Technologies Ltd. All rights reserved.</div>
+        <div className={styles.rights}>
+          © 2019 Tofu Technologies Ltd. All rights reserved.
+        </div>
         <ul className={styles.bottomLinks}>
           <li>
             <a href="#">Privacy &amp; Terms</a>

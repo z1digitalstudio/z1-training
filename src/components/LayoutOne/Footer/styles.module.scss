@@ -36,6 +36,7 @@ footer {
   padding: 15px;
   font-size: 0.75em;
   align-items: center;
+  flex-wrap: wrap;
 
   .bottomLinks {
     display: flex;
@@ -59,6 +60,55 @@ footer {
       width: 10px;
       margin-left: 40px;
       color: var(--gray-300);
+    }
+  }
+}
+
+@include mq($from: tablet, $until: desktop) {
+  .infoBottom {
+    .bottomLinks {
+      width: 55%;
+    }
+  }
+}
+
+@include mq($until: tablet) {
+  .nav {
+    flex-wrap: wrap;
+
+    .navElement {
+      width: 50%;
+      text-align: center;
+    }
+    .navElement:not(:last-child) {
+      margin-bottom: 2em;
+    }
+  }
+
+  .infoBottom {
+    display: flex;
+    text-align: center;
+    font-size: 0.7em;
+    vertical-align: center;
+
+    .rights {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+
+    .bottomLinks {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+
+      .languageDropdown > svg {
+        margin-left: 10px;
+      }
+
+      li {
+        margin-bottom: 1em;
+      }
     }
   }
 }
