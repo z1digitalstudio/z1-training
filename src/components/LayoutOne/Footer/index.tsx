@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles.module.scss';
 import { ReactComponent as CaretDown } from './caret-down-solid.svg';
+import { ReactComponent as AngleDown } from './angle-down-solid.svg';
 import globalStyles from '@/styles/global.scss';
 
 export function Footer() {
@@ -8,34 +9,59 @@ export function Footer() {
     <footer className={globalStyles.contentWrapper}>
       <div className={styles.nav}>
         <nav className={styles.navElement}>
-          <strong className={styles.navTitle}>Tofu</strong>
-          <a>For Teams</a>
-          <a>For Enterprise</a>
-          <a>Tofu Solo</a>
+          <div className={styles.cardHeader}>
+            <strong className={styles.navTitle}>Tofu</strong>
+            <AngleDown />
+          </div>
+          <div className={styles.cardBody}>
+            <a>For Teams</a>
+            <a>For Enterprise</a>
+            <a>Tofu Solo</a>
+          </div>
         </nav>
         <nav className={styles.navElement}>
-          <strong className={styles.navTitle}>Results</strong>
-          <a>Customers</a>
-          <a>Reviews</a>
-          <a>Stories</a>
+          <div className={styles.cardHeader}>
+            <strong className={styles.navTitle}>Results</strong>
+            <AngleDown />
+          </div>
+          <div className={styles.cardBody}>
+            <a>Customers</a>
+            <a>Reviews</a>
+            <a>Stories</a>
+          </div>
         </nav>
         <nav className={styles.navElement}>
-          <strong className={styles.navTitle}>Resources</strong>
-          <a>Download Tofu</a>
-          <a>Integrations (New)</a>
-          <a>Developers</a>
+          <div className={styles.cardHeader}>
+            <strong className={styles.navTitle}>Resources</strong>
+            <AngleDown />
+          </div>
+          <div className={styles.cardBody}>
+            <a>Download Tofu</a>
+            <a>Integrations (New)</a>
+            <a>Developers</a>
+          </div>
         </nav>
         <nav className={styles.navElement}>
-          <strong className={styles.navTitle}>Support</strong>
-          <a>Get Help</a>
-          <a>Helpful Guides</a>
-          <a>Tutorials (New)</a>
+          <div className={styles.cardHeader}>
+            <strong className={styles.navTitle}>Support</strong>
+            <AngleDown />
+          </div>
+          <div className={styles.cardBody}>
+            <a>Get Help</a>
+            <a>Helpful Guides</a>
+            <a>Tutorials (New)</a>
+          </div>
         </nav>
         <nav className={styles.navElement}>
-          <strong className={styles.navTitle}>Company</strong>
-          <a>Our Story</a>
-          <a>Contact Us</a>
-          <a>Blog</a>
+          <div className={styles.cardHeader}>
+            <strong className={styles.navTitle}>Company</strong>
+            <AngleDown />
+          </div>
+          <div className={styles.cardBody}>
+            <a>Our Story</a>
+            <a>Contact Us</a>
+            <a>Blog</a>
+          </div>
         </nav>
       </div>
       <div className={styles.infoBottom}>
@@ -52,7 +78,7 @@ export function Footer() {
           <li>
             <a href="#">Site Map</a>
           </li>
-          <li>
+          <li className={styles.languageWrapper}>
             <a href="#" className={styles.languageDropdown}>
               <span>English</span>
               <CaretDown />

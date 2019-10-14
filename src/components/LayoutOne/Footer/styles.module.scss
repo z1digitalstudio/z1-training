@@ -12,13 +12,6 @@ footer {
   display: flex;
   flex-direction: column;
 
-  .navTitle {
-    letter-spacing: 0.8px;
-    font-size: 13px;
-    text-transform: uppercase;
-    padding-bottom: 12px;
-  }
-
   a {
     font-size: 14px;
     letter-spacing: 0.44px;
@@ -29,6 +22,21 @@ footer {
   }
 }
 
+.navTitle {
+  letter-spacing: 0.8px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.cardBody {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader svg {
+  display: none;
+}
+
 .infoBottom {
   display: flex;
   justify-content: space-between;
@@ -37,31 +45,31 @@ footer {
   font-size: 12px;
   align-items: center;
   flex-wrap: wrap;
+}
 
-  .bottomLinks {
-    display: flex;
-    width: 45%;
-    justify-content: space-between;
-    align-items: center;
+.bottomLinks {
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+  align-items: center;
 
-    a {
-      text-decoration: none;
-      color: var(--gray-600);
-    }
-
-    .languageDropdown {
-      display: flex;
-      vertical-align: center;
-      border: 1px solid var(--gray-300);
-      padding: 7px;
-    }
-
-    .languageDropdown > svg {
-      width: 10px;
-      margin-left: 40px;
-      color: var(--gray-300);
-    }
+  a {
+    text-decoration: none;
+    color: var(--gray-600);
   }
+}
+
+.languageDropdown {
+  display: flex;
+  vertical-align: center;
+  border: 1px solid var(--gray-300);
+  padding: 7px;
+}
+
+.languageDropdown > svg {
+  width: 10px;
+  margin-left: 40px;
+  color: var(--gray-300);
 }
 
 @include mq($from: tablet, $until: desktop) {
@@ -74,41 +82,59 @@ footer {
 
 @include mq($until: tablet) {
   .nav {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    padding-top: 29px;
+    padding-bottom: 0px;
 
-    .navElement {
-      width: 50%;
-      text-align: center;
+    nav.navElement {
+      margin-bottom: 8px;
     }
-    .navElement:not(:last-child) {
-      margin-bottom: 28px;
+    svg {
+      display: flex;
+      width: 12px;
+      margin-left: auto;
+    }
+    .cardHeader {
+      display: flex;
+      padding: 15px 0 14px 0;
+      width: 100%;
+    }
+    .navElement:not(:first-child) {
+      border-top: 1px solid var(--gray-300);
+    }
+
+    .cardBody {
+      display: none;
+      flex-direction: column;
+      padding-bottom: 8px;
     }
   }
 
   .infoBottom {
-    display: flex;
     text-align: center;
     font-size: 12px;
-    vertical-align: center;
+  }
 
-    .rights {
-      width: 100%;
-      margin-bottom: 12px;
+  .rights {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .bottomLinks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    li {
+      margin-bottom: 16px;
     }
 
-    .bottomLinks {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
+    .languageWrapper {
       width: 100%;
+    }
 
-      .languageDropdown > svg {
-        margin-left: 10px;
-      }
-
-      li {
-        margin-bottom: 16px;
-      }
+    .languageDropdown > svg {
+      margin-left: auto;
     }
   }
 }

@@ -9,8 +9,11 @@
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
     "bottomLinks": string;
+    "cardBody": string;
+    "cardHeader": string;
     "infoBottom": string;
     "languageDropdown": string;
+    "languageWrapper": string;
     "nav": string;
     "navElement": string;
     "navTitle": string;
