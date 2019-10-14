@@ -3,7 +3,7 @@ import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
 import { Header } from '@/components/LayoutOne/Header';
 import { Jumbotron } from '@/components/LayoutOne/Jumbotron';
-import { ReactComponent as CaretDown } from './caret-down-solid.svg';
+import { Footer } from '@/components/LayoutOne/Footer';
 
 export function LayoutOne() {
   return (
@@ -81,61 +81,7 @@ export function LayoutOne() {
           </div>
         </section>
       </main>
-
-      <footer className={globalStyles.contentWrapper}>
-        <div className={styles.footerNav}>
-          <nav className={styles.footerNavElem}>
-            <strong>Tofu</strong>
-            <a>For Teams</a>
-            <a>For Enterprise</a>
-            <a>Tofu Solo</a>
-          </nav>
-          <nav className={styles.footerNavElem}>
-            <strong>Results</strong>
-            <a>Customers</a>
-            <a>Reviews</a>
-            <a>Stories</a>
-          </nav>
-          <nav className={styles.footerNavElem}>
-            <strong>Resources</strong>
-            <a>Download Tofu</a>
-            <a>Integrations (New)</a>
-            <a>Developers</a>
-          </nav>
-          <nav className={styles.footerNavElem}>
-            <strong>Support</strong>
-            <a>Get Help</a>
-            <a>Helpful Guides</a>
-            <a>Tutorials (New)</a>
-          </nav>
-          <nav className={styles.footerNavElem}>
-            <strong>Company</strong>
-            <a>Our Story</a>
-            <a>Contact Us</a>
-            <a>Blog</a>
-          </nav>
-        </div>
-        <div className={styles.footerBottom}>
-          <div>© 2019 Tofu Technologies Ltd. All rights reserved.</div>
-          <ul>
-            <li>
-              <a href="#">Privacy &amp; Terms</a>
-            </li>
-            <li>
-              <a href="#">Service Status</a>
-            </li>
-            <li>
-              <a href="#">Site Map</a>
-            </li>
-            <li>
-              <a href="#" className={styles.iconLink}>
-                <span>English</span>
-                <CaretDown />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

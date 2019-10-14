@@ -1,0 +1,60 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.navElement {
+  display: flex;
+  flex-direction: column;
+
+  .navTitle {
+    letter-spacing: 0.8px;
+    font-size: 0.81em;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+  }
+
+  a {
+    font-size: 0.875em;
+    letter-spacing: 0.44px;
+  }
+
+  a:not(:last-child) {
+    padding-bottom: 1em;
+  }
+}
+
+.infoBottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--gray-300);
+  padding: 15px;
+  font-size: 0.75em;
+  align-items: center;
+
+  .bottomLinks {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: var(--gray-600);
+    }
+
+    .languageDropdown {
+      display: flex;
+      vertical-align: center;
+      border: 1px solid var(--gray-300);
+      padding: 7px;
+    }
+
+    .languageDropdown > svg {
+      width: 10px;
+      margin-left: 40px;
+      color: var(--gray-300);
+    }
+  }
+}
