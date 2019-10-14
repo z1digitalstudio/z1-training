@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 import TofuLogoUrl from './tofulogobn.png';
 import { ReactComponent as CaretDown } from './caret-down-solid.svg';
 import globalStyles from '@/styles/global.scss';
+import { ReactComponent as Hamburger } from './bars-solid.svg';
 
 export function Header() {
   return (
@@ -41,6 +42,9 @@ export function Header() {
         </ul>
       </nav>
       <button className={styles.loginButton}>Login</button>
+      <button className={styles.hamburgerMenu}>
+        <Hamburger />
+      </button>
     </header>
   );
 }

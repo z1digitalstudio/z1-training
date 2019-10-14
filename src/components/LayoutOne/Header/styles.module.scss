@@ -44,3 +44,33 @@
   color: var(--black);
   font-weight: 500;
 }
+
+.hamburgerMenu {
+  width: 40px;
+  display: none;
+}
+
+@include mq($until: desktop) {
+  header {
+    width: 90%;
+  }
+}
+
+@include mq($until: tablet) {
+  header {
+    justify-content: space-between;
+
+    .navContainer,
+    .loginButton {
+      display: none;
+    }
+
+    .hamburgerMenu {
+      display: flex;
+    }
+
+    .hamburgerMenu > svg {
+      width: 20px;
+    }
+  }
+}
