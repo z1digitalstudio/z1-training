@@ -1,35 +1,35 @@
 section {
   display: flex;
   flex-wrap: wrap;
+}
 
-  .title {
-    width: 100%;
+.title {
+  width: 100%;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.wrapper {
+  width: 33.3%;
+  margin-top: 30px;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  letter-spacing: 0.44px;
+
+  .elementTitle {
+    font-size: 20px;
+    font-weight: 500;
     padding-bottom: 16px;
-    border-bottom: 1px solid var(--gray-300);
   }
 
-  .wrapper {
-    width: 33.3%;
-    margin-top: 30px;
-  }
-
-  .element {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
-    letter-spacing: 0.44px;
-
-    .elementTitle {
-      font-size: 20px;
-      font-weight: 500;
-      padding-bottom: 16px;
-    }
-
-    a {
-      padding-bottom: 16px;
-      text-decoration: none;
-      color: inherit;
-    }
+  a {
+    padding-bottom: 16px;
+    text-decoration: none;
+    color: inherit;
   }
 }
 
@@ -39,18 +39,16 @@ main {
 }
 
 @include mq($until: tablet) {
-  section {
-    .wrapper {
-      width: 100%;
-      margin-top: 0;
-    }
+  .wrapper {
+    width: 100%;
+    margin-top: 0;
+  }
 
-    .title {
-      margin-bottom: 30px;
-    }
+  .title {
+    margin-bottom: 30px;
   }
 
   main {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
 }

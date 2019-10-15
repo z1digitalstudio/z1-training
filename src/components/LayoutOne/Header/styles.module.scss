@@ -10,27 +10,27 @@
 
 .navContainer {
   flex-grow: 1;
+}
 
-  .navBar {
-    display: flex;
-    justify-content: space-evenly;
-  }
+.navMenu {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-  .element {
-    text-decoration: none;
-    color: var(--black);
-    font-weight: 500;
-    font-size: 15px;
-  }
+.element {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 15px;
+}
 
-  .iconLink {
-    display: flex;
-  }
+.iconLink {
+  display: flex;
+}
 
-  .iconLink > svg {
-    width: 12px;
-    margin-left: 10px;
-  }
+.iconLink > svg {
+  width: 12px;
+  margin-left: 10px;
 }
 
 .loginButton {
@@ -61,21 +61,21 @@
 @include mq($until: tablet) {
   header {
     justify-content: space-between;
+  }
 
-    .navContainer,
-    .loginButton {
-      display: none;
-    }
+  .navContainer,
+  .loginButton {
+    display: none;
+  }
 
-    .hamburgerMenu {
-      display: flex;
-      border: none;
-      color: var(--gray-700);
-      background-color: white;
-    }
+  .hamburgerMenu {
+    display: flex;
+    border: none;
+    color: var(--gray-700);
+    background-color: white;
+  }
 
-    .hamburgerMenu > svg {
-      width: 20px;
-    }
+  .hamburgerMenu > svg {
+    width: 20px;
   }
 }

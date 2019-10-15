@@ -14,8 +14,8 @@ interface ILocals {
     "iconLink": string;
     "loginButton": string;
     "logo": string;
-    "navBar": string;
     "navContainer": string;
+    "navMenu": string;
     [name: string]: string;
 }
 declare const locals: ILocals;

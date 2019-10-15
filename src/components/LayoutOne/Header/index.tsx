@@ -12,7 +12,7 @@ export function Header() {
         <img src={TofuLogoUrl} alt="Tofu logo" />
       </a>
       <nav className={styles.navContainer}>
-        <ul className={styles.navBar}>
+        <ul className={styles.navMenu}>
           <li>
             <a href="#" className={styles.element}>
               Why Tofu
