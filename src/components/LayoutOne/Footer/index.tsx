@@ -1,66 +1,66 @@
 import React from 'react';
 import styles from './styles.module.scss';
 import { ReactComponent as CaretDown } from './caret-down-solid.svg';
-import { ReactComponent as AngleDown } from './angle-down-solid.svg';
+import { ReactComponent as AngleUp } from './angle-up-solid.svg';
 import globalStyles from '@/styles/global.scss';
 
 export function Footer() {
   return (
     <footer className={globalStyles.contentWrapper}>
       <div className={styles.nav}>
-        <nav className={styles.navElement}>
+        <nav className={`${styles.navElement} ${styles.cardBodyClosed}`}>
           <div className={styles.cardHeader}>
             <strong className={styles.navTitle}>Tofu</strong>
-            <AngleDown />
+            <AngleUp />
           </div>
           <div className={styles.cardBody}>
-            <a>For Teams</a>
-            <a>For Enterprise</a>
-            <a>Tofu Solo</a>
+            <a href="#">For Teams</a>
+            <a href="#">For Enterprise</a>
+            <a href="#">Tofu Solo</a>
           </div>
         </nav>
-        <nav className={styles.navElement}>
+        <nav className={`${styles.navElement} ${styles.cardBodyClosed}`}>
           <div className={styles.cardHeader}>
             <strong className={styles.navTitle}>Results</strong>
-            <AngleDown />
+            <AngleUp />
           </div>
           <div className={styles.cardBody}>
-            <a>Customers</a>
-            <a>Reviews</a>
-            <a>Stories</a>
+            <a href="#">Customers</a>
+            <a href="#">Reviews</a>
+            <a href="#">Stories</a>
           </div>
         </nav>
-        <nav className={styles.navElement}>
+        <nav className={`${styles.navElement} ${styles.cardBodyClosed}`}>
           <div className={styles.cardHeader}>
             <strong className={styles.navTitle}>Resources</strong>
-            <AngleDown />
+            <AngleUp />
           </div>
           <div className={styles.cardBody}>
-            <a>Download Tofu</a>
-            <a>Integrations (New)</a>
-            <a>Developers</a>
+            <a href="#">Download Tofu</a>
+            <a href="#">Integrations (New)</a>
+            <a href="#">Developers</a>
           </div>
         </nav>
         <nav className={styles.navElement}>
           <div className={styles.cardHeader}>
             <strong className={styles.navTitle}>Support</strong>
-            <AngleDown />
+            <AngleUp />
           </div>
           <div className={styles.cardBody}>
-            <a>Get Help</a>
-            <a>Helpful Guides</a>
-            <a>Tutorials (New)</a>
+            <a href="#">Get Help</a>
+            <a href="#">Helpful Guides</a>
+            <a href="#">Tutorials (New)</a>
           </div>
         </nav>
         <nav className={styles.navElement}>
           <div className={styles.cardHeader}>
             <strong className={styles.navTitle}>Company</strong>
-            <AngleDown />
+            <AngleUp />
           </div>
           <div className={styles.cardBody}>
-            <a>Our Story</a>
-            <a>Contact Us</a>
-            <a>Blog</a>
+            <a href="#">Our Story</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Blog</a>
           </div>
         </nav>
       </div>

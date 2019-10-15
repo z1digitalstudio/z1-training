@@ -9,67 +9,67 @@ export function Sitemap() {
       <div className={styles.wrapper}>
         <nav className={styles.element}>
           <strong className={styles.elementTitle}>Choose Tofu</strong>
-          <a>Why Tofu</a>
-          <a>Features</a>
-          <a>Pricing</a>
-          <a>Security</a>
-          <a>Updates</a>
+          <a href="#">Why Tofu</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Security</a>
+          <a href="#">Updates</a>
         </nav>
         <nav className={styles.element}>
           <strong className={styles.elementTitle}>Tofu</strong>
-          <a>For Teams</a>
-          <a>For Enterprise</a>
-          <a>Tofu Chat</a>
-          <a>Tofu Solo</a>
+          <a href="#">For Teams</a>
+          <a href="#">For Enterprise</a>
+          <a href="#">Tofu Chat</a>
+          <a href="#">Tofu Solo</a>
         </nav>
         <nav className={styles.element}>
           <strong className={styles.elementTitle}>Results</strong>
-          <a>Customers</a>
-          <a>Reviews</a>
-          <a>Stories</a>
+          <a href="#">Customers</a>
+          <a href="#">Reviews</a>
+          <a href="#">Stories</a>
         </nav>
       </div>
       <div className={styles.wrapper}>
         <nav className={styles.element}>
           <strong className={styles.elementTitle}>Resources</strong>
-          <a>Download Tofu</a>
-          <a>Integrations</a>
+          <a href="#">Download Tofu</a>
+          <a href="#">Integrations</a>
         </nav>
         <nav className={styles.element}>
           <strong className={styles.elementTitle}>Support</strong>
-          <a>Get Help</a>
-          <a>Getting Started</a>
-          <a>Tutorials</a>
-          <a>Helpful Guides</a>
+          <a href="#">Get Help</a>
+          <a href="#">Getting Started</a>
+          <a href="#">Tutorials</a>
+          <a href="#">Helpful Guides</a>
         </nav>
         <nav className={styles.element}>
           <strong className={styles.elementTitle}>Developers</strong>
-          <a>Developing for Tofu</a>
-          <a>API Documentation</a>
-          <a>Site Status</a>
+          <a href="#">Developing for Tofu</a>
+          <a href="#">API Documentation</a>
+          <a href="#">Site Status</a>
         </nav>
       </div>
       <div className={styles.wrapper}>
         <nav className={styles.element}>
           <strong className={styles.elementTitle}>Company</strong>
-          <a>Our Story</a>
-          <a>Contact Us</a>
-          <a>Careers</a>
-          <a>Blog</a>
+          <a href="#">Our Story</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
         </nav>
         <nav className={styles.element}>
           <strong className={styles.elementTitle}>Tofu for...</strong>
-          <a>Tofu for Education</a>
-          <a>Tofu for Nonprofits</a>
-          <a>Tofu for Makers</a>
+          <a href="#">Tofu for Education</a>
+          <a href="#">Tofu for Nonprofits</a>
+          <a href="#">Tofu for Makers</a>
         </nav>
         <nav className={styles.element}>
           <strong className={styles.elementTitle}>Tofu Legal</strong>
-          <a>Legal</a>
-          <a>Terms of Service</a>
-          <a>Privacy Policy</a>
-          <a>Acceptable Use Policy</a>
-          <a>Subprocessors</a>
+          <a href="#">Legal</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Acceptable Use Policy</a>
+          <a href="#">Subprocessors</a>
         </nav>
       </div>
     </section>

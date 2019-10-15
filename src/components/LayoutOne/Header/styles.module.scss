@@ -43,11 +43,13 @@
   font-size: 14px;
   color: var(--black);
   font-weight: 500;
+  cursor: pointer;
 }
 
 .hamburgerMenu {
   width: 40px;
   display: none;
+  cursor: pointer;
 }
 
 @include mq($until: desktop) {

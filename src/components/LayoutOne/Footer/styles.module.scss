@@ -100,14 +100,18 @@ footer {
       padding: 15px 0 14px 0;
       width: 100%;
     }
-    .navElement:not(:first-child) {
-      border-top: 1px solid var(--gray-300);
-    }
-
     .cardBody {
-      display: none;
       flex-direction: column;
       padding-bottom: 8px;
+    }
+    .cardBodyClosed .cardBody {
+      display: none;
+    }
+    .cardBodyClosed svg {
+      transform: rotate(180deg);
+    }
+    .navElement:not(:first-child) {
+      border-top: 1px solid var(--gray-300);
     }
   }
 
