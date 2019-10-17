@@ -12,7 +12,7 @@ export function Header() {
       <a className={styles.logo} href="#">
         <img src={TofuLogoUrl} alt="Tofu logo" />
       </a>
-      <nav className={`${styles.navContainer} ${styles.openHamburger}`}>
+      <nav className={styles.navContainer}>
         <ul className={styles.navMenu}>
           <Close />
           <li>
