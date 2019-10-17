@@ -37,7 +37,10 @@ export function LayoutOne() {
         <button className={styles.loginButton}>Login</button>
       </header>
       <main>
-        <Jumbotron />
+        <Jumbotron
+          title="Tofu Site Map"
+          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        />
         <section className={globalStyles.contentWrapper}>
           <h4>Homepage</h4>
           <div className={styles.contentNavWrapper}>

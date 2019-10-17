@@ -1,13 +1,17 @@
 import React from 'react';
 import styles from './styles.module.scss';
 
-export function Jumbotron() {
+type Props = {
+  title: string;
+  subtitle?: string;
+  children?: React.ReactNode;
+};
+export function Jumbotron({ title, subtitle, children }: Props) {
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.title}>Tofu Site Map</h1>
-      <h3 className={styles.subtitle}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </h3>
+      <h1 className={styles.title}>{title}</h1>
+      {subtitle && <h3 className={styles.subtitle}>{subtitle}</h3>}
+      {children}
     </div>
   );
 }
