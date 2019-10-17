@@ -83,6 +83,14 @@ export function Footer() {
               <span>English</span>
               <CaretDown />
             </a>
+            <ul className={styles.dropdown}>
+              <li>
+                <a href="#">Spanish</a>
+              </li>
+              <li>
+                <a href="#">Italian</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>

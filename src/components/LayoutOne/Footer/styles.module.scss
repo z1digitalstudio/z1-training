@@ -67,12 +67,42 @@ footer {
   vertical-align: center;
   border: 1px solid var(--gray-300);
   padding: 7px;
+  border-radius: 4%;
 }
 
 .languageDropdown > svg {
   width: 10px;
   margin-left: 40px;
   color: var(--gray-300);
+}
+
+.bottomLinks li {
+  position: relative;
+  transition-duration: 0.5s;
+}
+
+.dropdown {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  bottom: 31px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  border-radius: 4%;
+  width: 100%;
+  border: 1px solid var(--gray-300);
+  li {
+    padding: 7px;
+  }
+  :not(:last-child) {
+    border-bottom: 1px solid var(--gray-300);
+  }
+}
+
+.bottomLinks li:hover > ul,
+.bottomLinks li ul:hover {
+  visibility: visible;
+  opacity: 1;
 }
 
 @include mq($from: tablet, $until: desktop) {

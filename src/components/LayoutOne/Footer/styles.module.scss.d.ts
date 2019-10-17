@@ -12,6 +12,7 @@ interface ILocals {
     "cardBody": string;
     "cardBodyClosed": string;
     "cardHeader": string;
+    "dropdown": string;
     "infoBottom": string;
     "languageDropdown": string;
     "languageWrapper": string;
