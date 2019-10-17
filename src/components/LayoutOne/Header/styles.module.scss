@@ -17,6 +17,10 @@
   justify-content: space-evenly;
 }
 
+.navMenu > svg {
+  display: none;
+}
+
 .element {
   text-decoration: none;
   color: var(--black);
@@ -63,8 +67,8 @@
     justify-content: space-between;
   }
 
-  .navContainer,
-  .loginButton {
+  .loginButton,
+  .navContainer {
     display: none;
   }
 
@@ -77,5 +81,36 @@
 
   .hamburgerMenu > svg {
     width: 20px;
+  }
+
+  .openHamburger.navContainer {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(242, 242, 242, 0.981);
+    z-index: 1;
+  }
+
+  .openHamburger .navMenu {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      padding: 40px;
+    }
+  }
+
+  .openHamburger .navMenu > svg {
+    display: flex;
+    width: 35px;
+    margin: 40px 20px;
+    cursor: pointer;
   }
 }

@@ -16,6 +16,7 @@ interface ILocals {
     "logo": string;
     "navContainer": string;
     "navMenu": string;
+    "openHamburger": string;
     [name: string]: string;
 }
 declare const locals: ILocals;

@@ -4,6 +4,7 @@ import TofuLogoUrl from './tofulogobn.png';
 import { ReactComponent as CaretDown } from './caret-down-solid.svg';
 import globalStyles from '@/styles/global.scss';
 import { ReactComponent as Hamburger } from './bars-solid.svg';
+import { ReactComponent as Close } from './close-icon.svg';
 
 export function Header() {
   return (
@@ -11,8 +12,9 @@ export function Header() {
       <a className={styles.logo} href="#">
         <img src={TofuLogoUrl} alt="Tofu logo" />
       </a>
-      <nav className={styles.navContainer}>
+      <nav className={`${styles.navContainer} ${styles.openHamburger}`}>
         <ul className={styles.navMenu}>
+          <Close />
           <li>
             <a href="#" className={styles.element}>
               Why Tofu
@@ -39,6 +41,7 @@ export function Header() {
               <CaretDown />
             </a>
           </li>
+          <Close />
         </ul>
       </nav>
       <button className={styles.loginButton}>Login</button>
