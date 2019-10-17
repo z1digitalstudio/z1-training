@@ -1,0 +1,147 @@
+.header {
+  display: flex;
+  padding: 5px 0;
+  align-items: center;
+}
+
+.logo {
+  width: 58px;
+}
+
+.navContainer {
+  flex-grow: 1;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navMenu > svg {
+  display: none;
+}
+
+.navMenu li {
+  position: relative;
+  transition-duration: 0.5s;
+}
+
+.element {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.iconLink {
+  display: flex;
+}
+
+.iconLink > svg {
+  width: 12px;
+  margin-left: 10px;
+}
+
+.submenu {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  left: -8px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  border-radius: 4%;
+  padding: 20px 10px 4px 10px;
+
+  li {
+    width: 100%;
+    padding: 8px 20px 5px 0px;
+  }
+}
+
+.navMenu li:hover > ul,
+.navMenu li ul:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.loginButton {
+  flex-grow: 0;
+  width: 70px;
+  height: 40px;
+  background-color: var(--gray-200);
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  color: var(--black);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hamburgerMenu {
+  width: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+@include mq($until: desktop) {
+  header {
+    width: 90%;
+  }
+}
+
+@include mq($until: tablet) {
+  header {
+    justify-content: space-between;
+  }
+
+  .loginButton,
+  .navContainer {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    border: none;
+    color: var(--gray-700);
+    background-color: white;
+  }
+
+  .hamburgerMenu > svg {
+    width: 20px;
+  }
+
+  .openHamburger.navContainer {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(222, 226, 230, 0.96);
+    z-index: 1;
+  }
+
+  .openHamburger .navMenu {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      padding: 40px;
+    }
+  }
+
+  .openHamburger .navMenu > svg {
+    display: flex;
+    width: 35px;
+    margin: 40px 20px;
+    cursor: pointer;
+  }
+  .submenu,
+  .iconLink > svg {
+    display: none;
+  }
+}

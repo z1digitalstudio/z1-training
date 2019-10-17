@@ -1,0 +1,188 @@
+footer {
+  color: var(--gray-600);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.navElement {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    font-size: 14px;
+    letter-spacing: 0.44px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:not(:last-child) {
+    padding-bottom: 12px;
+  }
+}
+
+.navTitle {
+  letter-spacing: 0.8px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.cardHeader svg {
+  display: none;
+}
+
+.cardBody {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoBottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--gray-300);
+  padding: 15px;
+  font-size: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bottomLinks {
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: var(--gray-600);
+  }
+}
+
+.languageDropdown {
+  display: flex;
+  vertical-align: center;
+  border: 1px solid var(--gray-300);
+  padding: 7px;
+  border-radius: 4%;
+}
+
+.languageDropdown > svg {
+  width: 10px;
+  margin-left: 40px;
+  color: var(--gray-300);
+}
+
+.bottomLinks li {
+  position: relative;
+  transition-duration: 0.5s;
+}
+
+.dropdown {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  bottom: 31px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  border-radius: 2%;
+  width: 100%;
+  border: 1px solid var(--gray-300);
+  li {
+    padding: 7px;
+  }
+  :not(:last-child) {
+    border-bottom: 1px solid var(--gray-300);
+  }
+}
+
+.bottomLinks li:hover > ul,
+.bottomLinks li ul:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+@include mq($from: tablet, $until: desktop) {
+  .infoBottom {
+    .bottomLinks {
+      width: 55%;
+    }
+  }
+}
+
+@include mq($until: tablet) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 36px;
+    padding-bottom: 0px;
+
+    svg {
+      display: flex;
+      width: 12px;
+      margin-left: auto;
+    }
+
+    .cardHeader {
+      display: flex;
+      padding: 15px 0 14px 0;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .cardBody {
+      padding-bottom: 8px;
+      margin-top: 0;
+      a:last-child {
+        padding-bottom: 8px;
+      }
+    }
+  }
+
+  .cardBodyClosed .cardBody {
+    display: none;
+  }
+
+  .cardBodyClosed svg {
+    transform: rotate(180deg);
+  }
+
+  .navElement:not(:first-child) {
+    border-top: 1px solid var(--gray-300);
+  }
+
+  .infoBottom {
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 5px 0 4px;
+  }
+
+  .rights {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .bottomLinks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    li {
+      margin-bottom: 16px;
+      .dropdown li {
+        margin-bottom: 0px;
+        text-align: left;
+      }
+    }
+
+    .languageWrapper {
+      width: 100%;
+    }
+
+    .languageDropdown > svg {
+      margin-left: auto;
+    }
+  }
+}
