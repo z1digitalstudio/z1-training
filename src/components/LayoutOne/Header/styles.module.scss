@@ -21,6 +21,11 @@
   display: none;
 }
 
+.navMenu li {
+  position: relative;
+  transition-duration: 0.5s;
+}
+
 .element {
   text-decoration: none;
   color: var(--black);
@@ -35,6 +40,26 @@
 .iconLink > svg {
   width: 12px;
   margin-left: 10px;
+}
+
+.submenu {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  left: -8px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  border-radius: 4%;
+  padding: 10px;
+  li {
+    padding: 20px 20px 5px 0px;
+  }
+}
+
+.navMenu li:hover > ul,
+.navMenu li ul:hover {
+  visibility: visible;
+  opacity: 1;
 }
 
 .loginButton {
@@ -90,7 +115,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(242, 242, 242, 0.981);
+    background-color: rgba(222, 226, 230, 0.96);
     z-index: 1;
   }
 
@@ -112,5 +137,9 @@
     width: 35px;
     margin: 40px 20px;
     cursor: pointer;
+  }
+  .submenu,
+  .iconLink > svg {
+    display: none;
   }
 }

@@ -40,6 +40,23 @@ export function Header() {
               <span>More</span>
               <CaretDown />
             </a>
+            <ul className={styles.submenu}>
+              <li>
+                <a href="#" className={styles.element}>
+                  Tofu
+                </a>
+              </li>
+              <li>
+                <a href="#" className={styles.element}>
+                  Tofu
+                </a>
+              </li>
+              <li>
+                <a href="#" className={styles.element}>
+                  Tofu
+                </a>
+              </li>
+            </ul>
           </li>
           <Close />
         </ul>
