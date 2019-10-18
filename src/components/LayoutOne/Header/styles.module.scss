@@ -1,6 +1,7 @@
 .header {
   display: flex;
-  padding: 5px 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
   align-items: center;
 }
 
@@ -83,14 +84,8 @@
   cursor: pointer;
 }
 
-@include mq($until: desktop) {
-  header {
-    width: 90%;
-  }
-}
-
 @include mq($until: tablet) {
-  header {
+  .header {
     justify-content: space-between;
   }
 

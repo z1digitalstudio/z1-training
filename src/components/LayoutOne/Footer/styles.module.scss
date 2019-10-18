@@ -1,11 +1,8 @@
-footer {
-  color: var(--gray-600);
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
   padding: 40px 0;
+  color: var(--gray-600);
 }
 
 .navElement {
@@ -16,7 +13,7 @@ footer {
     font-size: 14px;
     letter-spacing: 0.44px;
     text-decoration: none;
-    color: inherit;
+    color: var(--gray-600);
   }
 
   a:not(:last-child) {
@@ -43,11 +40,12 @@ footer {
 .infoBottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   border-top: 1px solid var(--gray-300);
   padding: 15px;
   font-size: 12px;
-  align-items: center;
-  flex-wrap: wrap;
+  color: var(--gray-600);
 }
 
 .bottomLinks {

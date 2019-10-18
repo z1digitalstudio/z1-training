@@ -10,6 +10,8 @@
 interface ILocals {
     "element": string;
     "elementTitle": string;
+    "mainContent": string;
+    "sitemapSection": string;
     "title": string;
     "wrapper": string;
     [name: string]: string;

@@ -1,4 +1,4 @@
-section {
+.sitemapSection {
   display: flex;
   flex-wrap: wrap;
 }
@@ -9,8 +9,12 @@ section {
   border-bottom: 1px solid var(--gray-300);
 }
 
-.wrapper {
-  width: 33.3%;
+.mainContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 800px;
   margin-top: 30px;
 }
 
@@ -48,7 +52,17 @@ main {
     margin-bottom: 30px;
   }
 
+  .mainContent {
+    max-height: 1200px;
+  }
+
   main {
     padding-bottom: 50px;
+  }
+}
+
+@include mq($until: mobile-big) {
+  .mainContent {
+    max-height: 2100px;
   }
 }

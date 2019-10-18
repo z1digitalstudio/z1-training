@@ -4,9 +4,11 @@ import globalStyles from '@/styles/global.scss';
 
 export function Sitemap() {
   return (
-    <section className={globalStyles.contentWrapper}>
+    <section
+      className={`${globalStyles.contentWrapper} ${styles.sitemapSection}`}
+    >
       <h4 className={styles.title}>Homepage</h4>
-      <div className={styles.wrapper}>
+      <div className={styles.mainContent}>
         <nav className={styles.element}>
           <strong className={styles.elementTitle}>Choose Tofu</strong>
           <a href="#">Why Tofu</a>
@@ -28,8 +30,6 @@ export function Sitemap() {
           <a href="#">Reviews</a>
           <a href="#">Stories</a>
         </nav>
-      </div>
-      <div className={styles.wrapper}>
         <nav className={styles.element}>
           <strong className={styles.elementTitle}>Resources</strong>
           <a href="#">Download Tofu</a>
@@ -48,8 +48,6 @@ export function Sitemap() {
           <a href="#">API Documentation</a>
           <a href="#">Site Status</a>
         </nav>
-      </div>
-      <div className={styles.wrapper}>
         <nav className={styles.element}>
           <strong className={styles.elementTitle}>Company</strong>
           <a href="#">Our Story</a>
