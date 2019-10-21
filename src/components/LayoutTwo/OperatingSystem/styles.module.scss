@@ -18,6 +18,10 @@
   width: 30px;
 }
 
+.checkIcon {
+  width: 30px;
+}
+
 @include mq($until: tablet) {
   .wrapper {
     padding: 0 24px;

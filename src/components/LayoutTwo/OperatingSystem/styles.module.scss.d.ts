@@ -8,6 +8,7 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
+    "checkIcon": string;
     "logo": string;
     "subtitle": string;
     "title": string;
