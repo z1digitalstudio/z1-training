@@ -34,7 +34,7 @@ export function LayoutTwo() {
           ]}
         />
         <OperatingSystem
-          os="Flow 1.8"
+          os=" 1.8"
           description="Performance improvements and bug fixes."
           dateTimeAttribute="2019-03-10"
           date="March 10, 2019"
@@ -49,7 +49,7 @@ export function LayoutTwo() {
           ]}
         />
         <OperatingSystem
-          os="Flow 1.7"
+          os=" 1.7"
           description="The release includes improvements and bug fixes."
           dateTimeAttribute="2019-01-07"
           date="January 7, 2019"
@@ -82,7 +82,7 @@ export function LayoutTwo() {
         </OperatingSystem>
 
         <OperatingSystem
-          os="Flow 1.6"
+          os=" 1.6"
           description="Performance improvements and bug fixes."
           dateTimeAttribute="2018-12-15"
           date="December 15, 2018"

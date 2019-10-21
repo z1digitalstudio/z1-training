@@ -31,7 +31,7 @@ export function OperatingSystem({
         <h2 className={styles.title}>
           {icon && (
             <img
-              className={styles.logo}
+              className={styles.appleLogo}
               src={icon}
               alt="Operating system icon"
             />

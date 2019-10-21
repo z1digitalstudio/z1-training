@@ -8,10 +8,16 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
+    "appleLogo": string;
+    "changesInfo": string;
     "checkIcon": string;
-    "logo": string;
+    "date": string;
+    "description": string;
+    "list": string;
+    "operatingSystem": string;
     "subtitle": string;
     "title": string;
+    "titleList": string;
     "wrapper": string;
     [name: string]: string;
 }
