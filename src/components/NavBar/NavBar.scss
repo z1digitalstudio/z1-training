@@ -7,16 +7,41 @@
   height: 500px;
   background-color: var(--gray-300);
 }
+@include mq($from: tablet) {
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+  }
 
-.navBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 64px;
-  align-items: center;
+  .loginItem {
+    margin-left: 15%;
+    font-weight: bold;
+  }
+  .imgMenu {
+    display: none;
+  }
 }
 
-.loginItem {
-  margin-left: 15%;
-  font-weight: bold;
+@include mq($from: mobile, $until: tablet) {
+  .navBar {
+    display: none;
+    flex-direction: column;
+    height: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .imgMenu {
+    width: 10%;
+    height: 10%;
+    margin-top: 10px;
+    margin-left: auto;
+  }
+  .divMenu {
+    display: flex;
+    height: 40px;
+  }
 }
