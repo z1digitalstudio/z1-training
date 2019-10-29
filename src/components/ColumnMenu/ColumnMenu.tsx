@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from '../Link/Link';
-import { ColumnBox } from '../ColumnBox/ColumnBox';
+import ColumnBox from '../ColumnBox/ColumnBox';
 import styles from './ColumnMenu.scss';
 
 export function ColumnMenu(props: any) {
