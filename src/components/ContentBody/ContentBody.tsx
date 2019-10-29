@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.module.scss';
+import styles from './ContentBody.scss';
 
 export default function ContentBody() {
   return (

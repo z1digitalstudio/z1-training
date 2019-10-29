@@ -1,0 +1,35 @@
+.urlLink {
+  height: 20px;
+  color: #222222;
+  font-family: 'Basis Grotesque Pro';
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.title {
+  height: 36px;
+  width: 125px;
+  color: #495057;
+  font-family: 'Basis Grotesque Pro';
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.44px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+
+.linksBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.linksBox > span {
+  height: 22px;
+  color: #495057;
+  font-family: 'Basis Grotesque Pro';
+  font-size: 16px;
+  letter-spacing: 0.44px;
+  line-height: 22px;
+  margin: 10px 10px 10px 0px;
+}

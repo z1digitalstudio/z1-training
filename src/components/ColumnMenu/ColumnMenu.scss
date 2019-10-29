@@ -1,0 +1,84 @@
+:root {
+  --custom-width: 960px;
+}
+.container {
+  width: var(--custom-width);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: fit-content;
+}
+.container > div {
+  width: 33%;
+  height: fit-content;
+  margin-bottom: 50px;
+}
+
+.homepage {
+  width: var(--custom-width);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.homepage > span {
+  height: 22px;
+  width: 83px;
+  color: #495057;
+  font-family: 'Basis Grotesque Pro';
+  font-size: 16px;
+  letter-spacing: 0.44px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+.divisor {
+  width: var(--custom-width);
+  margin: auto;
+  margin-bottom: 80px;
+}
+:root {
+  --custom-width: 960px;
+}
+.container {
+  width: var(--custom-width);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: fit-content;
+}
+.container > div {
+  width: 33%;
+  height: fit-content;
+  margin-bottom: 50px;
+}
+
+.homepage {
+  width: var(--custom-width);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.homepage > span {
+  height: 22px;
+  width: 83px;
+  color: #495057;
+  font-family: 'Basis Grotesque Pro';
+  font-size: 16px;
+  letter-spacing: 0.44px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+.divisor {
+  width: var(--custom-width);
+  margin: auto;
+  margin-bottom: 80px;
+}

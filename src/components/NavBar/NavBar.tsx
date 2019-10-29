@@ -1,6 +1,6 @@
 import React from 'react';
 import globalStyles from '@/styles/global.scss';
-import styles from './styles.module.scss';
+import styles from './NavBar.scss';
 import { Link } from '../Link/Link';
 
 export default function NavBar() {
