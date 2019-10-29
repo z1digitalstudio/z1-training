@@ -1,0 +1,30 @@
+.subFooterContainer {
+  width: var(--custom-width);
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 50px;
+}
+.subFooterContainer > span:first-child {
+  width: 300px;
+}
+.subFooterContainer > span {
+  height: 24px;
+  color: #495057;
+  font-family: 'Basis Grotesque Pro';
+  font-size: 12px;
+  line-height: 24px;
+}
+.subFooterContainer > div > span {
+  height: 24px;
+  color: #495057;
+  font-family: 'Basis Grotesque Pro';
+  font-size: 12px;
+  line-height: 24px;
+}
+.subFooterContainer > div {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-right: 100px;
+}
