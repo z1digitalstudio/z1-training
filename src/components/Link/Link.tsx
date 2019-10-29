@@ -1,5 +1,10 @@
 import React from 'react';
+import styles from './Link.scss';
 
 export function Link(props: any) {
-  return <span {...props}>{props.children}</span>;
+  return (
+    <span className={styles.urlLink} {...props}>
+      {props.children}
+    </span>
+  );
 }

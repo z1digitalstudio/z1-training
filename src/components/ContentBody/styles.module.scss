@@ -1,0 +1,37 @@
+.title {
+  color: var(--primary);
+}
+
+.background {
+  width: 100%;
+  height: 500px;
+  background-color: var(--gray-300);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainTitle {
+  height: 56px;
+  width: 273px;
+  color: #495057;
+  font-family: Bookmania;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.44px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.mainSpan {
+  height: 32px;
+  width: 531px;
+  color: #495057;
+  font-family: 'Basis Grotesque Pro';
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.44px;
+  line-height: 32px;
+  text-align: center;
+}

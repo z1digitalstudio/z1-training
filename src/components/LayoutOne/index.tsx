@@ -1,23 +1,13 @@
 import React from 'react';
 import globalStyles from '@/styles/global.scss';
-import styles from './styles.module.scss';
-import { Link } from '../Link/Link';
+import NavBar from '../NavBar/NavBar';
+import ContentBody from '../ContentBody/ContentBody';
 
 export function LayoutOne() {
   return (
     <>
-      <div className={globalStyles.contentWrapper}>
-        <div className={styles.navBar}>
-          <img src="flow-logo-mono.svg" alt="logo" />
-          <Link>Why Flow</Link>
-          <Link>Overview</Link>
-          <Link>Solutions</Link>
-          <Link>Pricing</Link>
-          <Link>More</Link>
-          <Link className={styles.loginItem}>Login</Link>
-        </div>
-      </div>
-      <div className={styles.background} />
+      <NavBar></NavBar>
+      <ContentBody></ContentBody>
       <div className={globalStyles.contentWrapper}>
         <p>Soy más contenido</p>
       </div>

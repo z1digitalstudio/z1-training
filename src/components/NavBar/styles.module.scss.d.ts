@@ -9,6 +9,8 @@
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
     "background": string;
+    "loginItem": string;
+    "navBar": string;
     "title": string;
     [name: string]: string;
 }
