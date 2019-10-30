@@ -8,6 +8,11 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
+    "angleIcon": string;
+    "caretIcon": string;
+    "operatingSystemUpdate": string;
+    "previousUpdates": string;
+    "seeMore": string;
     "title": string;
     [name: string]: string;
 }

@@ -1,10 +1,12 @@
 .wrapper {
   max-width: 960px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
+  justify-content: flex-end;
 }
 
 .operatingSystem {
@@ -59,7 +61,7 @@
   letter-spacing: 0.44px;
 }
 
-.list {
+.list:not(:last-child) {
   margin-bottom: 26px;
 }
 

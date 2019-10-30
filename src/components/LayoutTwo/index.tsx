@@ -6,6 +6,7 @@ import { OperatingSystem } from './OperatingSystem';
 import styles from './styles.module.scss';
 import AppleIcon from './Apple_logo_grey.svg';
 import AngleDown from './angle-down-solid.svg';
+import CaretDown from './caret-down-solid.svg';
 
 export function LayoutTwo() {
   return (
@@ -32,6 +33,7 @@ export function LayoutTwo() {
             'Integer porta nulla nisl, vel posuere orci consequat at.',
             'Donec ut feugiat justo. Morbi maximus placerat egestas.',
           ]}
+          className={styles.operatingSystemUpdate}
         />
         <OperatingSystem
           os=" 1.8"
@@ -47,6 +49,7 @@ export function LayoutTwo() {
             'Integer porta nulla nisl, vel posuere orci consequat at.',
             'Quisque imperdiet pharetra ipsum at luctus.',
           ]}
+          className={styles.operatingSystemUpdate}
         />
         <OperatingSystem
           os=" 1.7"
@@ -70,15 +73,18 @@ export function LayoutTwo() {
             'Integer porta nulla nisl, vel posuere orci consequat at.',
             'Quisque imperdiet pharetra ipsum at luctus.',
           ]}
+          className={styles.operatingSystemUpdate}
         >
-          <span>
-            See more{' '}
-            <img
-              className={styles.angleIcon}
-              src={AngleDown}
-              alt="Angle down icon"
-            />
-          </span>
+          <div className={styles.seeMore}>
+            <a href="#">
+              See more{' '}
+              <img
+                className={styles.angleIcon}
+                src={AngleDown}
+                alt="Angle down icon"
+              />
+            </a>
+          </div>
         </OperatingSystem>
 
         <OperatingSystem
@@ -95,7 +101,19 @@ export function LayoutTwo() {
             'Integer porta nulla nisl, vel posuere orci consequat at.',
             'Quisque imperdiet pharetra ipsum at luctus.',
           ]}
+          className={styles.operatingSystemUpdate}
         />
+        <div className={styles.previousUpdates}>
+          <a href="#">
+            {' '}
+            Show Previous Updates
+            <img
+              className={styles.caretIcon}
+              src={CaretDown}
+              alt="Angle down icon"
+            />
+          </a>
+        </div>
       </main>
       <Footer />
     </>
