@@ -8,9 +8,9 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
-    "borderBar": string;
-    "header": string;
-    "title": string;
+    "container": string;
+    "footer": string;
+    "responsiveLists": string;
     [name: string]: string;
 }
 declare const locals: ILocals;

@@ -1,0 +1,16 @@
+.dropdown-wrapper {
+  &.with-border {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    .dropdown-header {
+      padding: 0.2rem 0.5rem;
+    }
+  }
+  .dropdown-header {
+    display: flex;
+    align-items: center;
+    .dropdown-header-icon {
+      width: 0.5rem;
+      height: 0.5rem;
+    }
+  }
+}

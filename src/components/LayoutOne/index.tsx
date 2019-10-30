@@ -1,17 +1,25 @@
 import React from 'react';
 import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
+import { HomePage } from '@/components/LayoutOne/components/HomePage';
+import { Navbar } from '@/components/Navbar';
+import { Footer } from '@/components/Footer';
 
 export function LayoutOne() {
   return (
     <>
       <div className={globalStyles.contentWrapper}>
-        <h1 className={styles.title}>Soy el layout 1</h1>
+        <Navbar />
       </div>
-      <div className={styles.background} />
+      <div className={styles['border-bar']}></div>
+      <div className={styles.header}>
+        <h1>Flow Site Map</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
       <div className={globalStyles.contentWrapper}>
-        <p>Soy más contenido</p>
+        <HomePage />
       </div>
+      <Footer />
     </>
   );
 }

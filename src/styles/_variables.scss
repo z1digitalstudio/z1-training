@@ -1,14 +1,17 @@
 // colors
 $primary: #294d9c;
+$black: #222222;
 
 $gray-100: #fcfcfc;
+$gray-150: #f8f9fa;
 $gray-200: #f4f4f6;
-$gray-300: #eeeeee;
-$gray-500: #a5a7a6;
+$gray-300: #dee2e6;
 $gray-400: #d8d9d9;
+$gray-500: #a5a7a6;
 $gray-600: #717372;
-$gray-700: #3f4040;
-$gray-800: #262726;
+$gray-700: #495057;
+$gray-800: #3f4040;
+$gray-900: #262726;
 
 // z-index
 $zBackground: -1;
@@ -27,10 +30,12 @@ $normal-weight: 400;
 $medium-weight: 500;
 $semibold-weight: 600;
 $bold-weight: 700;
-$bold-weight: 800;
+$bold-weight-800: 800;
 $black-weight: 900;
 
 // Fonts
+$basisGrotesquePro: 'Basis Grotesque Pro';
+$basisGrotesquePro-path: '~@/styles/fonts/BasisGrotesquePro/BasisGrotesquePro-';
 $openSans: 'OpenSans';
 $openSans-path: '~@/styles/fonts/OpenSans/OpenSans-';
 $neoSans: 'NeoSans';

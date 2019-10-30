@@ -8,8 +8,10 @@
 
 :root {
   --primary: #{$primary};
+  --black: #{$black};
 
   --gray-100: #{$gray-100};
+  --gray-150: #{$gray-150};
   --gray-200: #{$gray-200};
   --gray-300: #{$gray-300};
   --gray-500: #{$gray-400};
@@ -17,13 +19,18 @@
   --gray-600: #{$gray-600};
   --gray-700: #{$gray-700};
   --gray-800: #{$gray-800};
+  --gray-900: #{$gray-900};
+
+  --light-weight: #{$light-weight};
+  --medium-weight: #{$medium-weight};
+  --bold-weight: #{$bold-weight};
 }
 
 html,
 body,
 [id='root'] {
   height: 100%;
-  font-family: $openSans;
+  font-family: $basisGrotesquePro;
 }
 
 input:-webkit-autofill,

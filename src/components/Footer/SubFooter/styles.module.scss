@@ -1,0 +1,25 @@
+.subFooter {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  font-family: 'Basis Grotesque Pro', sans-serif;
+  .container {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 1.1875rem;
+    color: var(--gray-700);
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    .options {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      .item {
+        cursor: pointer;
+        &:not(:last-child) {
+          margin-right: 1.875rem;
+        }
+      }
+    }
+  }
+}

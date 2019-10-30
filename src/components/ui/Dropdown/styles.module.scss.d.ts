@@ -8,9 +8,10 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
-    "borderBar": string;
-    "header": string;
-    "title": string;
+    "dropdownHeader": string;
+    "dropdownHeaderIcon": string;
+    "dropdownWrapper": string;
+    "withBorder": string;
     [name: string]: string;
 }
 declare const locals: ILocals;

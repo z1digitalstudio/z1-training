@@ -1,0 +1,27 @@
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+  margin-top: 3.75rem;
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+  }
+  .responsive-lists {
+    display: none;
+  }
+
+  @include mq($until: tablet) {
+    margin-top: 0;
+    .container {
+      display: none;
+    }
+    .responsive-lists {
+      display: flex;
+      flex-flow: column;
+      margin-top: 30px;
+    }
+  }
+}

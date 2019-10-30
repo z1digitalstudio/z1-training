@@ -8,8 +8,8 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
-    "borderBar": string;
-    "header": string;
+    "isFooter": string;
+    "item": string;
     "title": string;
     [name: string]: string;
 }
