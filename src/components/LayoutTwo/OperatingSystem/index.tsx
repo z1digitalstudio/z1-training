@@ -39,7 +39,7 @@ export function OperatingSystem({
                 alt="Operating system icon"
               />
             )}
-            Flow {os}
+            Tofu {os}
           </h2>
           <p className={styles.description}>{description}</p>
           <time dateTime={dateTimeAttribute} className={styles.date}>
