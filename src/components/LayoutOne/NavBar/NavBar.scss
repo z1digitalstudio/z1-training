@@ -1,0 +1,56 @@
+.navbar {
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+
+  .logo {
+    align-items: center;
+    color: #222222;
+    display: flex;
+  }
+
+  .hamburguer-icon {
+    align-items: center;
+    color: #222222;
+    display: none;
+    width: 1rem;
+  }
+
+  .link {
+    align-items: center;
+    color: #222222;
+    display: flex;
+    font-size: 0.925rem;
+    font-weight: $medium-weight;
+    text-decoration: none;
+
+    .caret-icon {
+      margin-left: 1rem;
+      width: 0.5rem;
+    }
+  }
+
+  .login {
+    background-color: var(--gray-200);
+    border-radius: 1rem;
+    color: #222222;
+    font-size: 0.875rem;
+    font-weight: $medium-weight;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+
+  @include mq($until: tablet) {
+    
+    .hamburguer-icon {
+      display: flex;
+    }
+
+    .link,
+    .login {
+      display: none;
+    }
+  }
+}

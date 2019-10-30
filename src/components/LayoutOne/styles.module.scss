@@ -1,9 +1,70 @@
-.title {
-  color: var(--primary);
+.fold {
+  align-items: center;
+  background-color: var(--gray-300);
+  color: #495057;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+  .fold-title {
+    font-family: 'Bookmania';
+    font-size: 2.25rem;
+    font-weight: $bold-weight;
+    margin-bottom: 1.5rem;
+  }
+
+  .fold-subtitle {
+    font-size: 1.25rem;
+    font-weight: $medium-weight;
+  }
 }
 
-.background {
-  width: 100%;
-  height: 500px;
-  background-color: var(--gray-300);
+.homepage {
+
+  .homepage-header {
+    border-bottom: 1px solid var(--gray-200);
+    margin-top: 2.25rem;
+    padding: 1.25rem 0;
+    width: 100%;
+
+    .title {
+      color: #495057;
+    }
+  }
+  
+  .homepage-content {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column wrap;
+    height: 720px;
+    justify-content: flex-start;
+    padding: 2.25rem 0 3.25rem;
+
+    .sitemap-section {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+
+      .section-title {
+        color: #495057;
+        font-size: 1.25rem;
+        font-weight: $medium-weight;
+        margin-bottom: 1rem;
+      }
+
+      .section-link {
+        color: #495057;
+        margin-bottom: 1rem;
+        text-decoration: none;
+      }
+    }
+    
+    @include mq($until: tablet) {
+      flex-wrap: nowrap;
+      height: auto;
+    }
+  }
 }
