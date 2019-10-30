@@ -15,7 +15,12 @@
     align-items: center;
     color: #222222;
     display: none;
-    width: 1rem;
+
+    svg {
+      align-items: center;
+      display: flex;
+      width: 1rem;
+    }
   }
 
   .link {
