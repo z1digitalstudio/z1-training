@@ -8,8 +8,13 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
+    "divColumnRow": string;
+    "down": string;
+    "left": string;
     "linksBox": string;
+    "right": string;
     "title": string;
+    "up": string;
     "urlLink": string;
     [name: string]: string;
 }
