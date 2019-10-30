@@ -11,9 +11,9 @@ export function SubFooter() {
         <a href="#">Privacy & Terms</a>
         <a href="#">Service Status</a>
         <a href="#">Site Map</a>
-        <select className={styles.language}>
+        <select className={styles.language} defaultValue="eng">
           <option disabled>Language</option>
-          <option selected>English</option>
+          <option value="eng">English</option>
         </select>
       </div>
     </div>
