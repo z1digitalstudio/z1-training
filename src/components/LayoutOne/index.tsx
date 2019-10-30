@@ -2,17 +2,18 @@ import React from 'react';
 import classNames from 'classnames';
 import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
-import { NavBar } from './NavBar/NavBar';
-import { Footer } from './Footer/Footer';
+import { NavBar } from '@/components/NavBar';
+import { Fold } from '@/components/Fold';
+import { Footer } from '@/components/Footer';
 
 export function LayoutOne() {
   return (
     <>
       <NavBar></NavBar>
-      <div className={classNames(styles.fold, globalStyles.contentPaddingWrapper)}>
-        <h1 className={styles.foldTitle}>Flow Site Map</h1>
-        <p className={styles.foldSubtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+      <Fold
+        title="Flow Site Map"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      ></Fold>
       <div className={classNames(styles.homepage, globalStyles.contentWrapper)}>
         <div className={styles.homepageHeader}>
           <h2 className={styles.title}>Homepage</h2>

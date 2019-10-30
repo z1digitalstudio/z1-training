@@ -1,8 +1,8 @@
 import React from 'react';
 import globalStyles from '@/styles/global.scss';
-import styles from './Footer.scss';
-import { FooterColumn } from '../FooterColumn/FooterColumn';
-import { SubFooter } from '../SubFooter/SubFooter';
+import styles from './styles.module.scss';
+import { FooterColumn } from './FooterColumn';
+import { SubFooter } from './SubFooter';
 
 export function Footer() {
   return (

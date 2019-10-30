@@ -1,10 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
 import globalStyles from '@/styles/global.scss';
-import styles from './NavBar.scss';
-import { ReactComponent as LogoIcon } from '../SVGIcon/flow-logo-mono.svg';
-import { ReactComponent as HamburguerIcon } from '../SVGIcon/bars-solid.svg';
-import { ReactComponent as CaretDown } from '../SVGIcon/caret-down-solid.svg';
+import styles from './styles.module.scss';
+import { ReactComponent as LogoIcon } from '@/components/SVGIcon/flow-logo-mono.svg';
+import { ReactComponent as HamburguerIcon } from '@/components/SVGIcon/bars-solid.svg';
+import { ReactComponent as CaretDown } from '@/components/SVGIcon/caret-down-solid.svg';
 
 export function NavBar() {
   return (

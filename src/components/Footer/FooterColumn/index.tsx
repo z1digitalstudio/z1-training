@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
-import styles from './FooterColumn.scss';
-import { ReactComponent as AngleDownIcon } from '../SVGIcon/angle-down-solid.svg';
-import { ReactComponent as AngleUpIcon } from '../SVGIcon/angle-up-solid.svg';
+import styles from './styles.module.scss';
+import { ReactComponent as AngleDownIcon } from '@/components/SVGIcon/angle-down-solid.svg';
+import { ReactComponent as AngleUpIcon } from '@/components/SVGIcon/angle-up-solid.svg';
 
 export function FooterColumn(props: any) {
   const [selected, setSelected] = useState(false);

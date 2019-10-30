@@ -1,7 +1,5 @@
 import React from 'react';
-import globalStyles from '@/styles/global.scss';
-import styles from './SubFooter.scss';
-
+import styles from './styles.module.scss';
 
 export function SubFooter() {
   return (
