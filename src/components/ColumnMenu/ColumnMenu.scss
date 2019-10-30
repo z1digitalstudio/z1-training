@@ -1,12 +1,14 @@
 @include mq($from: tablet) {
   .container {
     width: var(--custom-width);
-    margin: auto;
     display: flex;
+    flex-flow: column wrap;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     height: fit-content;
+    max-height: 800px;
+    width: 100%;
   }
   .container > div {
     width: 33%;
