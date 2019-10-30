@@ -12,6 +12,7 @@ interface ILocals {
     "down": string;
     "left": string;
     "linksBox": string;
+    "linksBoxExpanded": string;
     "right": string;
     "title": string;
     "up": string;

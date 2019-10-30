@@ -26,6 +26,20 @@
     display: flex;
     flex-direction: column;
   }
+  .linksBoxExpanded {
+    display: flex;
+    flex-direction: column;
+  }
+  .linksBoxExpanded > span {
+    height: 22px;
+    width: 116px;
+    color: #495057;
+    font-family: 'Basis Grotesque Pro';
+    font-size: 16px;
+    letter-spacing: 0.44px;
+    line-height: 22px;
+    margin: 10px 10px 10px 0px;
+  }
 
   .linksBox > span {
     height: 22px;
@@ -50,10 +64,20 @@
   }
 
   .linksBox {
-    display: none;
-    flex-direction: column;
+    visibility: hidden;
   }
 
+  .linksBoxExpanded {
+    display: flex;
+    flex-direction: column;
+  }
+  .linksBoxExpanded > span {
+    color: #495057;
+    font-family: 'Basis Grotesque Pro';
+    font-size: 14px;
+    letter-spacing: 0.44px;
+    line-height: 24px;
+  }
   .linksBox > span {
     height: 22px;
     color: #495057;
