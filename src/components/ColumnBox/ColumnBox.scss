@@ -7,7 +7,9 @@
     font-weight: 500;
     line-height: 20px;
   }
-
+  i {
+    display: none;
+  }
   .title {
     height: 36px;
     width: 125px;
@@ -66,7 +68,7 @@
     justify-content: space-between;
   }
 
-  .divColumnRow > i {
+  i {
     border: solid black;
     border-width: 0 3px 3px 0;
     height: 10px;

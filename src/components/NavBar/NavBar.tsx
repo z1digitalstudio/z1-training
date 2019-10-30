@@ -19,7 +19,10 @@ export default function NavBar() {
             <Link>Overview</Link>
             <Link>Solutions</Link>
             <Link>Pricing</Link>
-            <Link>More</Link>
+            <span>
+              <Link>More</Link> <i className={styles.down}></i>
+            </span>
+
             <Link className={styles.loginItem}>Login</Link>
           </div>
           <button className={styles.imgMenu} onClick={addClass}>

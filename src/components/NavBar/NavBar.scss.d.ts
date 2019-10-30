@@ -10,10 +10,14 @@
 interface ILocals {
     "background": string;
     "divMenu": string;
+    "down": string;
     "imgMenu": string;
+    "left": string;
     "loginItem": string;
     "navBar": string;
+    "right": string;
     "title": string;
+    "up": string;
     [name: string]: string;
 }
 declare const locals: ILocals;
