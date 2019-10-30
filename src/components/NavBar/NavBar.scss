@@ -13,6 +13,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: 64px;
+    width: var(--custom-width);
     align-items: center;
   }
 
@@ -25,19 +26,20 @@
   }
 }
 
-@include mq($from: mobile, $until: tablet) {
+@include mq($until: tablet) {
   .navBar {
     display: none;
     flex-direction: column;
     height: 40px;
+    width: var(--custom-width-mobile);
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
   .imgMenu {
-    width: 10%;
-    height: 10%;
-    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
     margin-left: auto;
   }
   .divMenu {
