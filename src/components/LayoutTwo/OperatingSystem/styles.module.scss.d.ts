@@ -15,7 +15,6 @@ interface ILocals {
     "description": string;
     "list": string;
     "operatingSystem": string;
-    "subtitle": string;
     "title": string;
     "titleList": string;
     "wrapper": string;

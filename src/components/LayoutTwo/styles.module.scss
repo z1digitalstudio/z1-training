@@ -42,3 +42,13 @@
     color: inherit;
   }
 }
+
+@include mq($until: tablet) {
+  .seeMore {
+    width: 100%;
+    margin: 0 0 40px 0;
+  }
+  main {
+    padding-bottom: 0;
+  }
+}

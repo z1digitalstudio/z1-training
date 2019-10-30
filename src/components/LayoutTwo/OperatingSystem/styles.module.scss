@@ -4,15 +4,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 20px 60px 20px;
 }
 
 .operatingSystem {
   max-width: 460px;
 }
 .changesInfo {
-  max-width: 480px;
+  max-width: 460px;
 }
 
 .title {
@@ -67,12 +66,15 @@
 @include mq($until: tablet) {
   .wrapper {
     padding: 0 24px;
+  }
 
-    .title {
-      font-size: 32px;
-    }
-    .subtitle {
-      font-size: 16px;
-    }
+  .operatingSystem,
+  .changesInfo {
+    max-width: 100%;
+    padding-top: 40px;
+  }
+
+  .changesInfo {
+    padding: 40px 0 40px 0;
   }
 }
