@@ -40,27 +40,6 @@
     border-bottom: 1px solid var(--gray-200);
     width: 100%;
 
-    &:hover {
-
-      .column-header {
-        .angle-down {
-          display: none;
-        }
-
-        .angle-up {
-          display: flex;
-        }
-      }
-
-      .column-content {
-        display: flex;
-
-        a {
-          margin-bottom: 1rem;
-        }
-      }
-    }
-
     &:last-of-type {
       border-bottom: none;
     }
@@ -80,6 +59,27 @@
 
     .column-content {
       display: none;
+    }
+
+    &.selected {
+
+      .column-header {
+        .angle-down {
+          display: none;
+        }
+
+        .angle-up {
+          display: flex;
+        }
+      }
+
+      .column-content {
+        display: flex;
+
+        a {
+          margin-bottom: 1rem;
+        }
+      }
     }
   }
 }

@@ -14,6 +14,7 @@ interface ILocals {
     "columnContent": string;
     "columnHeader": string;
     "columnTitle": string;
+    "selected": string;
     [name: string]: string;
 }
 declare const locals: ILocals;
