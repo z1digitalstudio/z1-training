@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './styles.module.scss';
 
 export function SubFooter() {
@@ -8,7 +9,7 @@ export function SubFooter() {
       <div className={styles.linksContainer}>
         <a href="#">Privacy & Terms</a>
         <a href="#">Service Status</a>
-        <a href="#">Site Map</a>
+        <Link to="/layout-one">Site Map</Link>
         <select className={styles.language} defaultValue="eng">
           <option disabled>Language</option>
           <option value="eng">English</option>

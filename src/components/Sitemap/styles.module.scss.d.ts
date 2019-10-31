@@ -8,9 +8,13 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
-    "fold": string;
-    "foldSubtitle": string;
-    "foldTitle": string;
+    "sectionLink": string;
+    "sectionTitle": string;
+    "sitemap": string;
+    "sitemapContent": string;
+    "sitemapHeader": string;
+    "sitemapSection": string;
+    "title": string;
     [name: string]: string;
 }
 declare const locals: ILocals;
