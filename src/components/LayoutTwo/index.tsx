@@ -1,9 +1,16 @@
 import React from 'react';
-import globalStyles from '@/styles/global.scss'
-import styles from './styles.module.scss'
+import { Jumbotron } from '@/components/ui/jumbotron';
+import { Sitemap } from '@/components/LayoutTwo/components/Sitemap';
 
 export function LayoutTwo() {
-  return <div className={globalStyles.contentWrapper}>
-    <h1 className={styles.title}>Soy el layout 2</h1>
-  </div>;
+  return (
+    <main>
+      <Jumbotron
+        title="Updates"
+        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Duis sit amet pellentesque metus, id mollis elit."
+      />
+      <Sitemap />
+    </main>
+  );
 }

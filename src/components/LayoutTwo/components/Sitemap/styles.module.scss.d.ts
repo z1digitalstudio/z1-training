@@ -9,7 +9,10 @@
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
     "borderBar": string;
-    "jumbotron": string;
+    "previousUpdates": string;
+    "sections": string;
+    "sitemap": string;
+    "withBackground": string;
     [name: string]: string;
 }
 declare const locals: ILocals;

@@ -30,8 +30,7 @@ export function Navbar() {
         </a>
         <a className={styles.item} href="#">
           <span>
-            {' '}
-            <Dropdown title="More" />{' '}
+            <Dropdown title="More" />
           </span>
         </a>
         <a href="#" className={styles['login-wrapper']}>

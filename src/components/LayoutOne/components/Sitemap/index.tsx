@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 import { List } from '../../../ui/List';
 import { firstList, secondList, thirdList } from './lists';
 
-export function HomePage() {
+export function Sitemap() {
   return (
     <>
       <div className={styles.container}>

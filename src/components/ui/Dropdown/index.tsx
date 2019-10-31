@@ -1,13 +1,15 @@
 import React from 'react';
 import styles from './styles.module.scss';
 import classNames from 'classnames';
-import { ReactComponent as ArrowDown } from '@/assets/icons/sort-down.svg';
+import { ReactComponent as SortDown } from '@/assets/icons/sort-down.svg';
+import { ReactComponent as ArrowDown } from '@/assets/icons/arrow-down.svg';
 
 interface DropdownParameters {
   title: string;
   items?: string[];
   width?: number;
   withBorder?: boolean;
+  sortIcon?: boolean;
 }
 
 export function Dropdown({
@@ -15,6 +17,7 @@ export function Dropdown({
   width = 10,
   items,
   withBorder = false,
+  sortIcon = true,
 }: DropdownParameters) {
   const customStyle = {
     marginRight: width + 'px',
@@ -30,7 +33,11 @@ export function Dropdown({
           <div className={styles['dropdown-header-title']} style={customStyle}>
             {title}
           </div>
-          <ArrowDown className={styles['dropdown-header-icon']} />
+          {sortIcon ? (
+            <SortDown className={styles['dropdown-header-icon']} />
+          ) : (
+            <ArrowDown className={styles['dropdown-header-icon']} />
+          )}
         </div>
       </div>
     </>
