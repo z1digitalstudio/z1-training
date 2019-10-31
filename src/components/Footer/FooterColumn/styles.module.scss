@@ -18,7 +18,7 @@
     .angle-down,
     .angle-up {
       align-items: center;
-      color: #495057;
+      color: var(--gray-700);
       display: none;
       width: 0.75rem;
     }
@@ -29,7 +29,7 @@
     flex-direction: column;
 
     a {
-      color: #495057;
+      color: var(--gray-700);
       font-size: 0.825rem;
       margin-bottom: 0.75rem;
       text-decoration: none;
@@ -37,7 +37,7 @@
   }
   
   @include mq($until: tablet) {
-    border-bottom: 1px solid var(--gray-200);
+    border-bottom: 1px solid var(--gray-100);
     width: 100%;
 
     &:last-of-type {

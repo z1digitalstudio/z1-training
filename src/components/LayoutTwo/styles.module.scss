@@ -1,3 +1,23 @@
-.title {
-  color: var(--primary);
+.load-more-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+
+  .load-more {
+    align-items: center;
+    color: var(--gray-700);
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: $medium-weight;
+    text-decoration: none;
+
+    svg {
+      align-items: center;
+      display: flex;
+      margin-left: 1rem;
+      width: 0.5rem;
+    }
+  }
 }

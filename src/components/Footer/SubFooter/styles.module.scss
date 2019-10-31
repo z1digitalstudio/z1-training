@@ -1,6 +1,6 @@
 .subfooter {
   align-items: center;
-  border-top: 1px solid var(--gray-200);
+  border-top: 1px solid var(--gray-100);
   display: flex;
   justify-content: space-between;
   padding-bottom: 1rem;
@@ -8,7 +8,7 @@
   width: 100%;
 
   p {
-    color: #495057;
+    color: var(--gray-700);
     font-size: 0.75rem;
   }
 
@@ -17,7 +17,7 @@
     display: flex;
 
     a {
-      color: #495057;
+      color: var(--gray-700);
       font-size: 0.75rem;
       margin-right: 1.5rem;
       text-decoration: none;
@@ -27,7 +27,7 @@
       background: var(--gray-100);
       border: 1px solid var(--gray-200);
       border-radius: 4px;
-      color: #495057;
+      color: var(--gray-700);
       font-size: 0.75rem;
       padding: 0.25rem;
     }
