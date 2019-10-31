@@ -1,6 +1,7 @@
 .subFooter {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   font-family: 'Basis Grotesque Pro', sans-serif;
+
   .container {
     align-items: center;
     display: flex;
@@ -10,14 +11,37 @@
     color: var(--gray-700);
     font-size: 0.75rem;
     line-height: 1.5rem;
+
+    .items,
     .options {
       display: flex;
       flex-flow: row wrap;
       align-items: center;
+
       .item {
         cursor: pointer;
-        &:not(:last-child) {
-          margin-right: 1.875rem;
+        margin-right: 1.875rem;
+      }
+    }
+    .items {
+      justify-content: center;
+    }
+
+    @include mq($until: tablet) {
+      justify-content: center;
+    }
+    @include mq($until: mobile-big) {
+      .items {
+        flex-flow: column nowrap;
+        margin-top: 16px;
+
+        .item {
+          margin-right: 1rem;
+        }
+
+        .language-select {
+          margin-top: 16px;
+          width: 100%;
         }
       }
     }

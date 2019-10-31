@@ -34,4 +34,10 @@
       display: none;
     }
   }
+  @include mq($from: tablet, $until: desktop) {
+    .first_column,
+    .second_column {
+      margin-right: 7rem !important;
+    }
+  }
 }

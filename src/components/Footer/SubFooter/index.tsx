@@ -7,18 +7,20 @@ export function SubFooter() {
     <>
       <div className={styles.subFooter}>
         <div className={styles.container}>
-          <p>© 2019 Flow Technologies Ltd. All rights reserved.</p>
-          <div className={styles.options}>
-            <div className={styles.item}>
-              <p>Privacy & Terms</p>
+          <p>©2019 Flow Technologies Ltd. All rights reserved.</p>
+          <div className={styles.items}>
+            <div className={styles.options}>
+              <div className={styles.item}>
+                <p>Privacy & Terms</p>
+              </div>
+              <div className={styles.item}>
+                <p>Service Status</p>
+              </div>
+              <div className={styles.item}>
+                <p>Site Map</p>
+              </div>
             </div>
-            <div className={styles.item}>
-              <p>Service Status</p>
-            </div>
-            <div className={styles.item}>
-              <p>Site Map</p>
-            </div>
-            <div className={styles.item}>
+            <div className={styles['language-select']}>
               <Dropdown title="English" width={50} withBorder={true} />
             </div>
           </div>

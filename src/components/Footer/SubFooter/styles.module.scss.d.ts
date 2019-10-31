@@ -10,6 +10,8 @@
 interface ILocals {
     "container": string;
     "item": string;
+    "items": string;
+    "languageSelect": string;
     "options": string;
     "subFooter": string;
     [name: string]: string;
