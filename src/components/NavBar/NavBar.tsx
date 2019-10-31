@@ -12,7 +12,7 @@ export default function NavBar() {
     <>
       <div className={globalStyles.contentWrapper}>
         <div className={styles.divMenu}>
-          <img src="flow-logo-mono.svg" alt="logo" />
+          <img src="/flow-logo-mono.svg" alt="logo" />
 
           <div className={styles.navBar}>
             <Link>Why Flow</Link>
@@ -26,7 +26,7 @@ export default function NavBar() {
             <Link className={styles.loginItem}>Login</Link>
           </div>
           <button className={styles.imgMenu} onClick={addClass}>
-            <img src="menu-512.png" alt="menu" />
+            <img src="/menu-512.png" alt="menu" />
           </button>
         </div>
       </div>

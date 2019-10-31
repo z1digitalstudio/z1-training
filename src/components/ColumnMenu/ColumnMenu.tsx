@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from '../Link/Link';
 import ColumnBox from '../ColumnBox/ColumnBox';
 import styles from './ColumnMenu.scss';
+import globalStyles from '@/styles/global.scss';
 
 export function ColumnMenu(props: any) {
   return (
-    <>
+    <div className={globalStyles.contentWrapper}>
       <div className={styles.homepage}>
         <span>HomePage</span>
       </div>
@@ -71,6 +72,6 @@ export function ColumnMenu(props: any) {
           <Link>Subprocessors</Link>
         </ColumnBox>
       </div>
-    </>
+    </div>
   );
 }

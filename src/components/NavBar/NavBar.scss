@@ -4,19 +4,9 @@
 
 .background {
   width: 100%;
-  height: 500px;
   background-color: var(--gray-300);
 }
 @include mq($from: tablet) {
-  i {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    height: 10px;
-    width: 10px;
-    display: inline-block;
-    padding: 3px;
-  }
-
   .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -33,6 +23,11 @@
   }
 
   .down {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    width: 10px;
+    display: inline-block;
+    padding: 3px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
@@ -51,7 +46,7 @@
 
   .loginItem {
     margin-left: 15%;
-    font-weight: bold;
+    font-weight: $medium-weight;
   }
   .imgMenu {
     display: none;
@@ -62,7 +57,6 @@
   .navBar {
     display: none;
     flex-direction: column;
-    height: 40px;
     width: var(--custom-width-mobile);
     flex-wrap: wrap;
     justify-content: space-between;
@@ -70,13 +64,11 @@
   }
   .imgMenu {
     width: 40px;
-    height: 40px;
     margin-top: 5px;
     margin-left: auto;
     align-self: center;
   }
   .divMenu {
     display: flex;
-    height: 80px;
   }
 }

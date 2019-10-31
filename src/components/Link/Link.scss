@@ -1,8 +1,7 @@
 .urlLink {
-  height: 20px;
-  color: #222222;
-  font-family: 'Basis Grotesque Pro';
+  color: $gray-800;
+  font-family: $openSans;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: $medium-weight;
   line-height: 20px;
 }

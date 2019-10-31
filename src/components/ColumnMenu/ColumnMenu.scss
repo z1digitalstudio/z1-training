@@ -1,23 +1,16 @@
 @include mq($from: tablet) {
   .container {
-    width: var(--custom-width);
     display: flex;
-    flex-flow: column wrap;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    height: fit-content;
-    max-height: 800px;
-    width: 100%;
   }
   .container > div {
     width: 33%;
-    height: fit-content;
     margin-bottom: 50px;
   }
 
   .homepage {
-    width: var(--custom-width);
     height: 100px;
     display: flex;
     align-items: center;
@@ -25,10 +18,9 @@
   }
 
   .homepage > span {
-    height: 22px;
     width: 83px;
-    color: #495057;
-    font-family: 'Basis Grotesque Pro';
+    color: $gray-700;
+    font-family: $openSans;
     font-size: 16px;
     letter-spacing: 0.44px;
     line-height: 22px;
@@ -39,20 +31,6 @@
     width: var(--custom-width);
     margin: auto;
     margin-bottom: 30px;
-  }
-  .container {
-    width: var(--custom-width);
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: fit-content;
-  }
-  .container > div {
-    width: 33%;
-    height: fit-content;
-    margin-bottom: 50px;
   }
 }
 @include mq($until: tablet) {

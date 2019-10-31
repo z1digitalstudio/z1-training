@@ -5,6 +5,7 @@
 @include mq($from: tablet) {
   .background {
     height: 500px;
+
     background-color: var(--gray-300);
     display: flex;
     flex-direction: column;
@@ -13,24 +14,20 @@
   }
 
   .mainTitle {
-    height: 56px;
-    width: 273px;
-    color: #495057;
-    font-family: Bookmania;
+    color: $gray-700;
+    font-family: $openSans;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: $bold-weight;
     letter-spacing: 0.44px;
     line-height: 56px;
     text-align: center;
   }
 
   .mainSpan {
-    height: 32px;
-    width: 531px;
-    color: #495057;
+    color: $gray-700;
     font-family: var(--font-family);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: $medium-weight;
     letter-spacing: 0.44px;
     line-height: 32px;
     text-align: center;
@@ -39,7 +36,6 @@
 
 @include mq($until: tablet) {
   .background {
-    height: 347px;
     background-color: var(--gray-300);
     display: flex;
     flex-direction: column;
@@ -52,23 +48,21 @@
   }
 
   .mainTitle {
-    height: 56px;
     width: 273px;
-    color: #495057;
+    color: $gray-700;
     font-family: Bookmania;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: $medium-weight;
     letter-spacing: 0.44px;
     line-height: 56px;
     text-align: center;
   }
 
   .mainSpan {
-    height: 32px;
-    color: #495057;
+    color: $gray-700;
     font-family: var(--font-family);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: $medium-weight;
     letter-spacing: 0.44px;
     line-height: 32px;
     text-align: center;
