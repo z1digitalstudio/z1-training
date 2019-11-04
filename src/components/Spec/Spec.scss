@@ -1,0 +1,19 @@
+.header1 {
+  color: #495057;
+  font-family: Bookmania;
+  font-size: 21px;
+  font-weight: $bold-weight;
+  letter-spacing: 0.44px;
+  line-height: 29px;
+}
+.specList > li {
+  color: #495057;
+  font-family: $openSans;
+  font-size: 16px;
+  letter-spacing: 0.44px;
+  line-height: 50px;
+}
+
+.specList {
+  margin-bottom: 30px;
+}
