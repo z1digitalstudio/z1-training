@@ -136,6 +136,10 @@ export default function Updates() {
           <Lines>consectetur adipiscing elit. </Lines>
         </Spec>
       </UpdateBox>
+      <div className={styles.previousUpdates}>
+        <span>Show Previous Updates</span>
+        <i className={styles.down}></i>
+      </div>
     </div>
   );
 }
