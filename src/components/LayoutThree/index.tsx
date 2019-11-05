@@ -6,6 +6,7 @@ import { PriceComparator } from './PriceComparator';
 import { ChatModule } from './ChatModule';
 import { PriceCalculator } from './PriceCalculator';
 import { FlowSoloCta } from './FlowSoloCta';
+import { CompaniesCta } from './CompaniesCta';
 import { Faq } from './Faq';
 import { Footer } from '@/components/Footer';
 
@@ -23,6 +24,7 @@ export function LayoutThree() {
         <ChatModule></ChatModule>
         <PriceCalculator></PriceCalculator>
         <FlowSoloCta></FlowSoloCta>
+        <CompaniesCta></CompaniesCta>
         <Faq></Faq>
       </main>
       <Footer></Footer>
