@@ -9,15 +9,14 @@
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
     "button": string;
-    "comparatorCell": string;
     "comparatorContainer": string;
-    "comparatorTableContent": string;
-    "comparatorTableMore": string;
-    "comparatorTableWrapper": string;
+    "comparatorContent": string;
+    "comparatorMore": string;
     "comparatorToggleContainer": string;
     "comparatorToggleContent": string;
     "comparatorToggleInfo": string;
     "comparatorToggleItem": string;
+    "comparatorWrapper": string;
     "featureListRow": string;
     "featureRow": string;
     "featuresItem": string;
@@ -31,6 +30,7 @@ interface ILocals {
     "priceSubtext": string;
     "priceValue": string;
     "priceValueContainer": string;
+    "row": string;
     "selected": string;
     "smallNote": string;
     "title": string;

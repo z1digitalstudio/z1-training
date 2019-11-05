@@ -46,190 +46,183 @@
     }
   }
 
-  .comparator-table-wrapper {
+  .comparator-wrapper {
     border: 1px solid var(--gray-300);
     box-shadow: 0 10px 10px -10px rgba(206,212,218,0.61);
     width: 100%;
 
-    .comparator-table-content {
-      display: table;
+    .comparator-content {
+      background-color: var(--gray-300);
+      display: grid;
+      grid: repeat(8, auto) / repeat(3, 1fr);
+      grid-auto-flow: column;
+      grid-column-gap: 1px;
+      justify-items: stretch;
       width: 100%;
+
+      @include mq($until: tablet) {
+        grid: none;
+
+        .name-row {
+
+          &:not(:first-of-type) {
+            border-top: 1px solid var(--gray-300)
+          }
+        }
+      }
   
-      .name-row,
-      .price-row,
-      .feature-row,
-      .feature-list-row {
-        display: table-row;
+      .row {
+        align-items: flex-start;
+        background-color: var(--gray-000);
+        color: var(--gray-700);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.5rem 1.5rem;
 
         &:nth-child(odd) {
           background-color: var(--gray-200);
         }
-  
-        .comparator-cell {
-          border-right: 1px solid var(--gray-300);
-          color: var(--gray-700);
-          display: table-cell;
-          padding: 0.5rem 1.5rem;
-          vertical-align: middle;
-          width: calc(100% / 3);
-  
-          &:last-child {
-            border-right: none;
-          }
 
-          .small-note {
-            display: block;
-            font-size: 0.875rem;
-            font-weight: $normal-weight;
-            margin-bottom: 0.25rem;
-          }
+        .small-note {
+          display: block;
+          font-size: 0.875rem;
+          font-weight: $normal-weight;
+          margin-bottom: 0.25rem;
         }
       }
 
       .name-row {
-
-        .comparator-cell {
-          color: var(--gray-700);
-          line-height: 1.5;
-          padding: 1.5rem;
-          text-align: center;
-          
-          .navigation-avatar {
-            background-color: var(--gray-000);
-            border-radius: 0.25rem;
-            height: 3rem;
-            margin: 0 auto 1.25rem;
-            width: 3rem;
-          }
+        align-items: center;
+        color: var(--gray-700);
+        line-height: 1.5;
+        padding: 1.5rem;
+        text-align: center;
         
-          .title {
-            font-family: 'Bookmania';
-            font-size: 1.25rem;
-            font-weight: $bold-weight;
-            margin-bottom: 0.75rem;
-          }
+        .navigation-avatar {
+          background-color: var(--gray-000);
+          border-radius: 0.25rem;
+          height: 3rem;
+          margin-bottom: 1.25rem;
+          width: 3rem;
+        }
+      
+        .title {
+          font-family: 'Bookmania';
+          font-size: 1.25rem;
+          font-weight: $bold-weight;
+          margin-bottom: 0.75rem;
         }
       }
 
       .price-row {
+        justify-content: flex-start;
 
-        .comparator-cell {
-          vertical-align: top;
+        .price-subtext {
+          color: var(--gray-700);
+          font-size: 0.875rem;
+        }
 
-          .price-subtext {
+        .price-content {
+          align-items: center;
+          align-self: center;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+  
+          .price-value-container {
+            align-items: center;
             color: var(--gray-700);
-            font-size: 0.875rem;
+            display: flex;
+            font-family: 'Helvetica';
+  
+            .price-currency {
+              font-size: 1.5rem;
+            }
+  
+            .price-value {
+              font-size: 3.5rem;
+              margin: 0.5rem;
+            }
+  
+            .info-icon {
+              align-items: center;
+              color: var(--gray-400);
+              display: flex;
+              width: 0.875rem;
+            }
           }
 
-          .price-content {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            max-width: 23.75rem;
+          .price-subtext {
+            margin-bottom: 1rem;
             text-align: center;
-    
-            .price-value-container {
-              align-items: center;
-              color: var(--gray-700);
-              display: flex;
-              font-family: 'Helvetica';
-    
-              .price-currency {
-                font-size: 1.5rem;
-              }
-    
-              .price-value {
-                font-size: 3.5rem;
-                margin: 0.5rem;
-              }
-    
-              .info-icon {
-                align-items: center;
-                color: var(--gray-400);
-                display: flex;
-                width: 0.875rem;
-              }
-            }
-
-            .price-subtext {
-              margin-bottom: 1rem;
-              text-align: center;
-            }
-            
-            .button {
-              align-items: center;
-              background-color: var(--gray-500);
-              border-radius: 1.5rem;
-              color: var(--gray-000);
-              display: flex;
-              font-weight: $bold-weight;
-              justify-content: center;
-              margin-bottom: 1rem;
-              padding: 1rem 1.5rem;
-              text-decoration: none;
-              width: 12rem;
-            }
+          }
+          
+          .button {
+            align-items: center;
+            background-color: var(--gray-500);
+            border-radius: 1.5rem;
+            color: var(--gray-000);
+            display: flex;
+            font-weight: $bold-weight;
+            justify-content: center;
+            margin-bottom: 1rem;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            width: 12rem;
           }
         }
       }
   
       .feature-row {
-  
-        .comparator-cell {
-          font-weight: $bold-weight;
-          height: 3.75rem;
-          line-height: 1.5;
+        font-weight: $bold-weight;
+        min-height: 3.75rem;
+        line-height: 1.5;
 
-          .info-icon {
-            align-items: center;
-            color: var(--gray-300);
-            display: inline-flex;
-            margin-left: 1rem;
-            width: 0.75rem;
-          }
+        .info-icon {
+          align-items: center;
+          color: var(--gray-300);
+          display: inline-flex;
+          margin-left: 1rem;
+          width: 0.75rem;
         }
       }
 
       .feature-list-row {
+        justify-content: flex-start;
+        padding: 1rem 1.5rem;
 
-        .comparator-cell {
-          height: auto;
-          padding: 1rem 1.5rem;
-          vertical-align: top;
+        span {
+          color: var(--gray-700);
+          font-weight: $bold-weight;
+          line-height: 1.5;
+        }
 
-          span {
+        .features-list {
+          margin-top: 1.25rem;
+
+          .features-item {
+            align-items: center;
+            display: flex;
             color: var(--gray-700);
-            font-weight: $bold-weight;
-            height: 3.75rem;
-            line-height: 1.5;
-          }
+            margin-bottom: 1.25rem;
 
-          .features-list {
-            margin-top: 1.25rem;
+            &:last-child {
+              margin-bottom: 0;
+            }
 
-            .features-item {
+            svg {
               align-items: center;
               display: flex;
-              color: var(--gray-700);
-              margin-bottom: 1.25rem;
-
-              &:last-child {
-                margin-bottom: 0;
-              }
-
-              svg {
-                align-items: center;
-                display: flex;
-                margin-right: 1rem;
-                width: 0.75rem;
-              }
+              margin-right: 1rem;
+              width: 0.75rem;
             }
           }
         }
       }
     }
 
-    .comparator-table-more {
+    .comparator-more {
       background-color: var(--gray-200);
       display: flex;
       justify-content: center;
