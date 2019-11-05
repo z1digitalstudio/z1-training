@@ -3,12 +3,11 @@ import React from 'react';
 import Footer from '../Footer/Footer';
 import Jumbotron from '../Jumbotron/Jumbotron';
 import Header from '../Header/Header';
-import globalStyles from '@/styles/global.scss';
 
 import Pricing from '../Pricing/Pricing';
 export function LayoutThree() {
   return (
-    <div className={globalStyles.contentWrapper}>
+    <div>
       <Header />
       <main>
         <Jumbotron

@@ -1,0 +1,32 @@
+.container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $gray-400;
+  border-top: 1px solid $gray-400;
+}
+.togglequestion {
+  display: flex;
+  justify-content: space-between;
+  > img {
+    height: 15px;
+    width: 15px;
+    margin-right: 30px;
+  }
+}
+.question {
+  color: $gray-700;
+  font-family: $openSans;
+  font-size: 18px;
+  font-weight: $bold-weight;
+  letter-spacing: 0.44px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.answer {
+  color: $gray-700;
+  font-family: $openSans;
+  font-size: 16px;
+  letter-spacing: 0.44px;
+  line-height: 28px;
+}

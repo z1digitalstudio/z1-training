@@ -7,6 +7,11 @@ import Tier from '../Tier/Tier';
 import TierFeatCard from '../TierFeatCard/TierFeatCard';
 import CalculatorBox from '../CalculatorBox/CalculatorBox';
 import LookingForPersonalBar from '../LookingForPersonalBar/LookingForPersonalBar';
+import CommonQuestions from '../CommonQuestions/CommonQuestions';
+import Question from '../Question/Question';
+import CommonQuestionSection from '../CommonQuestionSection/CommonQuestionSection';
+import BrandCarousel from '../BrandCarousel/BrandCarousel';
+import BrandItem from '../BrandItem/BrandItem';
 
 export default function Pricing(props: any) {
   var currency = '$';
@@ -92,6 +97,109 @@ export default function Pricing(props: any) {
       <ChatBox></ChatBox>
       <CalculatorBox inputPrice="35.91" currency={currency}></CalculatorBox>
       <LookingForPersonalBar></LookingForPersonalBar>
+      <BrandCarousel>
+        <BrandItem></BrandItem>
+        <BrandItem></BrandItem>
+        <BrandItem></BrandItem>
+        <BrandItem></BrandItem>
+        <BrandItem></BrandItem>
+      </BrandCarousel>
+      <CommonQuestions>
+        <CommonQuestionSection name="General">
+          <Question
+            question="How does the free trial work?"
+            answer="
+                    Try us free for 30 days! If you enjoy your Flow trial, do nothing 
+                    and your membership will automatically continue for as long as you 
+                    choose to remain a member. Cancel anytime before your trial ends and 
+                    you won’t be charged. There’s no complicated contract, no cancellation 
+                    fees, and no commitment. Cancel online anytime, 24 hours a day.
+                    "
+            toggleSpan="true"
+          ></Question>
+          <Question
+            question="Can we cancel at any time?"
+            answer="
+                    Try us free for 30 days! If you enjoy your Flow trial, do nothing 
+                    and your membership will automatically continue for as long as you 
+                    choose to remain a member. Cancel anytime before your trial ends and 
+                    you won’t be charged. There’s no complicated contract, no cancellation 
+                    fees, and no commitment. Cancel online anytime, 24 hours a day.
+                    "
+            toggleSpan="false"
+          ></Question>
+          <Question
+            question="Do you support guest accounts?"
+            answer="
+                    Try us free for 30 days! If you enjoy your Flow trial, do nothing 
+                    and your membership will automatically continue for as long as you 
+                    choose to remain a member. Cancel anytime before your trial ends and 
+                    you won’t be charged. There’s no complicated contract, no cancellation 
+                    fees, and no commitment. Cancel online anytime, 24 hours a day.
+                    "
+            toggleSpan="false"
+          ></Question>
+        </CommonQuestionSection>
+        <CommonQuestionSection name="Billing">
+          <Question
+            question="What are my payment options?"
+            answer="
+                    With monthly billing, you must pre-pay for the next month by credit card.
+                    With annual billing, you can always pay for the next year by credit card. We’re also 
+                    happy to help annual customers pay quarterly or every six months rather than yearly. 
+                    If you’re an annual billing customer and you’d like to change your payment 
+                    frequency just write us at help@getflow.com.
+                    With our enterprise plan you can pay quarterly, every six months, or yearly 
+                    via credit card, ACH, or wire transfer.
+                    "
+            toggleSpan="true"
+          ></Question>
+          <Question
+            question="What currency can I pay in?"
+            answer="
+                    Try us free for 30 days! If you enjoy your Flow trial, do nothing 
+                    and your membership will automatically continue for as long as you 
+                    choose to remain a member. Cancel anytime before your trial ends and 
+                    you won’t be charged. There’s no complicated contract, no cancellation 
+                    fees, and no commitment. Cancel online anytime, 24 hours a day.
+                    "
+            toggleSpan="false"
+          ></Question>
+          <Question
+            question="How does adding and removing licenses work?"
+            answer="
+                    Try us free for 30 days! If you enjoy your Flow trial, do nothing 
+                    and your membership will automatically continue for as long as you 
+                    choose to remain a member. Cancel anytime before your trial ends and 
+                    you won’t be charged. There’s no complicated contract, no cancellation 
+                    fees, and no commitment. Cancel online anytime, 24 hours a day.
+                    "
+            toggleSpan="false"
+          ></Question>
+          <Question
+            question="Do you offer discounts for education or non-profits?"
+            answer="
+                    Try us free for 30 days! If you enjoy your Flow trial, do nothing 
+                    and your membership will automatically continue for as long as you 
+                    choose to remain a member. Cancel anytime before your trial ends and 
+                    you won’t be charged. There’s no complicated contract, no cancellation 
+                    fees, and no commitment. Cancel online anytime, 24 hours a day.
+                    "
+            toggleSpan="false"
+          ></Question>
+          <Question
+            question="What your refund policy?"
+            answer="
+                    Try us free for 30 days! If you enjoy your Flow trial, do nothing 
+                    and your membership will automatically continue for as long as you 
+                    choose to remain a member. Cancel anytime before your trial ends and 
+                    you won’t be charged. There’s no complicated contract, no cancellation 
+                    fees, and no commitment. Cancel online anytime, 24 hours a day.
+                    "
+            toggleSpan="false"
+          ></Question>
+        </CommonQuestionSection>
+      </CommonQuestions>
     </>
   );
 }
