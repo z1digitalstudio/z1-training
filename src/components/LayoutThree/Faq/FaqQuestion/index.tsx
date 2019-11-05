@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
-import classNames from 'classnames';
 import styles from './styles.module.scss';
 import { ReactComponent as AngleDownIcon } from '@/components/SVGIcon/angle-down-solid.svg';
 import { ReactComponent as AngleUpIcon } from '@/components/SVGIcon/angle-up-solid.svg';
 
-export function FooterColumn(props: any) {
+export function FaqQuestion(props: any) {
   const [expanded, setExpanded] = useState(false);
 
   return (
     <>
-      <div className={classNames(styles.column, {[styles.expanded]: expanded})}>
-        <div className={styles.columnHeader} onClick={() => setExpanded(!expanded)}>
-          <span className={styles.columnTitle}>{props.title}</span>
+      <div className={styles.questionContainer}>
+        <div className={styles.questionHeader} onClick={() => setExpanded(!expanded)}>
+          <h3>{props.question}</h3>
           {expanded ? <AngleUpIcon></AngleUpIcon> : <AngleDownIcon></AngleDownIcon>}
         </div>
-        <div className={styles.columnContent}>
-          {props.children}
-        </div>
+        {expanded && <div className={styles.questionContent}>
+          {props.answer}
+        </div>}
       </div>
     </>
   );

@@ -1,0 +1,116 @@
+.card-wrapper {
+  align-items: center;
+  border-bottom: 1px solid var(--gray-300);
+  display: flex;
+  justify-content: center;
+
+  .card-container {
+    align-items: center;
+    background-color: var(--gray-000);
+    border: 1px solid var(--gray-200);
+    box-shadow: 0 10px 10px -10px rgba(73,80,87,0.3);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin-top: -8.5rem;
+    width: 28.75rem;
+  
+    .header-container {
+      align-items: center;
+      background-color: var(--gray-200);
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      width: 100%;
+  
+      .header-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 23.75rem;
+        text-align: center;
+  
+        .navigation-avatar {
+          background-color: var(--gray-000);
+          border-radius: 0.25rem;
+          height: 4.5rem;
+          margin-bottom: 1.25rem;
+          width: 4.5rem;
+        }
+  
+        .title {
+          color: var(--gray-700);
+          font-family: 'Bookmania';
+          font-size: 1.25rem;
+          font-weight: $bold-weight;
+          line-height: 1.5;
+          margin-bottom: 1rem;
+        }
+  
+        .description {
+          color: var(--gray-700);
+          font-size: 1.25rem;
+          font-weight: $medium-weight;
+          line-height: 1.5;
+        }
+      }
+    }
+  
+    .list-container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 2.5rem;
+      padding-top: 2.25rem;
+      width: 100%;
+  
+      .list-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 23.75rem;
+        text-align: center;
+
+        .list-element-container {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .list-element {
+            align-items: center;
+            display: flex;
+            margin-bottom: 2rem;
+
+            .check-icon {
+              align-items: center;
+              color: var(--gray-700);
+              display: flex;
+              margin-right: 1rem;
+              width: 0.875rem;
+            }
+
+            span {
+              color: var(--gray-700);
+            }
+          }
+        }
+        
+        .button {
+          align-items: center;
+          background-color: var(--gray-500);
+          border-radius: 1.5rem;
+          color: var(--gray-000);
+          display: flex;
+          font-weight: $bold-weight;
+          justify-content: center;
+          padding: 1rem 1.5rem;
+          text-decoration: none;
+          width: 12rem;
+        }
+      }
+    }
+  }
+}
+  

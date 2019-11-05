@@ -15,10 +15,9 @@
       text-transform: uppercase;
     }
 
-    .angle-down,
-    .angle-up {
+    svg {
       align-items: center;
-      color: var(--gray-700);
+      color: var(--gray-500);
       display: none;
       width: 0.75rem;
     }
@@ -52,7 +51,7 @@
         margin-bottom: 0;
       }
 
-      .angle-down {
+      svg {
         display: flex;
       }
     }
@@ -61,17 +60,7 @@
       display: none;
     }
 
-    &.selected {
-
-      .column-header {
-        .angle-down {
-          display: none;
-        }
-
-        .angle-up {
-          display: flex;
-        }
-      }
+    &.expanded {
 
       .column-content {
         display: flex;

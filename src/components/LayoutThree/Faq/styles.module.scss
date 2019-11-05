@@ -1,0 +1,22 @@
+.faq-container {
+  color: var(--gray-700);
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+
+  .title {
+    font-family: 'Bookmania';
+    font-size: 1.75rem;
+    font-weight: $bold-weight;
+    margin-bottom: 1.5rem;
+  }
+
+  .section {
+    margin-bottom: 2rem;
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: $medium-weight;
+      margin-bottom: 1.25rem;
+    }
+  }
+}

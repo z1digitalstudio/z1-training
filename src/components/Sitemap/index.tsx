@@ -16,7 +16,7 @@ export function Sitemap() {
             <h3 className={styles.sectionTitle}>Choose Flow</h3>
             <a href="#" className={styles.sectionLink}>Why Flow</a>
             <a href="#" className={styles.sectionLink}>Features</a>
-            <a href="#" className={styles.sectionLink}>Pricing</a>
+            <Link to="/layout-three" className={styles.sectionLink}>Pricing</Link>
             <a href="#" className={styles.sectionLink}>Security</a>
             <Link to="/layout-two" className={styles.sectionLink}>Updates</Link>
           </div>
