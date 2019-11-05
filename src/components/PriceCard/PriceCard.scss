@@ -1,0 +1,30 @@
+.priceContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+.price {
+  color: $gray-700;
+  font-family: Helvetica;
+  font-size: 56px;
+  line-height: 67px;
+}
+.priceBox {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  > img {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+.currency {
+  color: $gray-700;
+  font-family: Helvetica;
+  font-size: 24px;
+  line-height: 29px;
+}

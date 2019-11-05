@@ -1,10 +1,10 @@
 import React from 'react';
 import ContentBody from '../ContentBody/ContentBody';
 
-export default function Jumbotron() {
+export default function Jumbotron(props: any) {
   return (
     <>
-      <ContentBody></ContentBody>
+      <ContentBody {...props}></ContentBody>
     </>
   );
 }

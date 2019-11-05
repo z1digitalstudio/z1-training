@@ -4,7 +4,7 @@
 
 @include mq($from: tablet) {
   .background {
-    height: 500px;
+    height: 600px;
 
     background-color: var(--gray-300);
     display: flex;

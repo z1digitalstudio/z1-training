@@ -1,0 +1,43 @@
+.contentBox {
+  border: 1px solid #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerBox {
+  height: 210px;
+  width: 100%;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.img {
+  height: 72px;
+  width: 72px;
+  background-color: white;
+}
+
+.title {
+  color: #495057;
+  width: 300px;
+  font-family: Bookmania;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 0.44px;
+  line-height: 29px;
+  text-align: center;
+}
+.subtitle {
+  width: 271px;
+
+  color: #495057;
+  font-family: 'Basis Grotesque Pro';
+  font-size: 16px;
+  letter-spacing: 0.44px;
+  line-height: 28px;
+  text-align: center;
+}

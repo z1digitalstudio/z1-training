@@ -1,0 +1,38 @@
+.tierBox {
+  display: flex;
+  flex-direction: column;
+}
+.itemListTier {
+  display: flex;
+  flex-direction: column;
+}
+.itemListTier > li {
+  padding-left: 20px;
+  min-height: 80px;
+  width: 320px;
+}
+.itemListTier > li:nth-child(odd) {
+  background: $gray-200;
+}
+
+// TODO quitar este arreglo
+.itemListTier > li:nth-child(4) {
+  height: 300px;
+}
+.itemListTier > li > li {
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  width: 320px;
+}
+
+.extra {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  color: #495057;
+  font-family: 'Basis Grotesque Pro';
+  font-size: 14px;
+  letter-spacing: 0.44px;
+  line-height: 24px;
+}
