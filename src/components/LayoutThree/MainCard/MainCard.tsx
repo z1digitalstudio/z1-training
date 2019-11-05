@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '@/components/LayoutOne/Card/Card';
+import { Card } from '@/components/LayoutThree/Card/Card';
 import styles from './MainCard.scss';
 import Button from '@/components/Common/Button/Button';
 

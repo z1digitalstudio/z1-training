@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Tier.scss';
-import Card from '../../LayoutOne/Card/Card';
+import { Card } from '../Card/Card';
 import PriceCard from '../PriceCard/PriceCard';
 
 export default function Tier(props: any) {
