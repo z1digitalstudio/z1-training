@@ -36,11 +36,6 @@
       font-size: 0.925rem;
       font-weight: $medium-weight;
       text-decoration: none;
-  
-      .caret-icon {
-        margin-left: 1rem;
-        width: 0.5rem;
-      }
     }
   
     .login {
@@ -69,6 +64,8 @@
 
       .menu {
         align-items: flex-start;
+        border-bottom: 1px solid var(--gray-300);
+        box-shadow: 0 10px 10px -10px rgba(73,80,87,0.3);
         display: flex;
         flex-direction: column;
         left: 0;

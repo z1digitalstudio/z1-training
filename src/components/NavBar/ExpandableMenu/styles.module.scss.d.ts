@@ -9,13 +9,16 @@
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
     "expanded": string;
-    "hamburguerIcon": string;
-    "link": string;
-    "login": string;
-    "loginWrapper": string;
-    "logo": string;
-    "menu": string;
-    "navbar": string;
+    "hoverHelper": string;
+    "icon": string;
+    "menuContainer": string;
+    "menuLink": string;
+    "menuSection": string;
+    "menuSectionTitle": string;
+    "menuWrapper": string;
+    "navigationIcon": string;
+    "text": string;
+    "wrapper": string;
     [name: string]: string;
 }
 declare const locals: ILocals;
