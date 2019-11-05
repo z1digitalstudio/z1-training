@@ -12,7 +12,9 @@ export default function CalculatorBox(props: any) {
         </span>
         <span className={styles.subtitle}>Team Size</span>
         <div>
-          - <input className={styles.forminput} type="text" /> +
+          <img className={styles.iconImg} src="minus-solid.svg"></img>{' '}
+          <input className={styles.forminput} type="text" />{' '}
+          <img className={styles.iconImg} src="plus-solid.svg"></img>
         </div>
       </div>
       <div className={styles.calculatorContent}>
