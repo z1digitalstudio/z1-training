@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './styles.module.scss';
+import classNames from 'classnames';
 import { ReactComponent as CaretDown } from './caret-down-solid.svg';
 import { ReactComponent as AngleUp } from './angle-up-solid.svg';
 import globalStyles from '@/styles/global.scss';
 
 export function Footer() {
+  const [isClosed, setIsClosed] = useState(true);
+
   return (
     <>
       <div className={styles.separator} />
       <footer className={globalStyles.contentWrapper}>
         <div className={styles.nav}>
-          <nav className={`${styles.navElement} ${styles.cardBodyClosed}`}>
+          <nav
+            className={classNames(styles.navElement, {
+              [styles.cardBodyClosed]: isClosed,
+            })}
+            onClick={() => setIsClosed(!isClosed)}
+          >
             <div className={styles.cardHeader}>
               <strong className={styles.navTitle}>Tofu</strong>
               <AngleUp />
