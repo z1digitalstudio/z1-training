@@ -1,0 +1,13 @@
+.container {
+  height: 96px;
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.switchButton {
+  height: 56px;
+  width: 460px;
+  background: $gray-400;
+}

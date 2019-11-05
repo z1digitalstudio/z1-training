@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Footer from '../Footer/Footer';
-import Jumbotron from '../Jumbotron/Jumbotron';
-import Header from '../Header/Header';
+import { Jumbotron } from '../Common/Jumbotron';
+import Header from '../Common/Header/Header';
 
-import Pricing from '../Pricing/Pricing';
+import Pricing from './Pricing/Pricing';
+import Footer from '../Common/Footer/Footer';
 export function LayoutThree() {
   return (
     <div>
@@ -16,7 +16,7 @@ export function LayoutThree() {
         />
         <Pricing></Pricing>
       </main>
-      <Footer />
+      <Footer></Footer>
     </div>
   );
 }
