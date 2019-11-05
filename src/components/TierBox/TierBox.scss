@@ -4,16 +4,13 @@
   align-items: center;
   margin-bottom: 80px;
 }
-.tierBox {
-  display: flex;
-  justify-content: center;
-}
+
 .compareFeatures {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 60px;
-  width: 960px;
+  width: 100%;
   background-color: #f8f9fa;
   box-shadow: 0 10px 10px -10px rgba(206, 212, 218, 0.61);
   color: #495057;
@@ -26,5 +23,12 @@
   > img {
     height: 15px;
     width: 15px;
+  }
+}
+
+@include mq($from: tablet) {
+  .tierBox {
+    display: flex;
+    justify-content: center;
   }
 }

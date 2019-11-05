@@ -2,16 +2,14 @@
 }
 .contentCharModule {
   height: 311px;
-  width: 460px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
   text-align: center;
 
   > h1 {
     color: $gray-700;
-    font-family: Bookmania;
+    font-family: $openSans;
     font-size: 21px;
     font-weight: $bold-weight;
     letter-spacing: 0.44px;
@@ -20,7 +18,7 @@
   }
   > h2 {
     color: $gray-700;
-    font-family: 'Basis Grotesque Pro';
+    font-family: $openSans;
     font-size: 20px;
     font-weight: $medium-weight;
     letter-spacing: 0.44px;
@@ -29,7 +27,7 @@
   }
   span {
     color: $gray-700;
-    font-family: 'Basis Grotesque Pro';
+    font-family: $openSans;
     font-size: 16px;
     letter-spacing: 0.44px;
     line-height: 28px;
