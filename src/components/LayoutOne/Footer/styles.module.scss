@@ -1,3 +1,8 @@
+.separator {
+  width: 100%;
+  border-top: 1px solid var(--gray-300);
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
