@@ -63,10 +63,8 @@
             justify-content: center;
             margin-bottom: 1rem;
 
-            .input-icon {
-              align-items: center;
+            .icon {
               color: var(--gray-700);
-              display: flex;
               width: 0.875rem;
             } 
             
@@ -112,10 +110,8 @@
             margin: 0.5rem;
           }
 
-          .info-icon {
-            align-items: center;
+          .icon {
             color: var(--gray-400);
-            display: flex;
             width: 0.875rem;
           }
         }

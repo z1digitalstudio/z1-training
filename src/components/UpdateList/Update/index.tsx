@@ -12,7 +12,7 @@ export function Update(props: any) {
         <div className={classNames(globalStyles.contentWrapper, styles.updateContent)}>
           <div className={styles.generalInfo}>
             <h2 className={styles.updateTitle}>
-              {props.ios && <AppleBrandIcon className={styles.platformBrandIcon}></AppleBrandIcon>}
+              {props.ios && <AppleBrandIcon className={classNames(globalStyles.icon, styles.icon)}></AppleBrandIcon>}
               {props.title}
             </h2>
             <p className={styles.updateDescription}>{props.description}</p>
@@ -23,7 +23,7 @@ export function Update(props: any) {
               <h3 className={styles.sectionTitle}>Added</h3>
               {
                 props.added.length > 0 && props.added.map((value:any, index:any) => {
-                  return <li className={styles.sectionElement} key={index}><CheckIcon></CheckIcon>{value}</li>
+                  return <li className={styles.sectionElement} key={index}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>{value}</li>
                 })
               }
               </ul>
@@ -32,7 +32,7 @@ export function Update(props: any) {
               <h3 className={styles.sectionTitle}>Fixed</h3>
               {
                 props.fixed.length > 0 && props.fixed.map((value:any, index:any) => {
-                  return <li className={styles.sectionElement} key={index}><CheckIcon></CheckIcon>{value}</li>
+                  return <li className={styles.sectionElement} key={index}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>{value}</li>
                 })
               }
               </ul>
@@ -41,7 +41,7 @@ export function Update(props: any) {
               <h3 className={styles.sectionTitle}>Improved</h3>
               {
                 props.improved.length > 0 && props.improved.map((value:any, index:any) => {
-                  return <li className={styles.sectionElement} key={index}><CheckIcon></CheckIcon>{value}</li>
+                  return <li className={styles.sectionElement} key={index}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>{value}</li>
                 })
               }
               </ul>

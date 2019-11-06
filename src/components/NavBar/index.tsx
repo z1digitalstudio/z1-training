@@ -7,7 +7,6 @@ import { ExpandableMenu } from './ExpandableMenu';
 import { ReactComponent as LogoIcon } from '@/components/SVGIcon/flow-logo-mono.svg';
 import { ReactComponent as HamburguerIcon } from '@/components/SVGIcon/bars-solid.svg';
 import { ReactComponent as CloseIcon } from '@/components/SVGIcon/times-solid.svg';
-import { ReactComponent as CaretDown } from '@/components/SVGIcon/caret-down-solid.svg';
 
 export function NavBar() {
   const [expanded, setExpanded] = useState(false);
@@ -16,17 +15,17 @@ export function NavBar() {
     <>
       <nav className={classNames(globalStyles.contentWrapper, styles.navbar, {[styles.expanded]: expanded})}>
         <Link to="/" className={styles.logo}><LogoIcon></LogoIcon></Link>
-        <a href="#" className={styles.hamburguerIcon} onClick={() => setExpanded(!expanded)}>
-          {expanded ? <CloseIcon></CloseIcon> : <HamburguerIcon></HamburguerIcon>}
-        </a>
+        <div className={styles.icon} onClick={() => setExpanded(!expanded)}>
+          {expanded ? <CloseIcon className={globalStyles.icon}></CloseIcon> : <HamburguerIcon className={globalStyles.icon}></HamburguerIcon>}
+        </div>
         <div className={styles.menu}>
-          <a href="#" className={styles.link}>Why Flow</a>
-          <a href="#" className={styles.link}>Overview</a>
-          <a href="#" className={styles.link}>Solutions</a>
+          <Link to="/" className={styles.link}>Why Flow</Link>
+          <Link to="/" className={styles.link}>Overview</Link>
+          <Link to="/" className={styles.link}>Solutions</Link>
           <Link to="/layout-three" className={styles.link}>Pricing</Link>
           <ExpandableMenu></ExpandableMenu>
           <div className={styles.loginWrapper}>
-            <a href="#" className={styles.login}>Login</a>
+            <Link to="/" className={styles.login}>Login</Link>
           </div>
         </div>
       </nav>

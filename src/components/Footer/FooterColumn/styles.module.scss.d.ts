@@ -13,6 +13,7 @@ interface ILocals {
     "columnHeader": string;
     "columnTitle": string;
     "expanded": string;
+    "icon": string;
     [name: string]: string;
 }
 declare const locals: ILocals;

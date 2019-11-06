@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
@@ -10,7 +11,7 @@ export function FlowSoloCta() {
       <div className={classNames(globalStyles.contentPaddingWrapper, styles.ctaWrapper)}>
         <div className={classNames(globalStyles.contentWrapper, styles.ctaContainer)}>
           <h2 className={styles.title}>Looking for personal task management?</h2>
-          <a href="#" className={styles.button}><span>Try Flow Solo</span><ArrowRightIcon></ArrowRightIcon></a>
+          <Link to="/" className={styles.button}><span>Try Flow Solo</span><ArrowRightIcon className={classNames(globalStyles.icon, styles.icon)}></ArrowRightIcon></Link>
         </div>
       </div>
     </>

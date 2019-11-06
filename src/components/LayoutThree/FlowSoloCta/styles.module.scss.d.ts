@@ -11,6 +11,7 @@ interface ILocals {
     "button": string;
     "ctaContainer": string;
     "ctaWrapper": string;
+    "icon": string;
     "title": string;
     [name: string]: string;
 }

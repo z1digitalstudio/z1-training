@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
@@ -13,7 +14,7 @@ export function ChatModule() {
           <h3 className={styles.title}>Chat module</h3>
           <h4 className={styles.subtitle}>99¢ per user per month</h4>
           <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nisi turpis, sollicitudin eu vulputate non, tempor eget massa. Pellentesque id ornare lorem.</p>
-          <a href="#" className={styles.button}><span>Learn More</span><ArrowRightIcon className={styles.buttonIcon}></ArrowRightIcon></a>
+          <Link to="/" className={styles.button}><span>Learn More</span><ArrowRightIcon className={classNames(globalStyles.icon, styles.icon)}></ArrowRightIcon></Link>
         </div>
       </div>
     </>

@@ -11,16 +11,10 @@
     display: flex;
   }
 
-  .hamburguer-icon {
+  .icon {
     align-items: center;
     color: var(--gray-800);
     display: none;
-
-    svg {
-      align-items: center;
-      display: flex;
-      width: 1rem;
-    }
   }
 
   .menu {
@@ -51,7 +45,7 @@
 
   @include mq($until: tablet) {
     
-    .hamburguer-icon {
+    .icon {
       display: flex;
     }
 

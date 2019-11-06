@@ -8,15 +8,14 @@
     justify-content: space-between;
 
     .column-title {
-      color: #555555;
+      color: var(--gray-600);
       font-size: 0.825rem;
       font-weight: $bold-weight;
       margin-bottom: 0.75rem;
       text-transform: uppercase;
     }
 
-    svg {
-      align-items: center;
+    .icon {
       color: var(--gray-500);
       display: none;
       width: 0.75rem;
@@ -51,7 +50,7 @@
         margin-bottom: 0;
       }
 
-      svg {
+      .icon {
         display: flex;
       }
     }

@@ -12,6 +12,7 @@ interface ILocals {
     "chatContainer": string;
     "chatContent": string;
     "description": string;
+    "icon": string;
     "navigationAvatar": string;
     "subtitle": string;
     "title": string;

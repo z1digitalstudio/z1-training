@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
@@ -12,8 +13,8 @@ export function PriceComparator() {
       <div className={classNames(globalStyles.contentWrapper, styles.comparatorContainer)}>
         <div className={styles.comparatorToggleContainer}>
           <div className={styles.comparatorToggleContent}>
-            <a href="#" className={classNames(styles.comparatorToggleItem, styles.selected)}>Pay Yearly (Save 25%)</a>
-            <a href="#" className={styles.comparatorToggleItem}>Pay Monthly</a>
+            <div className={classNames(styles.comparatorToggleItem, styles.selected)}>Pay Yearly (Save 25%)</div>
+            <div className={styles.comparatorToggleItem}>Pay Monthly</div>
           </div>
           <p className={styles.comparatorToggleInfo}>Save 25% by paying yearly!”</p>
         </div>
@@ -29,10 +30,10 @@ export function PriceComparator() {
                 <div className={styles.priceValueContainer}>
                   <span className={styles.priceCurrency}>$</span>
                   <span className={styles.priceValue}>4.79</span>
-                  <InfoCircleIcon className={styles.infoIcon}></InfoCircleIcon>
+                  <InfoCircleIcon className={classNames(globalStyles.icon, styles.icon)}></InfoCircleIcon>
                 </div>
                 <p className={styles.priceSubtext}>Per User/Month</p>
-                <a href="#" className={styles.button}>Try Flow for Free</a>
+                <Link to="/" className={styles.button}>Try Flow for Free</Link>
               </div>
             </div>
             <div className={classNames(styles.row, styles.featureRow)}><span>Unlimited Tasks</span></div>
@@ -41,14 +42,14 @@ export function PriceComparator() {
             <div className={classNames(styles.row, styles.featureListRow)}>
               <span>Essential Features</span>
               <ul className={styles.featuresList}>
-                <li className={styles.featuresItem}><CheckIcon></CheckIcon>Commenting</li>
-                <li className={styles.featuresItem}><CheckIcon></CheckIcon>File Uploads (Unlimited)</li>
-                <li className={styles.featuresItem}><CheckIcon></CheckIcon>Tagging</li>
-                <li className={styles.featuresItem}><CheckIcon></CheckIcon>Filtering</li>
-                <li className={styles.featuresItem}><CheckIcon></CheckIcon>Search</li>
+                <li className={styles.featuresItem}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>Commenting</li>
+                <li className={styles.featuresItem}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>File Uploads (Unlimited)</li>
+                <li className={styles.featuresItem}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>Tagging</li>
+                <li className={styles.featuresItem}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>Filtering</li>
+                <li className={styles.featuresItem}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>Search</li>
               </ul>
             </div>
-            <div className={classNames(styles.row, styles.featureRow)}><span>Advanced Security<InfoCircleIcon className={styles.infoIcon}></InfoCircleIcon></span></div>
+            <div className={classNames(styles.row, styles.featureRow)}><span>Advanced Security<InfoCircleIcon className={classNames(globalStyles.icon, styles.icon)}></InfoCircleIcon></span></div>
             <div className={classNames(styles.row, styles.featureRow)}></div>
             <div className={classNames(styles.row, styles.nameRow)}>
               <div className={styles.navigationAvatar}></div>
@@ -60,10 +61,10 @@ export function PriceComparator() {
                 <div className={styles.priceValueContainer}>
                   <span className={styles.priceCurrency}>$</span>
                   <span className={styles.priceValue}>11.95</span>
-                  <InfoCircleIcon className={styles.infoIcon}></InfoCircleIcon>
+                  <InfoCircleIcon className={classNames(globalStyles.icon, styles.icon)}></InfoCircleIcon>
                 </div>
                 <p className={styles.priceSubtext}>Per User/Month</p>
-                <a href="#" className={styles.button}>Try Flow for Free</a>
+                <Link to="/" className={styles.button}>Try Flow for Free</Link>
               </div>
               <p className={styles.priceSubtext}>Everything in Essentials, plus:</p>
             </div>
@@ -73,12 +74,12 @@ export function PriceComparator() {
             <div className={classNames(styles.row, styles.featureListRow)}>
               <span>Advanced Reporting</span>
               <ul className={styles.featuresList}>
-                <li className={styles.featuresItem}><CheckIcon></CheckIcon>Project timelines</li>
-                <li className={styles.featuresItem}><CheckIcon></CheckIcon>Open and completed tasks...</li>
-                <li className={styles.featuresItem}><CheckIcon></CheckIcon>Team workload management...</li>
+                <li className={styles.featuresItem}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>Project timelines</li>
+                <li className={styles.featuresItem}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>Open and completed tasks...</li>
+                <li className={styles.featuresItem}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>Team workload management...</li>
               </ul>
             </div>
-            <div className={classNames(styles.row, styles.featureRow)}><span>Advanced Security<InfoCircleIcon className={styles.infoIcon}></InfoCircleIcon></span></div>
+            <div className={classNames(styles.row, styles.featureRow)}><span>Advanced Security<InfoCircleIcon className={classNames(globalStyles.icon, styles.icon)}></InfoCircleIcon></span></div>
             <div className={classNames(styles.row, styles.featureRow)}></div>
             <div className={classNames(styles.row, styles.nameRow)}>
               <div className={styles.navigationAvatar}></div>
@@ -90,10 +91,10 @@ export function PriceComparator() {
                 <div className={styles.priceValueContainer}>
                   <span className={styles.priceCurrency}>$</span>
                   <span className={styles.priceValue}>19.95</span>
-                  <InfoCircleIcon className={styles.infoIcon}></InfoCircleIcon>
+                  <InfoCircleIcon className={classNames(globalStyles.icon, styles.icon)}></InfoCircleIcon>
                 </div>
                 <p className={styles.priceSubtext}>Per User/Month</p>
-                <a href="#" className={styles.button}>Try Flow for Free</a>
+                <Link to="/" className={styles.button}>Try Flow for Free</Link>
               </div>
               <p className={styles.priceSubtext}>Everything in Essentials, plus:</p>
             </div>
@@ -103,16 +104,16 @@ export function PriceComparator() {
             <div className={classNames(styles.row, styles.featureListRow)}>
               <span>Advanced Controls</span>
               <ul className={styles.featuresList}>
-                <li className={styles.featuresItem}><CheckIcon></CheckIcon>Full data export</li>
-                <li className={styles.featuresItem}><CheckIcon></CheckIcon>Cross-regional backups</li>
-                <li className={styles.featuresItem}><CheckIcon></CheckIcon>User provisioning and deprovis...</li>
+                <li className={styles.featuresItem}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>Full data export</li>
+                <li className={styles.featuresItem}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>Cross-regional backups</li>
+                <li className={styles.featuresItem}><CheckIcon className={classNames(globalStyles.icon, styles.icon)}></CheckIcon>User provisioning and deprovis...</li>
               </ul>
             </div>
-            <div className={classNames(styles.row, styles.featureRow)}><span>Advanced Security<InfoCircleIcon className={styles.infoIcon}></InfoCircleIcon></span></div>
+            <div className={classNames(styles.row, styles.featureRow)}><span>Advanced Security<InfoCircleIcon className={classNames(globalStyles.icon, styles.icon)}></InfoCircleIcon></span></div>
             <div className={classNames(styles.row, styles.featureRow)}><span>99.9% Uptime SLA</span></div>
           </div>
           <div className={styles.comparatorMore}>
-            <a href="#"><span>Compare all Features</span><CaretDownIcon></CaretDownIcon></a>
+            <p className={styles.content}><span>Compare all Features</span><CaretDownIcon className={classNames(globalStyles.icon, styles.icon)}></CaretDownIcon></p>
           </div>
         </div>
       </div>

@@ -17,11 +17,12 @@ interface ILocals {
     "comparatorToggleInfo": string;
     "comparatorToggleItem": string;
     "comparatorWrapper": string;
+    "content": string;
     "featureListRow": string;
     "featureRow": string;
     "featuresItem": string;
     "featuresList": string;
-    "infoIcon": string;
+    "icon": string;
     "nameRow": string;
     "navigationAvatar": string;
     "priceContent": string;

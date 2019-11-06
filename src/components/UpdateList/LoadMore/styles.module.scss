@@ -8,14 +8,13 @@
   .load-more {
     align-items: center;
     color: var(--gray-700);
+    cursor: pointer;
     display: flex;
     font-size: 1.25rem;
     font-weight: $medium-weight;
     text-decoration: none;
 
-    svg {
-      align-items: center;
-      display: flex;
+    .icon {
       margin-left: 1rem;
       width: 0.5rem;
     }

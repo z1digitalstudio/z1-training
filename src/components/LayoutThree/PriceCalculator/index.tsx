@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
@@ -18,9 +19,9 @@ export function PriceCalculator() {
               <div className={styles.inputLabelValueContainer}>
                 <span className={styles.inputLabel}>Team Size</span>
                 <div className={styles.inputValueContainer}>
-                  <MinusCircleIcon className={styles.inputIcon}></MinusCircleIcon>
+                  <MinusCircleIcon className={classNames(globalStyles.icon, styles.icon)}></MinusCircleIcon>
                   <input type="text" className={styles.inputValue} placeholder="03"></input>
-                  <PlusCircleIcon className={styles.inputIcon}></PlusCircleIcon>
+                  <PlusCircleIcon className={classNames(globalStyles.icon, styles.icon)}></PlusCircleIcon>
                 </div>
               </div>
             </div>
@@ -30,10 +31,10 @@ export function PriceCalculator() {
               <div className={styles.resultValueContainer}>
                 <span className={styles.resultCurrency}>$</span>
                 <span className={styles.resultValue}>35.85</span>
-                <InfoCircleIcon className={styles.infoIcon}></InfoCircleIcon>
+                <InfoCircleIcon className={classNames(globalStyles.icon, styles.icon)}></InfoCircleIcon>
               </div>
               <p className={styles.usersNumber}>Price for 3 users</p>
-              <a href="#" className={styles.button}>Try Flow for Free</a>
+              <Link to="/" className={styles.button}>Try Flow for Free</Link>
             </div>
           </div>
         </div>

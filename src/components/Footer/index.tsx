@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
 import { FooterColumn } from './FooterColumn';
@@ -11,29 +12,29 @@ export function Footer() {
         <div className={globalStyles.contentWrapper}>
           <div className={styles.columns}>
             <FooterColumn title="Flow">
-              <a href="#">For Teams</a>
-              <a href="#">For Enterprise</a>
-              <a href="#">Flow Solo</a>
+              <Link to="/">For Teams</Link>
+              <Link to="/">For Enterprise</Link>
+              <Link to="/">Flow Solo</Link>
             </FooterColumn>
             <FooterColumn title="Results">
-              <a href="#">Customers</a>
-              <a href="#">Reviews</a>
-              <a href="#">Stories</a>
+              <Link to="/">Customers</Link>
+              <Link to="/">Reviews</Link>
+              <Link to="/">Stories</Link>
             </FooterColumn>
             <FooterColumn title="Resources">
-              <a href="#">Download Flow</a>
-              <a href="#">Integrations (New)</a>
-              <a href="#">Developers</a>
+              <Link to="/">Download Flow</Link>
+              <Link to="/">Integrations (New)</Link>
+              <Link to="/">Developers</Link>
             </FooterColumn>
             <FooterColumn title="Support">
-              <a href="#">Get Help</a>
-              <a href="#">Helpful Guides</a>
-              <a href="#">Flow solo</a>
+              <Link to="/">Get Help</Link>
+              <Link to="/">Helpful Guides</Link>
+              <Link to="/">Flow solo</Link>
             </FooterColumn>
             <FooterColumn title="Company">
-              <a href="#">Our Story</a>
-              <a href="#">Contact Us</a>
-              <a href="#">Blog</a>
+              <Link to="/">Our Story</Link>
+              <Link to="/">Contact Us</Link>
+              <Link to="/">Blog</Link>
             </FooterColumn>
           </div>
           <SubFooter></SubFooter>

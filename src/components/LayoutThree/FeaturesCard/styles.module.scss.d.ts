@@ -11,10 +11,10 @@ interface ILocals {
     "button": string;
     "cardContainer": string;
     "cardWrapper": string;
-    "checkIcon": string;
     "description": string;
     "headerContainer": string;
     "headerContent": string;
+    "icon": string;
     "listContainer": string;
     "listContent": string;
     "listElement": string;

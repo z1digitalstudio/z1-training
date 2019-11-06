@@ -8,6 +8,7 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
+    "icon": string;
     "questionContainer": string;
     "questionContent": string;
     "questionHeader": string;

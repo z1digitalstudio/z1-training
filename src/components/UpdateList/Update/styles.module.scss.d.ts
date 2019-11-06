@@ -10,8 +10,8 @@
 interface ILocals {
     "changeList": string;
     "generalInfo": string;
+    "icon": string;
     "listSection": string;
-    "platformBrandIcon": string;
     "recent": string;
     "sectionElement": string;
     "sectionTitle": string;

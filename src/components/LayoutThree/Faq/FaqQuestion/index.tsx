@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import classNames from 'classnames';
+import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
 import { ReactComponent as AngleDownIcon } from '@/components/SVGIcon/angle-down-solid.svg';
 import { ReactComponent as AngleUpIcon } from '@/components/SVGIcon/angle-up-solid.svg';
@@ -11,7 +13,7 @@ export function FaqQuestion(props: any) {
       <div className={styles.questionContainer}>
         <div className={styles.questionHeader} onClick={() => setExpanded(!expanded)}>
           <h3>{props.question}</h3>
-          {expanded ? <AngleUpIcon></AngleUpIcon> : <AngleDownIcon></AngleDownIcon>}
+          {expanded ? <AngleUpIcon className={classNames(globalStyles.icon, styles.icon)}></AngleUpIcon> : <AngleDownIcon className={classNames(globalStyles.icon, styles.icon)}></AngleDownIcon>}
         </div>
         {expanded && <div className={styles.questionContent}>
           {props.answer}

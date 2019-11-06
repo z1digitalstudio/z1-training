@@ -7,8 +7,8 @@ export function SubFooter() {
     <div className={styles.subfooter}>
       <p>© 2019 Flow Technologies Ltd. All rights reserved.</p>
       <div className={styles.linksContainer}>
-        <a href="#">Privacy & Terms</a>
-        <a href="#">Service Status</a>
+        <Link to="/">Privacy & Terms</Link>
+        <Link to="/">Service Status</Link>
         <Link to="/layout-one">Site Map</Link>
         <select className={styles.language} defaultValue="eng">
           <option disabled>Language</option>

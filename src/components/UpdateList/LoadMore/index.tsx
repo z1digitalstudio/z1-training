@@ -8,7 +8,7 @@ export function LoadMore() {
   return (
     <>
       <div className={classNames(globalStyles.contentWrapper, styles.loadMoreContainer)}>
-        <a href="#" className={styles.loadMore}>Show Previous Updates<CaretDownIcon></CaretDownIcon></a>
+        <p className={styles.loadMore}>Show Previous Updates<CaretDownIcon className={classNames(globalStyles.icon, styles.icon)}></CaretDownIcon></p>
       </div>
     </>
   );

@@ -9,7 +9,7 @@
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
     "expanded": string;
-    "hamburguerIcon": string;
+    "icon": string;
     "link": string;
     "login": string;
     "loginWrapper": string;

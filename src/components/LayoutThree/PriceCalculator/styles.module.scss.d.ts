@@ -11,10 +11,9 @@ interface ILocals {
     "button": string;
     "calculatorContainer": string;
     "calculatorContent": string;
-    "infoIcon": string;
+    "icon": string;
     "inputContainer": string;
     "inputContent": string;
-    "inputIcon": string;
     "inputLabel": string;
     "inputLabelValueContainer": string;
     "inputValue": string;

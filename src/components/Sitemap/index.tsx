@@ -14,63 +14,63 @@ export function Sitemap() {
         <div className={styles.sitemapContent}>
           <div className={styles.sitemapSection}>
             <h3 className={styles.sectionTitle}>Choose Flow</h3>
-            <a href="#" className={styles.sectionLink}>Why Flow</a>
-            <a href="#" className={styles.sectionLink}>Features</a>
+            <Link to="/" className={styles.sectionLink}>Why Flow</Link>
+            <Link to="/" className={styles.sectionLink}>Features</Link>
             <Link to="/layout-three" className={styles.sectionLink}>Pricing</Link>
-            <a href="#" className={styles.sectionLink}>Security</a>
+            <Link to="/" className={styles.sectionLink}>Security</Link>
             <Link to="/layout-two" className={styles.sectionLink}>Updates</Link>
           </div>
           <div className={styles.sitemapSection}>
             <h3 className={styles.sectionTitle}>Flow</h3>
-            <a href="#" className={styles.sectionLink}>For Teams</a>
-            <a href="#" className={styles.sectionLink}>For Enterprise</a>
-            <a href="#" className={styles.sectionLink}>Flow Chat</a>
-            <a href="#" className={styles.sectionLink}>Flow Solo</a>
+            <Link to="/" className={styles.sectionLink}>For Teams</Link>
+            <Link to="/" className={styles.sectionLink}>For Enterprise</Link>
+            <Link to="/" className={styles.sectionLink}>Flow Chat</Link>
+            <Link to="/" className={styles.sectionLink}>Flow Solo</Link>
           </div>
           <div className={styles.sitemapSection}>
             <h3 className={styles.sectionTitle}>Results</h3>
-            <a href="#" className={styles.sectionLink}>Customers</a>
-            <a href="#" className={styles.sectionLink}>Reviews</a>
-            <a href="#" className={styles.sectionLink}>Stories</a>
+            <Link to="/" className={styles.sectionLink}>Customers</Link>
+            <Link to="/" className={styles.sectionLink}>Reviews</Link>
+            <Link to="/" className={styles.sectionLink}>Stories</Link>
           </div>
           <div className={styles.sitemapSection}>
             <h3 className={styles.sectionTitle}>Resources</h3>
-            <a href="#" className={styles.sectionLink}>Download Flow</a>
-            <a href="#" className={styles.sectionLink}>Integrations</a>
+            <Link to="/" className={styles.sectionLink}>Download Flow</Link>
+            <Link to="/" className={styles.sectionLink}>Integrations</Link>
           </div>
           <div className={styles.sitemapSection}>
             <h3 className={styles.sectionTitle}>Support</h3>
-            <a href="#" className={styles.sectionLink}>Get Help</a>
-            <a href="#" className={styles.sectionLink}>Getting Started</a>
-            <a href="#" className={styles.sectionLink}>Tutorials</a>
-            <a href="#" className={styles.sectionLink}>Helpful Guides</a>
+            <Link to="/" className={styles.sectionLink}>Get Help</Link>
+            <Link to="/" className={styles.sectionLink}>Getting Started</Link>
+            <Link to="/" className={styles.sectionLink}>Tutorials</Link>
+            <Link to="/" className={styles.sectionLink}>Helpful Guides</Link>
           </div>
           <div className={styles.sitemapSection}>
             <h3 className={styles.sectionTitle}>Developers</h3>
-            <a href="#" className={styles.sectionLink}>Developing for Flow</a>
-            <a href="#" className={styles.sectionLink}>API Documentation</a>
-            <a href="#" className={styles.sectionLink}>Site Status</a>
+            <Link to="/" className={styles.sectionLink}>Developing for Flow</Link>
+            <Link to="/" className={styles.sectionLink}>API Documentation</Link>
+            <Link to="/" className={styles.sectionLink}>Site Status</Link>
           </div>
           <div className={styles.sitemapSection}>
             <h3 className={styles.sectionTitle}>Company</h3>
-            <a href="#" className={styles.sectionLink}>Our Story</a>
-            <a href="#" className={styles.sectionLink}>Contact Us</a>
-            <a href="#" className={styles.sectionLink}>Careers</a>
-            <a href="#" className={styles.sectionLink}>Blog</a>
+            <Link to="/" className={styles.sectionLink}>Our Story</Link>
+            <Link to="/" className={styles.sectionLink}>Contact Us</Link>
+            <Link to="/" className={styles.sectionLink}>Careers</Link>
+            <Link to="/" className={styles.sectionLink}>Blog</Link>
           </div>
           <div className={styles.sitemapSection}>
             <h3 className={styles.sectionTitle}>Flow for...</h3>
-            <a href="#" className={styles.sectionLink}>Flow for Education</a>
-            <a href="#" className={styles.sectionLink}>Flow for Nonprofits</a>
-            <a href="#" className={styles.sectionLink}>Flow for Makers</a>
+            <Link to="/" className={styles.sectionLink}>Flow for Education</Link>
+            <Link to="/" className={styles.sectionLink}>Flow for Nonprofits</Link>
+            <Link to="/" className={styles.sectionLink}>Flow for Makers</Link>
           </div>
           <div className={styles.sitemapSection}>
             <h3 className={styles.sectionTitle}>Flow Legal</h3>
-            <a href="#" className={styles.sectionLink}>Legal</a>
-            <a href="#" className={styles.sectionLink}>Terms of Service</a>
-            <a href="#" className={styles.sectionLink}>Privacy Policy</a>
-            <a href="#" className={styles.sectionLink}>Acceptable Use Policy</a>
-            <a href="#" className={styles.sectionLink}>Subprocessors</a>
+            <Link to="/" className={styles.sectionLink}>Legal</Link>
+            <Link to="/" className={styles.sectionLink}>Terms of Service</Link>
+            <Link to="/" className={styles.sectionLink}>Privacy Policy</Link>
+            <Link to="/" className={styles.sectionLink}>Acceptable Use Policy</Link>
+            <Link to="/" className={styles.sectionLink}>Subprocessors</Link>
           </div>
         </div>
       </div>

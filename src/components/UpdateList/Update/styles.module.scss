@@ -27,10 +27,8 @@
         font-weight: $bold-weight;
         margin-bottom: 1.25rem;
 
-        .platform-brand-icon {
-          align-items: center;
+        .icon {
           color: var(--gray-300);
-          display: flex;
           margin-right: 0.75rem;
           width: 1.5rem;
         }
@@ -65,10 +63,7 @@
           display: flex;
           margin-bottom: 1.25rem;
 
-          svg {
-            align-items: center;
-            display: flex;
-            flex: 0 0 auto;
+          .icon {
             margin-left: 0.25rem;
             margin-right: 1rem;
             width: 0.825rem;
