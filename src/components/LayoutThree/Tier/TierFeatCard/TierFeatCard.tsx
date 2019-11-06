@@ -1,9 +1,22 @@
 import React from 'react';
 import styles from './TierFeatCard.scss';
-export default function TierFeatCard(props: any) {
+
+interface Props {
+  img?: string;
+  pretitle?: string;
+  title?: string;
+  children?: React.ReactNode;
+}
+
+export default function TierFeatCard({
+  img,
+  title,
+  pretitle,
+  children,
+}: Props) {
   var imagen;
-  if (props.img !== undefined) {
-    imagen = <img src={props.img}></img>;
+  if (img !== undefined) {
+    imagen = <img src={img}></img>;
   } else {
     imagen = null;
   }
@@ -11,14 +24,14 @@ export default function TierFeatCard(props: any) {
   return (
     <>
       <li>
-        <span>{props.pretitle}</span>
+        <span>{pretitle}</span>
         <br />
         <span className={styles.tierTitle}>
-          {props.title}
+          {title}
           {imagen}
         </span>
 
-        {props.children}
+        {children}
       </li>
     </>
   );

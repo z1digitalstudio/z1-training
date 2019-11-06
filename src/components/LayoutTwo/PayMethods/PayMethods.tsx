@@ -3,7 +3,7 @@ import styles from './PayMethods.scss';
 import globalStyles from '@/styles/global.scss';
 import classnames from 'classnames';
 
-export default function PayMethods(props: any) {
+export default function PayMethods() {
   return (
     <div className={classnames(styles.container, globalStyles.contentWrapper)}>
       <div className={styles.switchButton}></div>

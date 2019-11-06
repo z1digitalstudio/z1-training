@@ -4,7 +4,7 @@ import ColumnBox from '../ColumnBox';
 import styles from './ColumnMenu.scss';
 import globalStyles from '@/styles/global.scss';
 
-export function ColumnMenu(props: any) {
+export function ColumnMenu() {
   return (
     <div className={globalStyles.contentWrapper}>
       <div className={styles.homepage}>

@@ -1,11 +1,16 @@
 import React from 'react';
 import styles from './Lines.scss';
-export default function Lines(props: any) {
+
+interface Props {
+  children: React.ReactNode;
+  className?: string;
+}
+
+export default function Lines({ children }: Props) {
   return (
     <>
       <li className={styles.content}>
-        <img className={styles.checkIcon} src="check-icon.svg"></img>{' '}
-        {props.children}
+        <img className={styles.checkIcon} src="check-icon.svg"></img> {children}
       </li>
     </>
   );

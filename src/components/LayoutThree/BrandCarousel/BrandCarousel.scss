@@ -5,19 +5,19 @@
   justify-content: space-between;
   margin-top: 100px;
   margin-bottom: 100px;
-}
 
-.itemContainer {
-  display: flex;
-  justify-content: space-between;
-}
+  .title {
+    color: $gray-700;
+    font-family: $openSans;
+    font-size: 21px;
+    font-weight: $bold-weight;
+    letter-spacing: 0.44px;
+    line-height: 29px;
+    text-align: center;
+  }
 
-.title {
-  color: $gray-700;
-  font-family: $openSans;
-  font-size: 21px;
-  font-weight: $bold-weight;
-  letter-spacing: 0.44px;
-  line-height: 29px;
-  text-align: center;
+  .itemContainer {
+    display: flex;
+    justify-content: space-between;
+  }
 }

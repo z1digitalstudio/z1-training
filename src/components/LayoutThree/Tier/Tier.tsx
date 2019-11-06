@@ -3,14 +3,32 @@ import styles from './Tier.scss';
 import { Card } from '../Card/Card';
 import PriceCard from '../PriceCard/PriceCard';
 
-export default function Tier(props: any) {
+interface Props {
+  price: string;
+  currency: string;
+  extra?: string;
+  children: React.ReactNode;
+  title?: string;
+  subtitle?: string;
+}
+
+export default function Tier({
+  price,
+  currency,
+  extra,
+  children,
+  title,
+  subtitle,
+}: Props) {
   return (
     <div className={styles.tierBox}>
-      <Card {...props}> </Card>
-      <PriceCard price={props.price} currency={props.currency}></PriceCard>
-      <div className={styles.extra}>{props.extra}</div>
+      <Card title={title || ''} subtitle={subtitle || ''}>
+        {' '}
+      </Card>
+      <PriceCard price={price} currency={currency}></PriceCard>
+      <div className={styles.extra}>{extra}</div>
       <div className={styles.featsTier}>
-        <ul className={styles.itemListTier}>{props.children}</ul>
+        <ul className={styles.itemListTier}>{children}</ul>
       </div>
     </div>
   );

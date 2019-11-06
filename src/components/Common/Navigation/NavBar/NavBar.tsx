@@ -4,7 +4,7 @@ import styles from './NavBar.scss';
 import { Link } from '../../../LayoutOne/Link/Link';
 import { MenuArrow } from '../../MenuArrow/MenuArrow';
 
-function addClass(e: any) {
+function addClass() {
   alert('Funcionalidad pendiente de implementar. (ES UNA MAQUETA)');
 }
 

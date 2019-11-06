@@ -14,7 +14,7 @@ import BrandCarousel from '../BrandCarousel/BrandCarousel';
 import BrandItem from '../BrandCarousel/BrandItem/BrandItem';
 import PayMethods from '../../LayoutTwo/PayMethods/PayMethods';
 
-export default function Pricing(props: any) {
+export default function Pricing() {
   var currency = '$';
   return (
     <>

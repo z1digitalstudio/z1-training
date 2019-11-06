@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@/components/Common/Button/Button';
 import CardChatModule from './CardChatModule/CardChatModule';
 
-export default function ChatBox(props: any) {
+export default function ChatBox() {
   return (
     <>
       <CardChatModule title="Chat Module" subtitle="99c per user per month">

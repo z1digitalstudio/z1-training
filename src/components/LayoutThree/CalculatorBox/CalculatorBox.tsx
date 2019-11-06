@@ -2,7 +2,12 @@ import React from 'react';
 import Button from '../../Common/Button/Button';
 import styles from './CalculatorBox.scss';
 
-export default function CalculatorBox(props: any) {
+interface Props {
+  currency: string;
+  inputPrice: string;
+}
+
+export default function CalculatorBox({ currency, inputPrice }: Props) {
   return (
     <div className={styles.calculatorContainer}>
       <div className={styles.calculatorHeader}>
@@ -19,7 +24,7 @@ export default function CalculatorBox(props: any) {
       </div>
       <div className={styles.calculatorContent}>
         <div className={styles.priceContent}>
-          {props.currency} {props.inputPrice}{' '}
+          {currency} {inputPrice}{' '}
           <img className={styles.iconImg} src="info-circle-solid.svg" alt="" />
         </div>
         <span>Price for 3 users</span>

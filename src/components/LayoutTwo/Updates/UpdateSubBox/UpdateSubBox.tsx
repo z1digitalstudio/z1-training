@@ -1,5 +1,9 @@
 import React from 'react';
 
-export default function UpdateSubBox(props: any) {
-  return <>{props.children}</>;
+interface Props {
+  children: React.ReactNode;
+}
+
+export default function UpdateSubBox({ children }: Props) {
+  return <>{children}</>;
 }

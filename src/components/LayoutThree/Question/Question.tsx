@@ -2,20 +2,26 @@ import React from 'react';
 import styles from './Question.scss';
 import { MenuArrow } from '@/components/Common/MenuArrow/MenuArrow';
 
-export default function Question(props: any) {
-  var toggleSpan;
-  if (props.toggleSpan === 'true') {
-    toggleSpan = <span className={styles.answer}>{props.answer}</span>;
+interface Props {
+  answer: string;
+  question: string;
+  toggleSpan: string;
+}
+
+export default function Question({ toggleSpan, answer, question }: Props) {
+  var ctoggleSpan;
+  if (toggleSpan === 'true') {
+    ctoggleSpan = <span className={styles.answer}>{answer}</span>;
   } else {
-    toggleSpan = <></>;
+    ctoggleSpan = <></>;
   }
   return (
     <div className={styles.container}>
       <div className={styles.togglequestion}>
-        <span className={styles.question}>{props.question}</span>
+        <span className={styles.question}>{question}</span>
         <MenuArrow></MenuArrow>
       </div>
-      {toggleSpan}
+      {ctoggleSpan}
     </div>
   );
 }

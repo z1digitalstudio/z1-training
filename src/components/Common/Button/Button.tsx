@@ -1,5 +1,9 @@
 import React from 'react';
 import styles from './Button.scss';
-export default function Button(props: any) {
-  return <button className={styles.tryButton}>{props.value}</button>;
+
+interface Props {
+  value: string;
+}
+export default function Button({ value }: Props) {
+  return <button className={styles.tryButton}>{value}</button>;
 }

@@ -3,7 +3,13 @@ import { Card } from '@/components/LayoutThree/Card/Card';
 import styles from './MainCard.scss';
 import Button from '@/components/Common/Button/Button';
 
-export default function MainCard(props: any) {
+interface Props {
+  children: React.ReactNode;
+  title: string;
+  subtitle: string;
+}
+
+export default function MainCard(props: Props) {
   return (
     <div className={styles.mainCard}>
       <Card {...props}>

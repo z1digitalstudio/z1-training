@@ -4,7 +4,7 @@ import styles from './Card.scss';
 interface Props {
   title: string;
   subtitle: string;
-  children: React.ReactChildren;
+  children?: React.ReactNode;
 }
 
 export const Card = ({ title, subtitle, children }: Props) => {

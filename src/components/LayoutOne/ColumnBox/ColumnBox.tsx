@@ -9,19 +9,23 @@ function setStyles(isExpanded: boolean) {
   return styles.linksBox;
 }
 
-export default function ColumnBox(props: any) {
+interface Props {
+  title: string;
+  children: React.ReactNode;
+}
+export default function ColumnBox({ title, children }: Props) {
   var [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div {...props}>
+    <div>
       <div
         className={styles.divColumnRow}
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <h1 className={styles.columnTitle}>{props.title}</h1>
+        <h1 className={styles.columnTitle}>{title}</h1>
         <MenuArrow></MenuArrow>
       </div>
-      <div className={setStyles(isExpanded)}>{props.children}</div>
+      <div className={setStyles(isExpanded)}>{children}</div>
     </div>
   );
 }

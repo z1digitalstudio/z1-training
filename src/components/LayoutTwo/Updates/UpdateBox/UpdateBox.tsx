@@ -1,18 +1,24 @@
 import React from 'react';
 import styles from './UpdateBox.scss';
-import UpdateSubBox from '../UpdateSubBox/UpdateSubBox';
 
-export default function UpdateBox(props: any) {
+interface Props {
+  title: string;
+  subtitle: string;
+  date: string;
+  children: React.ReactNode;
+}
+
+export default function UpdateBox({ title, subtitle, date, children }: Props) {
   return (
     <div className={styles.update_content}>
       <div>
-        <span className={styles.title}>{props.title}</span>
+        <span className={styles.title}>{title}</span>
         <br />
-        <span className={styles.subtitle}>{props.subtitle}</span>
+        <span className={styles.subtitle}>{subtitle}</span>
         <br />
-        <span className={styles.date}>{props.date}</span>
+        <span className={styles.date}>{date}</span>
       </div>
-      <div>{props.children}</div>
+      <div>{children}</div>
     </div>
   );
 }
