@@ -6,119 +6,130 @@ export function LayoutOne() {
   return (
     <>
       <div title={'Nav'} className={globalStyles.contentWrapper}>
-        <img src="" alt="Logo" />
-        <p>Why Flow</p>
-        <p>Overview</p>
-        <p>Solutions</p>
-        <p>Pricing</p>
-        <p>More</p>
-        <p>Login</p>
+        <nav>
+          <img src="" alt="Logo" />
+          <a href={''}>Why Flow</a>
+          <a href={''}>Overview</a>
+          <a href={''}>Solutions</a>
+          <a href={''}>Pricing</a>
+          <a href={''}>More</a>
+          <a href={''}>Login</a>
+        </nav>
       </div>
       <div title={'Main'} className={styles.background}>
         <h1 className={styles.title}>Flow Site Map</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-      <div title={'Content'} className={globalStyles.contentWrapper}>
-        <p>Homepage</p>
+      <div title={'Links Map'} className={globalStyles.contentWrapper}>
+        <a href={''}>Homepage</a>
         <hr />
         <div title={'Column1'} className={globalStyles.contentWrapper}>
           <div title={'Box11'} className={globalStyles.contentWrapper}>
             <h1 className={styles.title}>Choose Flow</h1>
-            <p>Why Flow</p>
-            <p>Features</p>
-            <p>Pricing</p>
-            <p>Security</p>
-            <p>Updates</p>
+            <a href={''}>Why Flow</a>
+            <a href={''}>Features</a>
+            <a href={''}>Pricing</a>
+            <a href={''}>Security</a>
+            <a href={''}>Updates</a>
           </div>
           <div title={'Box12'} className={globalStyles.contentWrapper}>
             <h1 className={styles.title}>Flow</h1>
-            <p>For Teams</p>
-            <p>For Enterprise</p>
-            <p>Flow Chart</p>
-            <p>Flow Solo</p>
+            <a href={''}>For Teams</a>
+            <a href={''}>For Enterprise</a>
+            <a href={''}>Flow Chart</a>
+            <a href={''}>Flow Solo</a>
           </div>
           <div title={'Box13'} className={globalStyles.contentWrapper}>
             <h1 className={styles.title}>Results</h1>
-            <p>Customers</p>
-            <p>Reviews</p>
-            <p>Stories</p>
+            <a href={''}>Customers</a>
+            <a href={''}>Reviews</a>
+            <a href={''}>Stories</a>
           </div>
         </div>
         <div title={'Column2'} className={globalStyles.contentWrapper}>
           <div title={'Box21'} className={globalStyles.contentWrapper}>
             <h1 className={styles.title}>Resources</h1>
-            <p>Download Flow</p>
-            <p>Integrations</p>
+            <a href={''}>Download Flow</a>
+            <a href={''}>Integrations</a>
           </div>
           <div title={'Box22'} className={globalStyles.contentWrapper}>
             <h1 className={styles.title}>Support</h1>
-            <p>Get Help</p>
-            <p>Getting Started</p>
-            <p>Tutorials</p>
-            <p>Helpful Guides</p>
+            <a href={''}>Get Help</a>
+            <a href={''}>Getting Started</a>
+            <a href={''}>Tutorials</a>
+            <a href={''}>Helpful Guides</a>
           </div>
           <div title={'Box23'} className={globalStyles.contentWrapper}>
             <h1 className={styles.title}>Developers</h1>
-            <p>Developing for Flow</p>
-            <p>API Documentation</p>
-            <p>Site Status</p>
+            <a href={''}>Developing for Flow</a>
+            <a href={''}>API Documentation</a>
+            <a href={''}>Site Status</a>
           </div>
         </div>
         <div title={'Column3'} className={globalStyles.contentWrapper}>
           <div title={'Box31'} className={globalStyles.contentWrapper}>
             <h1 className={styles.title}>Company</h1>
-            <p>Our Story</p>
-            <p>Contact Us</p>
-            <p>Careers</p>
-            <p>Blog</p>
+            <a href={''}>Our Story</a>
+            <a href={''}>Contact Us</a>
+            <a href={''}>Careers</a>
+            <a href={''}>Blog</a>
           </div>
           <div title={'Box32'} className={globalStyles.contentWrapper}>
             <h1 className={styles.title}>Flow for...</h1>
-            <p>Flow for Education</p>
-            <p>Flow for Nonprofits</p>
-            <p>Flow for Makers</p>
+            <a href={''}>Flow for Education</a>
+            <a href={''}>Flow for Nonprofits</a>
+            <a href={''}>Flow for Makers</a>
           </div>
           <div title={'Box33'} className={globalStyles.contentWrapper}>
             <h1 className={styles.title}>Flow Legal</h1>
-            <p>Legal</p>
-            <p>Terms of Service</p>
-            <p>Privacy Policy</p>
-            <p>Acceptable Use Policy</p>
-            <p>Subprocessors</p>
+            <a href={''}>Legal</a>
+            <a href={''}>Terms of Service</a>
+            <a href={''}>Privacy Policy</a>
+            <a href={''}>Acceptable Use Policy</a>
+            <a href={''}>Subprocessors</a>
           </div>
         </div>
       </div>
       <div title={'Footer'} className={globalStyles.contentWrapper}>
         <div title={'FooterColumn1'}>
           <h1 className={styles.title}>Flow</h1>
-          <p>For Teams</p>
-          <p>For Enterprise</p>
-          <p>Flow Solo</p>
+          <a href={''}>For Teams</a>
+          <a href={''}>For Enterprise</a>
+          <a href={''}>Flow Solo</a>
         </div>
         <div title={'FooterColumn2'}>
           <h1 className={styles.title}>Results</h1>
-          <p>Customers</p>
-          <p>Reviews</p>
-          <p>Stories</p>
+          <a href={''}>Customers</a>
+          <a href={''}>Reviews</a>
+          <a href={''}>Stories</a>
         </div>
         <div title={'FooterColumn3'}>
           <h1 className={styles.title}>Resources</h1>
-          <p>Download Flow</p>
-          <p>Integrations (New)</p>
-          <p>Developers</p>
+          <a href={''}>Download Flow</a>
+          <a href={''}>Integrations (New)</a>
+          <a href={''}>Developers</a>
         </div>
         <div title={'FooterColumn4'}>
           <h1 className={styles.title}>Support</h1>
-          <p>Get Help</p>
-          <p>Helpful Guides</p>
-          <p>Tutorials (New)</p>
+          <a href={''}>Get Help</a>
+          <a href={''}>Helpful Guides</a>
+          <a href={''}>Tutorials (New)</a>
         </div>
         <div title={'FooterColumn5'}>
           <h1 className={styles.title}>Company</h1>
-          <p>Our Story</p>
-          <p>Contact Us</p>
-          <p>Blog</p>
+          <a href={''}>Our Story</a>
+          <a href={''}>Contact Us</a>
+          <a href={''}>Blog</a>
         </div>
+      </div>
+      <div title={'Subfooter'}>
+        <p>© 2019 Flow Technologies Ltd. All rights reserved.</p>
+        <a href={''}>Privacy & Terms</a>
+        <a href={''}>Service Status</a>
+        <a href={''}>Site Map</a>
+        <li>
+          <a>asd</a>
+        </li>
       </div>
     </>
   );
