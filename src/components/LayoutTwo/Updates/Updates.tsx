@@ -2,7 +2,7 @@ import React from 'react';
 import globalStyles from '@/styles/global.scss';
 import UpdateBox from './UpdateBox/UpdateBox';
 import styles from './Updates.scss';
-import Spec from '../../LayoutOne/Spec/Spec';
+import Spec from '../Spec/Spec';
 import Lines from '../../LayoutOne/Lines/Lines';
 export default function Updates() {
   return (

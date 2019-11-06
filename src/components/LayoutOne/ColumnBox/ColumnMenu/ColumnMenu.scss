@@ -1,63 +1,56 @@
-@include mq($from: tablet) {
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .container > div {
-    width: 33%;
-    margin-bottom: 50px;
-  }
-
-  .homepage {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    margin: auto;
-  }
-
-  .homepage > span {
-    width: 83px;
-    color: $gray-700;
-    font-family: $openSans;
-    font-size: 16px;
-    letter-spacing: 0.44px;
-    line-height: 22px;
-    margin-top: 20px;
-  }
-
-  .divisor {
-    width: var(--custom-width);
-    margin: auto;
-    margin-bottom: 30px;
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  height: 900px;
+  align-items: flex-start;
+  @include mq($from: mobile, $until: tablet) {
+    display: none;
   }
 }
-@include mq($until: tablet) {
-  .container {
-    margin: auto;
-    display: flex;
-    flex-wrap: nowrap;
+.container > div:nth-child(3n + 1) {
+  order: 1;
+}
+.container > div:nth-child(3n + 2) {
+  order: 2;
+}
+.container > div:nth-child(3n) {
+  order: 3;
+}
+.container > div {
+  width: 33%;
+  margin-bottom: 40px;
+  @include mq($from: mobile, $until: tablet) {
+    display: none;
   }
-  .container > div {
-    margin-bottom: 50px;
-  }
+}
 
-  .homepage {
+.homepage {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  @include mq($from: mobile, $until: tablet) {
     display: none;
   }
+}
 
-  .homepage > span {
+.homepage > span {
+  width: 83px;
+  color: $gray-700;
+  font-family: $openSans;
+  font-size: 16px;
+  letter-spacing: 0.44px;
+  line-height: 22px;
+  margin-top: 20px;
+  @include mq($from: mobile, $until: tablet) {
     display: none;
   }
+}
 
-  .divisor {
-    display: none;
-  }
-  .container {
-    display: none;
-  }
-  .container > div {
+.divisor {
+  margin: auto;
+  margin-bottom: 30px;
+  @include mq($from: mobile, $until: tablet) {
     display: none;
   }
 }

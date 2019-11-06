@@ -16,7 +16,6 @@ interface ILocals {
     "loginItem": string;
     "navBar": string;
     "right": string;
-    "title": string;
     "up": string;
     [name: string]: string;
 }

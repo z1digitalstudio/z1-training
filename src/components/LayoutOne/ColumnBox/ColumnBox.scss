@@ -1,98 +1,43 @@
-@include mq($from: tablet) {
-  .urlLink {
-    color: $gray-800;
-    font-family: $openSans;
-    font-size: 15px;
-    font-weight: $medium-weight;
-    line-height: 20px;
-  }
-  .down {
-    display: none;
-  }
-  .title {
-    width: 125px;
-    color: $gray-700;
-    font-family: $openSans;
-    font-size: 20px;
-    font-weight: $medium-weight;
-    letter-spacing: 0.44px;
-    line-height: 36px;
-    margin-bottom: 15px;
-  }
-
-  .linksBox {
-    display: flex;
-    flex-direction: column;
-  }
-  .linksBoxExpanded {
-    display: flex;
-    flex-direction: column;
-  }
-  .linksBoxExpanded > span {
-    width: 116px;
-    color: $gray-700;
-    font-family: $openSans;
-    font-size: 16px;
-    letter-spacing: 0.44px;
-    line-height: 22px;
-    margin: 10px 10px 10px 0px;
-  }
-
-  .linksBox > span {
-    color: $gray-700;
-    font-family: $openSans;
-    font-size: 16px;
-    letter-spacing: 0.44px;
-    line-height: 22px;
-    margin: 10px 10px 10px 0px;
+.divColumnRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > img {
+    height: 15px;
+    width: 15px;
+    @include mq($from: tablet) {
+      display: none;
+    }
   }
 }
 
-@include mq($until: tablet) {
-  .title {
-    width: 125px;
-    color: $gray-700;
-    font-family: $openSans;
-    font-size: 20px;
-    font-weight: $medium-weight;
-    letter-spacing: 0.44px;
-    line-height: 36px;
-  }
+.columnTitle {
+  color: $gray-700;
+  font-family: $openSans;
+  font-size: 20px;
+  font-weight: $medium-weight;
+  letter-spacing: 0.44px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
 
-  .linksBox {
-    visibility: hidden;
+.linksBox {
+  display: flex;
+  flex-direction: column;
+  @include mq($from: mobile, $until: tablet) {
+    display: none;
   }
+}
+.linksBoxExpanded {
+  display: flex;
+  flex-direction: column;
+}
 
-  .linksBoxExpanded {
-    display: flex;
-    flex-direction: column;
-  }
-  .linksBoxExpanded > span {
-    color: $gray-700;
-    font-size: 14px;
-    letter-spacing: 0.44px;
-    line-height: 24px;
-  }
-  .linksBox > span {
-    color: $gray-700;
-    font-size: 16px;
-    letter-spacing: 0.44px;
-    line-height: 22px;
-    margin: 10px 10px 10px 0px;
-  }
-  .divColumnRow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .down {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    width: 10px;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
+.linksBox > span {
+  color: $gray-700;
+  font-family: $openSans;
+  font-size: 16px;
+  letter-spacing: 0.44px;
+  line-height: 22px;
+  margin: 10px 10px 10px 0px;
 }

@@ -17,8 +17,8 @@ export default function ColumnBox(props: any) {
         className={styles.divColumnRow}
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <h1 className={styles.title}>{props.title}</h1>
-        <i className={styles.down}></i>
+        <h1 className={styles.columnTitle}>{props.title}</h1>
+        <img src="caret-down-solid.svg"></img>
       </div>
       <div className={setStyles(isExpanded)}>{props.children}</div>
     </div>

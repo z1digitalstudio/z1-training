@@ -8,12 +8,10 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
+    "columnTitle": string;
     "divColumnRow": string;
-    "down": string;
     "linksBox": string;
     "linksBoxExpanded": string;
-    "title": string;
-    "urlLink": string;
     [name: string]: string;
 }
 declare const locals: ILocals;

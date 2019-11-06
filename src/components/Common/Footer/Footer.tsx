@@ -3,10 +3,11 @@ import styles from './Footer.scss';
 import SubFooter from '../SubFooter/SubFooter';
 import ColumnBox from '@/components/LayoutOne/ColumnBox/ColumnBox';
 import { Link } from '@/components/LayoutOne/Link/Link';
+import globalStyles from '@/styles/global.scss';
 
 export default function Footer() {
   return (
-    <>
+    <div className={globalStyles.contentWrapper}>
       <div className={styles.footerContainer}>
         <ColumnBox title="Flow">
           <Link>For Teams</Link>
@@ -35,6 +36,6 @@ export default function Footer() {
         </ColumnBox>
       </div>
       <SubFooter></SubFooter>
-    </>
+    </div>
   );
 }
