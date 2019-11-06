@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavBar } from '@/components/NavBar';
 import { Jumbotron } from '@/components/Jumbotron';
-import { UpdateList } from '@/components/UpdateList';
+import { UpdateList } from './UpdateList';
 import { Footer } from '@/components/Footer';
 
 export function LayoutTwo() {
