@@ -15,6 +15,11 @@
     align-items: center;
     color: var(--gray-800);
     display: none;
+    width: 1rem;
+
+    @include mq($until: tablet) {
+      display: flex;
+    }
   }
 
   .menu {
@@ -41,20 +46,16 @@
       padding: 0.5rem 1rem;
       text-decoration: none;
     }
-  }
 
-  @include mq($until: tablet) {
-    
-    .icon {
-      display: flex;
-    }
-
-    .menu {
+    @include mq($until: tablet) {
       background-color: var(--gray-000);
       display: none;
     }
+  }
 
-    &.expanded {
+  &.expanded {
+    
+    @include mq($until: tablet) {
 
       .menu {
         align-items: flex-start;

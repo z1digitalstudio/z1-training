@@ -63,13 +63,6 @@
 
       @include mq($until: tablet) {
         grid: none;
-
-        .name-row {
-
-          &:not(:first-of-type) {
-            border-top: 1px solid var(--gray-300)
-          }
-        }
       }
   
       .row {
@@ -113,6 +106,13 @@
           font-size: 1.25rem;
           font-weight: $bold-weight;
           margin-bottom: 0.75rem;
+        }
+
+        @include mq($until: tablet) {
+          
+          &:not(:first-of-type) {
+            border-top: 1px solid var(--gray-300)
+          }
         }
       }
 

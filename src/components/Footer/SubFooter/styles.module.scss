@@ -10,6 +10,10 @@
   p {
     color: var(--gray-700);
     font-size: 0.75rem;
+
+    @include mq($until: tablet) {
+      margin: 0.75rem 0.25rem;
+    }
   }
 
   .links-container {
@@ -21,6 +25,13 @@
       font-size: 0.75rem;
       margin-right: 1.5rem;
       text-decoration: none;
+
+      @include mq($until: tablet) {
+        
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
     }
     
     .language {
@@ -30,29 +41,21 @@
       color: var(--gray-700);
       font-size: 0.75rem;
       padding: 0.25rem;
+
+      @include mq($until: tablet) {
+        margin: 1.5rem 0.25rem 0.75rem;
+        width: 100%;
+      }
+    }
+
+    @include mq($until: tablet) {
+      justify-content: space-around;
+      margin: 0.75rem 0.25rem;
+      flex-wrap: wrap;
     }
   }
 
   @include mq($until: tablet) {
     flex-direction: column;
-
-    p {
-      margin: 0.75rem 0.25rem;
-    }
-
-    .links-container {
-      justify-content: space-around;
-      margin: 0.75rem 0.25rem;
-      flex-wrap: wrap;
-
-      a:last-of-type {
-        margin-right: 0;
-      }
-
-      .language {
-        margin: 1.5rem 0.25rem 0.75rem;
-        width: 100%;
-      }
-    }
   } 
 }

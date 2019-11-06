@@ -32,55 +32,55 @@
 
       &.apple-brand {
         width: 2.5rem;
+
+        @include mq($until: tablet) {
+          width: 6.5rem;
+        }
       }
 
       &.ted-brand {
         width: 5rem;
+
+        @include mq($until: tablet) {
+          width: 9rem;
+        }
       }
 
       &.redbull-brand {
         width: 6rem;
+
+        @include mq($until: tablet) {
+          width: 10rem;
+        }
       }
 
       &.ogilvy-brand {
         width: 6rem;
+
+        @include mq($until: tablet) {
+          width: 10rem;
+        }
       }
 
       &.yale-brand {
         width: 5rem;
+
+        @include mq($until: tablet) {
+          width: 9rem;
+        }
       }
-    }
 
-    @include mq($until: tablet) {
-      flex-direction: column;
-
-      .companies-item {
+      @include mq($until: tablet) {
         margin-bottom: 3rem;
 
         &:last-child {
           margin-bottom: 0;
         }
-
-        &.apple-brand {
-          width: 6.5rem;
-        }
-  
-        &.ted-brand {
-          width: 9rem;
-        }
-  
-        &.redbull-brand {
-          width: 10rem;
-        }
-  
-        &.ogilvy-brand {
-          width: 10rem;
-        }
-  
-        &.yale-brand {
-          width: 9rem;
-        }
       }
+    }
+
+    @include mq($until: tablet) {
+      flex-direction: column;
     }
   }
 }
