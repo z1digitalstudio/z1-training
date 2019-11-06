@@ -1,12 +1,16 @@
 import React from 'react';
 import globalStyles from '@/styles/global.scss';
-import styles from './styles.module.scss';
 import { Sitemap } from '@/components/LayoutOne/components/Sitemap';
 import { Jumbotron } from '@/components/ui/jumbotron';
+import { Navbar } from '@/components/Navbar';
+import { Footer } from '@/components/Footer';
 
 export function LayoutOne() {
   return (
     <>
+      <div className={globalStyles.contentWrapper}>
+        <Navbar />
+      </div>
       <main>
         <Jumbotron
           title="Flow Site Map"
@@ -16,6 +20,7 @@ export function LayoutOne() {
           <Sitemap />
         </div>
       </main>
+      <Footer />
     </>
   );
 }

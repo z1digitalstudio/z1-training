@@ -8,6 +8,12 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
+    "monthly": string;
+    "selected": string;
+    "selectorWrapper": string;
+    "selectorWrapperOptions": string;
+    "selectorWrapperText": string;
+    "yearly": string;
     [name: string]: string;
 }
 declare const locals: ILocals;

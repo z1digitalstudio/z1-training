@@ -1,0 +1,158 @@
+.cardPlanWrapper {
+  .cardPlanWrapperHeader {
+    align-items: center;
+    background-color: var(--gray-150);
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px 22px;
+
+    .avatar {
+      background-color: var(--white);
+      border-radius: 10px;
+      height: 48px;
+      margin-bottom: 1rem;
+      width: 48px;
+    }
+
+    .title {
+      color: var(--gray-700);
+      font-family: Bookmania;
+      font-size: 21px;
+      font-weight: var(--bold-weight);
+      letter-spacing: 0.44px;
+      line-height: 29px;
+      margin-bottom: 11px;
+      max-width: 21rem;
+      text-align: center;
+    }
+
+    .subtitle {
+      color: var(--gray-700);
+      font-family: 'Basis Grotesque Pro', sans-serif;
+      font-size: 16px;
+      font-weight: var(--medium-weight);
+      letter-spacing: 0.44px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+
+  .cardPlanWrapperBody {
+    .priceContent {
+      background-color: var(--white);
+      display: flex;
+      flex-flow: column nowrap;
+      margin-top: 25px;
+      min-height: 200px;
+      .price {
+        align-items: center;
+        color: var(--gray-700);
+        display: flex;
+        flex-flow: row nowrap;
+        font-family: Helvetica;
+        justify-content: center;
+
+        .dollarSymbol {
+          font-size: 24px;
+          line-height: 29px;
+          margin-right: 8px;
+        }
+
+        .priceNumber {
+          font-size: 56px;
+          line-height: 67px;
+        }
+
+        .icon {
+          height: 15px;
+          margin-left: 8px;
+          width: 15px;
+        }
+      }
+
+      .rememberUserMonth {
+        color: var(--gray-550);
+        font-family: 'Basis Grotesque Pro', sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.44px;
+        line-height: 24px;
+        text-align: center;
+      }
+
+      button {
+        align-self: center;
+        color: var(--white);
+        cursor: pointer;
+        background-color: var(--gray-550);
+        border-radius: 32px;
+        font-size: 16px;
+        font-weight: var(--medium-weight);
+        line-height: 24px;
+        margin-bottom: 20px;
+        margin-top: 7px;
+        max-width: 177px;
+        padding: 10px 20px;
+      }
+
+      .plusMessage {
+        color: var(--gray-700);
+        font-family: 'Basis Grotesque Pro', sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.44px;
+        line-height: 24px;
+        margin-bottom: 8px;
+        margin-left: 20px;
+      }
+    }
+
+    .itemsList {
+      display: flex;
+      flex-flow: column nowrap;
+
+      .item {
+        &.black {
+          background-color: var(--gray-150);
+        }
+
+        .title {
+          padding: 19px 22px;
+          &.comingSoon {
+            padding: 7px 22px;
+          }
+          &.withIcon {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+          }
+          .comingSoonText {
+            color: var(--gray-700);
+            font-family: 'Basis Grotesque Pro', sans-serif;
+            font-size: 14px;
+            letter-spacing: 0.44px;
+            line-height: 24px;
+          }
+          .message {
+            color: var(--gray-700);
+            font-family: 'Basis Grotesque Pro', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0.44px;
+            line-height: 22px;
+            text-transform: capitalize;
+          }
+
+          .icon {
+            margin-left: 7px;
+            height: 15px;
+            width: 15px;
+          }
+        }
+
+        .children {
+          margin: 20px 30px;
+          min-height: 168px;
+        }
+      }
+    }
+  }
+}

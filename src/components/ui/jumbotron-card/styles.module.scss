@@ -1,0 +1,52 @@
+.jumbotron-card-wrapper {
+  margin-top: 5.625rem;
+  max-width: 28.75rem;
+  .jumbotron-card-wrapper-header {
+    align-items: center;
+    background-color: var(--gray-150);
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1.875rem 3.5rem;
+    .avatar {
+      background-color: var(--white);
+      border-radius: 16px;
+      height: 4.5rem;
+      margin-bottom: 1rem;
+      width: 4.5rem;
+    }
+    .title {
+      color: var(--gray-700);
+      font-family: Bookmania;
+      font-size: 1.3125rem;
+      font-weight: var(--bold-weight);
+      letter-spacing: 0.44px;
+      line-height: 1.8125rem;
+      max-width: 21rem;
+      text-align: center;
+    }
+    .subtitle {
+      color: var(--gray-700);
+      font-family: 'Basis Grotesque Pro', sans-serif;
+      font-size: 1.25rem;
+      font-weight: var(--medium-weight);
+      letter-spacing: 0.44px;
+      line-height: 2.25rem;
+      text-align: center;
+    }
+  }
+  .jumbotron-card-wrapper-body {
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid var(--gray-150);
+    box-sizing: border-box;
+    box-shadow: 0 10px 10px -10px rgba(73, 80, 87, 0.3);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 30px;
+    .items {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+  }
+}

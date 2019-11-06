@@ -1,0 +1,21 @@
+.item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-bottom: 20px;
+  .icon {
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+  }
+  .text {
+    color: var(--gray-700);
+    font-family: 'Basis Grotesque Pro', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.44px;
+    line-height: 22px;
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.selector-wrapper {
+  margin: 0 auto;
+  max-width: 460px;
+  .selector-wrapper-options {
+    align-items: center;
+    background-color: var(--gray-300);
+    border-radius: 8px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    .yearly,
+    .monthly {
+      cursor: pointer;
+      padding: 4px 2px;
+      width: 226px;
+      p {
+        color: var(--gray-700);
+        font-family: 'Basis Grotesque Pro', sans-serif;
+        font-size: 16px;
+        font-weight: var(--light-weight);
+        letter-spacing: 0.44px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: capitalize;
+      }
+      &.selected {
+        cursor: initial;
+        p {
+          background-color: var(--gray-550);
+          border-radius: 8px;
+          color: var(--white);
+          padding: 7px 13px;
+        }
+      }
+    }
+  }
+  .selector-wrapper-text {
+    color: var(--gray-700);
+    font-family: 'Basis Grotesque Pro', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.44px;
+    line-height: 24px;
+    margin-top: 16px;
+    text-align: center;
+  }
+}

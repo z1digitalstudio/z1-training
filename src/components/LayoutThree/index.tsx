@@ -1,11 +1,12 @@
 import React from 'react';
 import { Jumbotron } from '@/components/ui/jumbotron';
-import { Sitemap } from '@/components/LayoutTwo/components/Sitemap';
 import globalStyles from '@/styles/global.scss';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
+import { Sitemap } from '@/components/LayoutThree/components/Sitemap';
+import styles from './styles.module.scss';
 
-export function LayoutTwo() {
+export function LayoutThree() {
   return (
     <>
       <div className={globalStyles.contentWrapper}>
@@ -13,11 +14,14 @@ export function LayoutTwo() {
       </div>
       <main>
         <Jumbotron
-          title="Updates"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Duis sit amet pellentesque metus, id mollis elit."
+          title="Pricing"
+          subtitle="Choose the plan that’s right for you. Our team plans start at just $5.99 a month."
+          width={750}
+          withCard={true}
         />
-        <Sitemap />
+        <div className={styles.sitemap}>
+          <Sitemap />
+        </div>
       </main>
       <Footer />
     </>
