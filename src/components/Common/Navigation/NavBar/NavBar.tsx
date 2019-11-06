@@ -2,6 +2,7 @@ import React from 'react';
 import globalStyles from '@/styles/global.scss';
 import styles from './NavBar.scss';
 import { Link } from '../../../LayoutOne/Link/Link';
+import { MenuArrow } from '../../MenuArrow/MenuArrow';
 
 function addClass(e: any) {
   alert('Funcionalidad pendiente de implementar. (ES UNA MAQUETA)');
@@ -20,7 +21,7 @@ export default function NavBar() {
             <Link>Solutions</Link>
             <Link>Pricing</Link>
             <span>
-              <Link>More</Link> <i className={styles.down}></i>
+              <Link>More</Link> <MenuArrow></MenuArrow>
             </span>
 
             <Link className={styles.loginItem}>Login</Link>

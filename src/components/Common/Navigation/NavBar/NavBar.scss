@@ -2,35 +2,15 @@
   width: 100%;
   background-color: $gray-300;
 }
-@include mq($from: tablet) {
-  .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  }
 
-  .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-  }
+.loginItem {
+  margin-left: 15%;
+  font-weight: $medium-weight;
+}
 
-  .up {
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-  }
-
-  .down {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    width: 10px;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
-  .divMenu {
-    display: flex;
-  }
-  .navBar {
+.navBar {
+  display: none;
+  @include mq($from: tablet) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,32 +19,18 @@
     align-items: center;
     margin-left: 50px;
   }
+}
 
-  .loginItem {
-    margin-left: 15%;
-    font-weight: $medium-weight;
-  }
-  .imgMenu {
+.imgMenu {
+  width: 40px;
+  margin-top: 5px;
+  margin-left: auto;
+  align-self: center;
+  @include mq($from: tablet) {
     display: none;
   }
 }
 
-@include mq($until: tablet) {
-  .navBar {
-    display: none;
-    flex-direction: column;
-    width: var(--custom-width-mobile);
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .imgMenu {
-    width: 40px;
-    margin-top: 5px;
-    margin-left: auto;
-    align-self: center;
-  }
-  .divMenu {
-    display: flex;
-  }
+.divMenu {
+  display: flex;
 }

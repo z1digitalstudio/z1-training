@@ -1,30 +1,16 @@
 .previousUpdates {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   height: 80px;
-}
-
-.previousUpdates > span {
-  height: 32px;
-  width: 227px;
-  color: #495057;
-  font-family: 'Basis Grotesque Pro';
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.44px;
-  line-height: 32px;
-  text-align: center;
-}
-
-.down {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  width: 10px;
-  height: 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-  display: inline-block;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  > span {
+    color: $gray-700;
+    font-family: $openSans;
+    font-size: 20px;
+    font-weight: $medium-weight;
+    letter-spacing: 0.44px;
+    line-height: 32px;
+    text-align: center;
+  }
 }

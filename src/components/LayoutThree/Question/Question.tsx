@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Question.scss';
+import { MenuArrow } from '@/components/Common/MenuArrow/MenuArrow';
 
 export default function Question(props: any) {
   var toggleSpan;
@@ -12,7 +13,7 @@ export default function Question(props: any) {
     <div className={styles.container}>
       <div className={styles.togglequestion}>
         <span className={styles.question}>{props.question}</span>
-        <img src="caret-down-solid.svg"></img>
+        <MenuArrow></MenuArrow>
       </div>
       {toggleSpan}
     </div>

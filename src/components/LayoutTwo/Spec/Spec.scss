@@ -1,5 +1,5 @@
 .header1 {
-  color: #495057;
+  color: $gray-700;
   font-family: Bookmania;
   font-size: 21px;
   font-weight: $bold-weight;
@@ -7,7 +7,7 @@
   line-height: 29px;
 }
 .specList > li {
-  color: #495057;
+  color: $gray-700;
   font-family: $openSans;
   font-size: 16px;
   letter-spacing: 0.44px;

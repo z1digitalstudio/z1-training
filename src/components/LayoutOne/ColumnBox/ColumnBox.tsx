@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './ColumnBox.scss';
+import { MenuArrow } from '@/components/Common/MenuArrow/MenuArrow';
 
 function setStyles(isExpanded: boolean) {
   if (isExpanded) {
@@ -18,7 +19,7 @@ export default function ColumnBox(props: any) {
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <h1 className={styles.columnTitle}>{props.title}</h1>
-        <img src="caret-down-solid.svg"></img>
+        <MenuArrow></MenuArrow>
       </div>
       <div className={setStyles(isExpanded)}>{props.children}</div>
     </div>

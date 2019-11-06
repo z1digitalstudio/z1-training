@@ -1,71 +1,33 @@
-.title {
-  color: var(--primary);
-}
-
-@include mq($from: tablet) {
-  .background {
+.background {
+  background-color: $gray-300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  height: 350px;
+  @include mq($from: tablet) {
     height: 600px;
-
-    background-color: var(--gray-300);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .mainTitle {
-    color: $gray-700;
-    font-family: $openSans;
-    font-size: 40px;
-    font-weight: $bold-weight;
-    letter-spacing: 0.44px;
-    line-height: 56px;
-    text-align: center;
-  }
-
-  .mainSpan {
-    color: $gray-700;
-    font-family: var(--font-family);
-    font-size: 20px;
-    font-weight: $medium-weight;
-    letter-spacing: 0.44px;
-    line-height: 32px;
-    text-align: center;
   }
 }
 
-@include mq($until: tablet) {
-  .background {
-    background-color: var(--gray-300);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin-left: 12px;
-    margin-right: 12px;
-    margin-bottom: 50px;
-  }
+.mainTitle {
+  color: $gray-700;
+  font-family: $openSans;
+  font-size: 40px;
+  font-weight: $medium-weight;
+  letter-spacing: 0.44px;
+  line-height: 56px;
+  text-align: center;
+}
 
-  .mainTitle {
-    width: 273px;
-    color: $gray-700;
-    font-family: Bookmania;
-    font-size: 40px;
-    font-weight: $medium-weight;
-    letter-spacing: 0.44px;
-    line-height: 56px;
-    text-align: center;
-  }
-
-  .mainSpan {
-    color: $gray-700;
-    font-family: var(--font-family);
-    font-size: 20px;
-    font-weight: $medium-weight;
-    letter-spacing: 0.44px;
-    line-height: 32px;
-    text-align: center;
-    display: flex;
-  }
+.mainSpan {
+  color: $gray-700;
+  font-family: $openSans;
+  font-size: 20px;
+  font-weight: $medium-weight;
+  letter-spacing: 0.44px;
+  line-height: 32px;
+  text-align: center;
+  display: flex;
 }

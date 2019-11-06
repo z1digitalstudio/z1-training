@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './TierBox.scss';
+import { MenuArrow } from '@/components/Common/MenuArrow/MenuArrow';
 
 export default function TierBox(props: any) {
   return (
@@ -12,7 +13,7 @@ export default function TierBox(props: any) {
 
       <div className={styles.compareFeatures}>
         {' '}
-        Compare all Features <img src="caret-down-solid.svg"></img>
+        Compare all Features <MenuArrow></MenuArrow>
       </div>
     </div>
   );

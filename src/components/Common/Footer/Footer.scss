@@ -1,58 +1,14 @@
-@include mq($from: tablet) {
-  .footerContainer {
-    display: flex;
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  @include mq($from: tablet) {
     flex-direction: row;
-    justify-content: space-between;
-    width: var(--custom-width);
-    margin: auto;
-  }
-
-  .footerContainer > div > div > h1 {
-    color: $gray-600;
-    font-family: $openSans;
-    font-size: 13px;
-    font-weight: $medium-weight;
-    letter-spacing: 0.8px;
-    line-height: 17px;
-    text-transform: uppercase;
-  }
-
-  .footerContainer > div > div > span {
-    color: $gray-700;
-    font-family: $openSans;
-    font-size: 14px;
-    letter-spacing: 0.44px;
-    line-height: 24px;
   }
 }
-@include mq($until: tablet) {
-  .footerContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    margin: auto;
-  }
 
-  .footerContainer > div {
-    margin-bottom: 50px;
-  }
-
-  .footerContainer > div > h1 {
-    color: $gray-600;
-    font-family: $openSans;
-    font-size: 13px;
-    font-weight: $medium-weight;
-    letter-spacing: 0.8px;
-    line-height: 17px;
-    text-transform: uppercase;
-  }
-
-  .footerContainer > div > div > span {
-    color: $gray-700;
-    font-family: $openSans;
-    font-size: 14px;
-    letter-spacing: 0.44px;
-    line-height: 24px;
-  }
+.footerContainer > div {
+  margin-bottom: 50px;
 }

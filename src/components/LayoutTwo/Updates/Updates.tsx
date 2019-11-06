@@ -4,6 +4,7 @@ import UpdateBox from './UpdateBox/UpdateBox';
 import styles from './Updates.scss';
 import Spec from '../Spec/Spec';
 import Lines from '../../LayoutOne/Lines/Lines';
+import { MenuArrow } from '@/components/Common/MenuArrow/MenuArrow';
 export default function Updates() {
   return (
     <div className={globalStyles.contentWrapper}>
@@ -138,7 +139,7 @@ export default function Updates() {
       </UpdateBox>
       <div className={styles.previousUpdates}>
         <span>Show Previous Updates</span>
-        <i className={styles.down}></i>
+        <MenuArrow></MenuArrow>
       </div>
     </div>
   );

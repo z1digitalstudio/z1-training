@@ -1,62 +1,26 @@
-@include mq($from: tablet) {
-  .subFooterContainer {
-    width: var(--custom-width);
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    margin-top: 50px;
-  }
-  .subFooterContainer > span:first-child {
-    width: 300px;
-  }
-  .subFooterContainer > span {
-    color: $gray-700;
-    font-family: $openSans;
-    font-size: 12px;
-    line-height: 24px;
-  }
-  .subFooterContainer > div > span {
-    color: $gray-700;
-    font-family: $openSans;
-    font-size: 12px;
-    line-height: 24px;
-  }
-  .subFooterContainer > div {
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-    margin-right: 100px;
+.subFooterContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  > span {
+    flex: 1;
   }
 }
 
-@include mq($until: tablet) {
-  .subFooterContainer {
-    width: var(--custom-width-mobile);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: auto;
-    margin-top: 50px;
+.subFooterContainer > span:first-child {
+  flex: 100%;
+  @include mq($from: tablet) {
+    flex: 2;
   }
-  .subFooterContainer > span:first-child {
-    width: 300px;
-  }
-  .subFooterContainer > span {
-    color: $gray-700;
-    font-family: $openSans;
-    font-size: 12px;
-    line-height: 24px;
-  }
-  .subFooterContainer > div > span {
-    color: $gray-700;
-    font-family: $openSans;
-    font-size: 12px;
-    line-height: 24px;
-  }
-  .subFooterContainer > div {
-    display: flex;
-    justify-content: space-between;
-    width: var(--custom-width-mobile);
-    margin-right: 100px;
-  }
+}
+
+.subFooterContainer > span,
+.subFooterContainer > div > span {
+  color: $gray-700;
+  font-family: $openSans;
+  font-size: 10px;
+  line-height: 24px;
 }

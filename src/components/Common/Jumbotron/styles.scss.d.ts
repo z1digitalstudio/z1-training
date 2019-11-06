@@ -11,7 +11,6 @@ interface ILocals {
     "background": string;
     "mainSpan": string;
     "mainTitle": string;
-    "title": string;
     [name: string]: string;
 }
 declare const locals: ILocals;
