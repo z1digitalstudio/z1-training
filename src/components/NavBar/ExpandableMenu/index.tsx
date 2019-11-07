@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
+import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
 import { ReactComponent as CaretDownIcon } from '@/components/SVGIcon/caret-down-solid.svg';
 import { ReactComponent as CaretUpIcon } from '@/components/SVGIcon/caret-up-solid.svg';
@@ -11,7 +12,7 @@ export function ExpandableMenu(props: any) {
   return (
     <>
       <div className={styles.wrapper}>
-        <p className={styles.text} onClick={() => setExpanded(!expanded)}>More{expanded ? <CaretUpIcon className={styles.icon}></CaretUpIcon> : <CaretDownIcon className={styles.icon}></CaretDownIcon>}</p>
+        <p className={styles.text} onClick={() => setExpanded(!expanded)}>More{expanded ? <CaretUpIcon className={classNames(globalStyles.icon, styles.icon)}></CaretUpIcon> : <CaretDownIcon className={classNames(globalStyles.icon, styles.icon)}></CaretDownIcon>}</p>
         <div className={classNames(styles.menuWrapper, {[styles.expanded]: expanded})}>
           <div className={styles.hoverHelper}></div>
           <div className={styles.menuContainer}>

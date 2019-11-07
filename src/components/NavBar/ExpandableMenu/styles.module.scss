@@ -5,10 +5,10 @@
 
     .menu-wrapper {
       display: flex;
-    }
-
-    @include mq($until: tablet) {
-      display: none;
+      
+      @include mq($until: tablet) {
+        display: none;
+      }
     }
   }
   
@@ -85,7 +85,7 @@
         }
 
         @include mq($until: tablet) {
-          background-color: var(--gray-100);
+          border-color: var(--gray-100);
         }
       }
 
@@ -94,17 +94,14 @@
       }
     }
 
-    &.expanded {
-
-      @include mq($until: tablet) {
-        display: flex;
-      }
-    }
-
     @include mq($until: tablet) {
       left: 0;
       position: relative;
       width: 100%;
+
+      &.expanded {
+        display: flex;
+      }
     }
   }
 
