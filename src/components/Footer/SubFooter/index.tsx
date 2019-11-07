@@ -20,7 +20,7 @@ export function SubFooter() {
                 <p>Site Map</p>
               </div>
             </div>
-            <div className={styles['language-select']}>
+            <div className={styles.languageSelect}>
               <Dropdown title="English" width={50} withBorder={true} />
             </div>
           </div>

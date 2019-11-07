@@ -25,18 +25,18 @@ export function Dropdown({
   return (
     <>
       <div
-        className={classNames(styles['dropdown-wrapper'], {
-          [styles['with-border']]: withBorder,
+        className={classNames(styles.dropdownWrapper, {
+          [styles.withBorder]: withBorder,
         })}
       >
-        <div className={styles['dropdown-header']}>
-          <div className={styles['dropdown-header-title']} style={customStyle}>
+        <div className={styles.dropdownHeader}>
+          <div className={styles.dropdownHeaderTitle} style={customStyle}>
             {title}
           </div>
           {sortIcon ? (
-            <SortDown className={styles['dropdown-header-icon']} />
+            <SortDown className={styles.dropdownHeaderIcon} />
           ) : (
-            <ArrowDown className={styles['dropdown-header-icon']} />
+            <ArrowDown className={styles.dropdownHeaderIcon} />
           )}
         </div>
       </div>

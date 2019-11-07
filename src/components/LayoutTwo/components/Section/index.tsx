@@ -31,11 +31,11 @@ export function Section({
       <div
         className={classNames(
           globalStyles.contentWrapper,
-          styles['section-wrapper'],
+          styles.sectionWrapper,
         )}
       >
-        <div className={styles['section-wrapper-header']}>
-          <div className={styles['section-wrapper-header__title']}>
+        <div className={styles.sectionWrapperHeader}>
+          <div className={styles.sectionWrapperHeaderTitle}>
             {withAppleIcon ? (
               <div className={styles.icon}>
                 <AppleLogo />
@@ -45,12 +45,12 @@ export function Section({
             )}
             <p>{title}</p>
           </div>
-          <p className={styles['section-wrapper-header__subtitle']}>
+          <p className={styles.sectionWrapperHeaderSubtitle}>
             {subtitle}
           </p>
-          <p className={styles['section-wrapper-header__date']}>{customDate}</p>
+          <p className={styles['sectionWrapperHeaderDate']}>{customDate}</p>
         </div>
-        <div className={styles['section-wrapper-lists']}>
+        <div className={styles['sectionWrapperLists']}>
           {descriptions.map((value, index) => {
             return (
               <Description
@@ -61,7 +61,7 @@ export function Section({
             );
           })}
           {showMoreOption ? (
-            <div className={styles['show-more']}>
+            <div className={styles.showMore}>
               <Dropdown title="See more" sortIcon={false} />
             </div>
           ) : (

@@ -1,14 +1,14 @@
-.section-wrapper {
+.sectionWrapper {
   align-items: flex-start;
   display: flex;
   flex-flow: row wrap;
   &:first-letter {
     text-transform: uppercase;
   }
-  .section-wrapper-header {
+  .sectionWrapperHeader {
     margin-right: 70px;
     max-width: 400px;
-    .section-wrapper-header__title {
+    .sectionWrapperHeaderTitle {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
@@ -24,7 +24,7 @@
         margin-right: 16px;
       }
     }
-    .section-wrapper-header__subtitle {
+    .sectionWrapperHeaderSubtitle {
       color: var(--gray-700);
       font-family: 'Basis Grotesque Pro', sans-serif;
       font-size: 20px;
@@ -34,7 +34,7 @@
       margin-top: 20px;
       max-width: 440px;
     }
-    .section-wrapper-header__date {
+    .sectionWrapperHeaderDate {
       color: var(--gray-700);
       font-family: 'Basis Grotesque Pro', sans-serif;
       font-size: 14px;
@@ -44,11 +44,11 @@
     }
   }
 
-  .section-wrapper-lists {
+  .sectionWrapperLists {
     align-items: flex-start;
     display: flex;
     flex-flow: column nowrap;
-    .show-more {
+    .showMore {
       color: var(--black);
       font-family: 'Basis Grotesque Pro', sans-serif;
       font-size: 14px;
@@ -58,10 +58,10 @@
   }
   @include mq($until: tablet) {
     flex-flow: column nowrap;
-    .section-wrapper-header {
+    .sectionWrapperHeader {
       margin-bottom: 25px;
-      .section-wrapper-header__date,
-      .section-wrapper-header__subtitle {
+      .sectionWrapperHeaderDate,
+      .sectionWrapperHeaderSubtitle {
         margin-top: 8px;
       }
     }

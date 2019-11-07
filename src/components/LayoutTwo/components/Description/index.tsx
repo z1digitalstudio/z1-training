@@ -10,11 +10,11 @@ interface DescriptionProps {
 export function Description({ title, items }: DescriptionProps) {
   return (
     <>
-      <div className={styles['description-wrapper']}>
-        <p className={styles['description-wrapper-title']}> {title} </p>
+      <div className={styles.descriptionWrapper}>
+        <p className={styles.descriptionWrapperTitle}> {title} </p>
         {items.map((value, index) => {
           return (
-            <div key={index} className={styles['description-wrapper-item']}>
+            <div key={index} className={styles.descriptionWrapperItem}>
               <VerificationMark className={styles.icon} />
               <p className={styles.text}>{value}</p>
             </div>

@@ -1,15 +1,15 @@
-.dropdown-wrapper {
-  &.with-border {
+.dropdownWrapper {
+  &.withBorder {
     border: 1px solid rgba(0, 0, 0, 0.05);
-    .dropdown-header {
+    .dropdownHeader {
       padding: 0.2rem 0.5rem;
     }
   }
-  .dropdown-header {
+  .dropdownHeader {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .dropdown-header-icon {
+    .dropdownHeaderIcon {
       width: 0.5rem;
       height: 0.5rem;
     }

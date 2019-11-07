@@ -1,5 +1,4 @@
 import React from 'react';
-import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
 import { ReactComponent as LogoIcon } from '@/assets/icons/logo.svg';
 import { ReactComponent as Hamburguer } from '@/assets/icons/hamburguer.svg';
@@ -33,7 +32,7 @@ export function Navbar() {
             <Dropdown title="More" />
           </span>
         </a>
-        <a href="#" className={styles['login-wrapper']}>
+        <a href="#" className={styles.loginWrapper}>
           <span>Login</span>
         </a>
       </nav>

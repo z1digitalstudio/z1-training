@@ -21,7 +21,7 @@ export function Jumbotron({
   };
   return (
     <>
-      <div className={styles['border-bar']}></div>
+      <div className={styles.borderBar}></div>
       <div
         className={classNames(styles.jumbotron, {
           [styles['with-card']]: withCard,

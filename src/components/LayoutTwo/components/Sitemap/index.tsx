@@ -1,5 +1,4 @@
 import React from 'react';
-import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
 import { Section } from '@/components/LayoutTwo/components/Section';
 import { SECTIONS } from '@/components/LayoutTwo/components/Sitemap/sections';
@@ -15,7 +14,7 @@ export function Sitemap() {
             <div
               key={index}
               className={classNames(styles.sections, {
-                [styles['with-background']]: value.withBackground,
+                [styles.withBackground]: value.withBackground,
               })}
             >
               <Section
@@ -30,8 +29,8 @@ export function Sitemap() {
             </div>
           );
         })}
-        <div className={styles['border-bar']}></div>
-        <div className={styles['previous-updates']}>
+        <div className={styles.borderBar}></div>
+        <div className={styles.previousUpdates}>
           <Dropdown title="Show Previous Updates" />
         </div>
       </div>

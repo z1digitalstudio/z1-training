@@ -1,11 +1,11 @@
-.description-wrapper {
+.descriptionWrapper {
   align-items: flex-start;
   display: flex;
   flex-flow: column nowrap;
   &:not(:first-child) {
     margin-top: 26px;
   }
-  .description-wrapper-title {
+  .descriptionWrapperTitle {
     color: var(--gray-700);
     font-family: Bookmania;
     font-size: 21px;
@@ -14,7 +14,7 @@
     line-height: 29px;
     margin-bottom: 16px;
   }
-  .description-wrapper-item {
+  .descriptionWrapperItem {
     align-items: center;
     display: flex;
     flex-flow: row nowrap;
