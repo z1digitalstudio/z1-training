@@ -1,68 +1,67 @@
-.calculatorHeader {
-  height: 296px;
-  width: 100%;
-  background-color: $gray-200;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.imgHeader {
-  height: 72px;
-  width: 72px;
-  background: white;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
 .calculatorContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.title {
-  width: 379px;
-  color: $gray-700;
-  font-family: Bookmania;
-  font-size: 21px;
-  font-weight: $bold-weight;
-  letter-spacing: 0.44px;
-  line-height: 29px;
-  text-align: center;
-}
-.subtitle {
-  height: 24px;
-  width: 68px;
-  color: #495057;
-  font-family: 'Basis Grotesque Pro';
-  font-size: 14px;
-  letter-spacing: 0.44px;
-  line-height: 24px;
-  text-align: center;
-}
 
-.forminput {
-  height: 47px;
-  width: 92px;
-}
+  .calculatorHeader {
+    height: 296px;
+    width: 100%;
+    background-color: $gray-200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.iconImg {
-  height: 15px;
-  width: 15px;
-}
+  .imgHeader {
+    height: 72px;
+    width: 72px;
+    background: $gray-100;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 
-.priceContent {
-  display: flex;
-  align-items: center;
-  color: #495057;
-  font-family: Helvetica;
-  font-size: 56px;
-  line-height: 67px;
-}
-.calculatorContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 234px;
-  margin-bottom: 40px;
+  .title {
+    color: $gray-700;
+    font-family: $openSans;
+    font-size: 21px;
+    font-weight: $bold-weight;
+    letter-spacing: 0.44px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .subtitle {
+    color: $gray-600;
+    font-family: $openSans;
+    font-size: 14px;
+    letter-spacing: 0.44px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .forminput {
+    height: 47px;
+    width: 92px;
+  }
+
+  .iconImg {
+    height: 15px;
+    width: 15px;
+  }
+
+  .priceContent {
+    display: flex;
+    align-items: center;
+    color: $gray-700;
+    font-family: Helvetica;
+    font-size: 56px;
+    line-height: 67px;
+  }
+  .calculatorContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 234px;
+    margin-bottom: 40px;
+  }
 }
