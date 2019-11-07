@@ -7,6 +7,13 @@ import { SubFooter } from '@/components/Footer/SubFooter';
 import { Collapse } from '@/components/ui/Collapse';
 
 export function Footer() {
+  const stylesTitleCollapse = {
+    color: '#555555',
+    fontSize: '13px',
+    letterSpacing: '0.8px',
+    lineHeight: '17px',
+    textTransform: 'uppercase',
+  };
   return (
     <>
       <div className={styles.footer}>
@@ -32,6 +39,7 @@ export function Footer() {
                   title={value.title}
                   items={value.items}
                   selected={value.selected}
+                  styleTitle={stylesTitleCollapse}
                 />
               );
             })}

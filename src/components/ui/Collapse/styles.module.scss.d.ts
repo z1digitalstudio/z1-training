@@ -15,7 +15,9 @@ interface ILocals {
     "collapseWrapper": string;
     "item": string;
     "items": string;
+    "message": string;
     "selected": string;
+    "withBorderTop": string;
     [name: string]: string;
 }
 declare const locals: ILocals;

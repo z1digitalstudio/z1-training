@@ -8,7 +8,11 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
-  [name: string]: string;
+    "commonQuestionsWrapper": string;
+    "list": string;
+    "listTitle": string;
+    "title": string;
+    [name: string]: string;
 }
 declare const locals: ILocals;
 export = locals;

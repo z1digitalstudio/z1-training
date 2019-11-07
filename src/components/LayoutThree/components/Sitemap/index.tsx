@@ -5,6 +5,7 @@ import { ChoicePlan } from '@/components/LayoutThree/components/ChoicePlan';
 import { ChatModule } from '@/components/LayoutThree/components/ChatModule';
 import { Banner } from '@/components/LayoutThree/components/Banner';
 import { Organizations } from '@/components/LayoutThree/components/Organizations';
+import { CommonQuestions } from '@/components/LayoutThree/components/CommonQuestions';
 
 export function Sitemap() {
   return (
@@ -22,6 +23,9 @@ export function Sitemap() {
       <div className={globalStyles.contentWrapper}>
         <div className={styles.organizations}>
           <Organizations />
+        </div>
+        <div className={styles.commonQuestions}>
+          <CommonQuestions />
         </div>
       </div>
     </>

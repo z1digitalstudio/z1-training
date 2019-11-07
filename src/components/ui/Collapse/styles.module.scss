@@ -1,14 +1,13 @@
-$black-title-collapse: #555555;
 
 .collapseWrapper {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   font-family: 'Basis Grotesque Pro', sans-serif;
   &.selected {
-    .collapse-body {
-      margin-top: 12px;
+    .collapseBody {
       .items {
         display: flex;
         flex-flow: column;
+        margin-top: 12px;
         .item {
           color: var(--gray-700);
           font-size: 14px;
@@ -23,31 +22,44 @@ $black-title-collapse: #555555;
           }
         }
       }
+      .message {
+        color: var(--gray-700);
+        font-family: "Basis Grotesque Pro", sans-serif;
+        font-size: 16px;
+        font-weight: var(--light-weight);
+        letter-spacing: 0.44px;
+        line-height: 28px;
+        margin-bottom: 20px;
+        max-width: 870px;
+        padding-left: 18px;
+      }
     }
+  }
+  &.withBorderTop {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
   .collapseHeader {
     align-items: center;
+    cursor: pointer;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     padding: 10px 0;
     .collapseHeaderTitle {
-      color: $black-title-collapse;
-      font-size: 13px;
       font-weight: var(--bold-weight);
-      letter-spacing: 0.8px;
-      line-height: 17px;
-      text-transform: uppercase;
+      &:first-letter {
+        text-transform: uppercase;
+      }
     }
     .collapseHeaderIcon {
       svg {
-        width: 8px;
-        height: 8px;
+        width: 13px;
+        height: 13px;
       }
     }
   }
   .collapseBody {
-    .items {
+    .items{
       display: none;
     }
   }
