@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './styles.module.scss';
 import { VerificationText } from '@/components/ui/VerificationText';
 import { CustomButton } from '@/components/ui/CustomButton';
+import { Avatar } from '@/components/ui/Avatar';
 
 export function JumbotronCard() {
   const plans_include = [
@@ -16,7 +17,7 @@ export function JumbotronCard() {
     <>
       <div className={styles.jumbotronCardWrapper}>
         <div className={styles.jumbotronCardWrapperHeader}>
-          <div className={styles.avatar}></div>
+          <Avatar width={72} height={72} color="#fff" />
           <h3 className={styles.title}>
             Use anywhere. Cancel anytime. First month free.
           </h3>

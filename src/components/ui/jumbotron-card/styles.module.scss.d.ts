@@ -8,7 +8,6 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
-    "avatar": string;
     "items": string;
     "jumbotronCardWrapper": string;
     "jumbotronCardWrapperBody": string;

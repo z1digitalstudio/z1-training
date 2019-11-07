@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { ReactComponent as InformationMark } from '@/assets/icons/information-button.svg';
 import { VerificationText } from '@/components/ui/VerificationText';
 import { CustomButton } from '@/components/ui/CustomButton';
+import { Avatar } from '@/components/ui/Avatar';
 
 interface CardPlanProps {
   items: {
@@ -28,7 +29,7 @@ export function CardPlan({
   return (
     <div className={styles.cardPlanWrapper}>
       <div className={styles.cardPlanWrapperHeader}>
-        <div className={styles.avatar}></div>
+        <Avatar width={48} height={48} color="#fff"/>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.subtitle}>{subtitle}</p>
       </div>

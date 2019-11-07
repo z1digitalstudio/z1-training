@@ -8,10 +8,7 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
-    "chatModuleWrapper": string;
-    "message": string;
-    "subtitle": string;
-    "title": string;
+    "avatar": string;
     [name: string]: string;
 }
 declare const locals: ILocals;
