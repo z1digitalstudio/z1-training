@@ -8,7 +8,20 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
-  [name: string]: string;
+    "avatar": string;
+    "calculatorInput": string;
+    "calculatorWrapper": string;
+    "calculatorWrapperBody": string;
+    "calculatorWrapperHeader": string;
+    "customButton": string;
+    "dollarSymbol": string;
+    "icon": string;
+    "price": string;
+    "priceInfo": string;
+    "priceNumber": string;
+    "subtitle": string;
+    "title": string;
+    [name: string]: string;
 }
 declare const locals: ILocals;
 export = locals;

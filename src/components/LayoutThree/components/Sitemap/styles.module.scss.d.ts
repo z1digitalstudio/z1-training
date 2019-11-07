@@ -9,6 +9,7 @@
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
     "borderBar": string;
+    "calculator": string;
     "choicePlan": string;
     "organizations": string;
     [name: string]: string;

@@ -3,6 +3,7 @@ import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
 import { ChoicePlan } from '@/components/LayoutThree/components/ChoicePlan';
 import { ChatModule } from '@/components/LayoutThree/components/ChatModule';
+import { Calculator } from '@/components/LayoutThree/components/Calculator';
 import { Banner } from '@/components/LayoutThree/components/Banner';
 import { Organizations } from '@/components/LayoutThree/components/Organizations';
 import { CommonQuestions } from '@/components/LayoutThree/components/CommonQuestions';
@@ -17,6 +18,9 @@ export function Sitemap() {
         </div>
         <div className={styles.chatModule}>
           <ChatModule />
+        </div>
+        <div className={styles.calculator}>
+          <Calculator />
         </div>
       </div>
       <Banner />

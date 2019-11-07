@@ -1,0 +1,111 @@
+.calculatorWrapper {
+  .calculatorWrapperHeader,
+  .calculatorWrapperBody {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .calculatorWrapperHeader {
+    background-color: var(--gray-150);
+    .avatar {
+      padding-top: 30px;
+    }
+    .title {
+      color: var(--gray-700);
+      font-family: Bookmania;
+      font-size: 21px;
+      font-weight: var(--bold-weight);
+      letter-spacing: 0.44px;
+      line-height: 29px;
+      margin-top: 16px;
+      max-width: 359px;
+      text-align: center;
+    }
+    .subtitle {
+      color: var(--gray-700);
+      font-family: "Basis Grotesque Pro", sans-serif;
+      font-size: 14px;
+      font-weight: var(--light-weight);
+      letter-spacing: 0.44px;
+      line-height: 24px;
+      margin: 8px 0;
+      text-align: center;
+    }
+    .calculatorInput {
+      align-items: center;
+      display: flex;
+      flex-flow: row nowrap;
+      padding-bottom: 33px;
+      .icon {
+        cursor: pointer;
+        width: 13px;
+        height: 13px;
+        &:first-child {
+          margin-right: 10px;
+        }
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+      .price {
+        align-items: center;
+        background-color: var(--white);
+        border: 1px solid var(--gray-300);
+        display: flex;
+        justify-content: center;
+        height: 47px;
+        width: 90px;
+        span {
+          color: var(--gray-500);
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .calculatorWrapperBody {
+    background-color: var(--white);
+    border: 1px solid var(--gray-150);
+    box-sizing: border-box;
+    box-shadow: 0 10px 10px -10px rgba(73,80,87,0.3);
+    .price {
+      align-items: center;
+      color: var(--gray-700);
+      display: flex;
+      flex-flow: row nowrap;
+      font-family: Helvetica;
+      justify-content: center;
+      padding-top: 30.5px;
+      .dollarSymbol {
+        font-size: 24px;
+        line-height: 29px;
+        margin-right: 8px;
+      }
+
+      .priceNumber {
+        font-size: 56px;
+        line-height: 67px;
+      }
+
+      .icon {
+        height: 15px;
+        margin-left: 8px;
+        width: 15px;
+      }
+    }
+    .priceInfo {
+      color: var(--gray-700);
+      font-family: "Basis Grotesque Pro", sans-serif;
+      font-size: 14px;
+      font-weight: var(--light-weight);
+      letter-spacing: 0.44px;
+      line-height: 24px;
+      margin: 4px 0 20px 0;
+      text-align: center;
+    }
+    .customButton {
+      padding-bottom: 40.5px;
+    }
+  }
+}
