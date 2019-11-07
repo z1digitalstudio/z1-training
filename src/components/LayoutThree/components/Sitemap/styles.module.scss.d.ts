@@ -10,6 +10,7 @@
 interface ILocals {
     "borderBar": string;
     "choicePlan": string;
+    "organizations": string;
     [name: string]: string;
 }
 declare const locals: ILocals;

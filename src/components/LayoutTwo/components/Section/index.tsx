@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './styles.module.scss';
 import { ReactComponent as AppleLogo } from '@/assets/icons/apple-logo.svg';
-import { ReactComponent as VerificationMark } from '@/assets/icons/verification-mark.svg';
 import { Description } from '@/components/LayoutTwo/components/Description';
 import { Dropdown } from '@/components/ui/Dropdown';
 import classNames from 'classnames';

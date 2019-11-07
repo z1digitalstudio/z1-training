@@ -1,9 +1,10 @@
 import React from 'react';
 import globalStyles from '@/styles/global.scss';
 import styles from './styles.module.scss';
-import classNames from 'classnames';
 import { ChoicePlan } from '@/components/LayoutThree/components/ChoicePlan';
 import { ChatModule } from '@/components/LayoutThree/components/ChatModule';
+import { Banner } from '@/components/LayoutThree/components/Banner';
+import { Organizations } from '@/components/LayoutThree/components/Organizations';
 
 export function Sitemap() {
   return (
@@ -15,6 +16,12 @@ export function Sitemap() {
         </div>
         <div className={styles.chatModule}>
           <ChatModule />
+        </div>
+      </div>
+      <Banner />
+      <div className={globalStyles.contentWrapper}>
+        <div className={styles.organizations}>
+          <Organizations />
         </div>
       </div>
     </>

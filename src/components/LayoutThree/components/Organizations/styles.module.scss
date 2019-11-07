@@ -1,0 +1,27 @@
+.organizationsWrapper {
+  .title {
+    color: var(--gray-700);
+    font-family: Bookmania;
+    font-size: 21px;
+    font-weight: var(--bold-weight);
+    letter-spacing: 0.44px;
+    line-height: 29px;
+    margin-bottom: 33px;
+    text-align: center;
+  }
+  .organizationsList {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    .icon {
+      height: 59px;
+      width: 92px;
+      &:not(:last-child) {
+        margin-right: 110px;
+      }
+      &.yale {
+        margin-top: 16px;
+      }
+    }
+  }
+}
