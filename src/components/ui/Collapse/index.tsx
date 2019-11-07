@@ -14,17 +14,17 @@ export function Collapse({ title, items, selected = false }: ListParameters) {
   return (
     <>
       <div
-        className={classNames(styles['collapse-wrapper'], {
+        className={classNames(styles.collapseWrapper, {
           [styles.selected]: selected,
         })}
       >
-        <div className={styles['collapse-header']}>
-          <div className={styles['collapse-header-title']}>{title}</div>
-          <div className={styles['collapse-header-icon']}>
+        <div className={styles.collapseHeader}>
+          <div className={styles.collapseHeaderTitle}>{title}</div>
+          <div className={styles.collapseHeaderIcon}>
             {selected ? <ArrowUp /> : <ArrowDown />}
           </div>
         </div>
-        <div className={styles['collapse-body']}>
+        <div className={styles.collapseBody}>
           <ul className={styles.items}>
             {items.map((value, index) => {
               return (

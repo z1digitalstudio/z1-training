@@ -1,6 +1,6 @@
 $black-title-collapse: #555555;
 
-.collapse-wrapper {
+.collapseWrapper {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   font-family: 'Basis Grotesque Pro', sans-serif;
   &.selected {
@@ -25,13 +25,13 @@ $black-title-collapse: #555555;
       }
     }
   }
-  .collapse-header {
+  .collapseHeader {
     align-items: center;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     padding: 10px 0;
-    .collapse-header-title {
+    .collapseHeaderTitle {
       color: $black-title-collapse;
       font-size: 13px;
       font-weight: var(--bold-weight);
@@ -39,14 +39,14 @@ $black-title-collapse: #555555;
       line-height: 17px;
       text-transform: uppercase;
     }
-    .collapse-header-icon {
+    .collapseHeaderIcon {
       svg {
         width: 8px;
         height: 8px;
       }
     }
   }
-  .collapse-body {
+  .collapseBody {
     .items {
       display: none;
     }
