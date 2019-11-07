@@ -1,15 +1,14 @@
 .container {
   font-family: 'Basis Grotesque Pro', sans-serif;
-  margin-bottom: 3.75rem;
-  margin-top: 3.75rem;
+  margin: 60px 0;
   .title {
     border-bottom: 1px solid var(--gray-300);
     p {
       color: var(--gray-700);
-      font-size: 1rem;
+      font-size: 16px;
       letter-spacing: 0.44px;
-      line-height: 1.375rem;
-      padding-bottom: 1rem;
+      line-height: 22px;
+      padding-bottom: 16px;
     }
   }
   .lists {
@@ -18,11 +17,11 @@
     align-items: flex-start;
 
     .first_column {
-      margin-right: 12.6rem;
+      margin-right: 201.6px;
     }
 
     .second_column {
-      margin-right: 10.9rem;
+      margin-right: 174.4px;
     }
   }
 
@@ -38,7 +37,7 @@
   @include mq($from: tablet, $until: desktop) {
     .first_column,
     .second_column {
-      margin-right: 7rem !important;
+      margin-right: 112px !important;
     }
   }
 }

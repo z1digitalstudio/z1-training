@@ -11,7 +11,8 @@ interface CardPlanProps {
     title: string;
     children?: string[];
     comingSoon?: boolean;
-    withIcon: boolean;
+    withIcon?: boolean;
+    longText?: boolean;
   }[];
   title: string;
   subtitle: string;
@@ -64,6 +65,7 @@ export function CardPlan({
                     styles.title,
                     { [styles.withIcon]: item.withIcon },
                     { [styles.comingSoon]: item.comingSoon },
+                    {[styles.longText]: item.longText }
                   )}
                 >
                   {item.comingSoon ? (

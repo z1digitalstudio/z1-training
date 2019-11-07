@@ -7,7 +7,7 @@
   background-color: var(--gray-300);
   display: flex;
   flex-flow: column;
-  height: 27.5rem;
+  height: 440px;
   justify-content: center;
   width: 100%;
 
@@ -17,19 +17,19 @@
     text-align: center;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-family: Bookmania;
     font-weight: var(--bold-weight);
     letter-spacing: 0.44px;
-    line-height: 3.5rem;
+    line-height: 56px;
     text-transform: capitalize;
   }
   p {
-    font-size: 1.25rem;
+    font-size: 20px;
     font-family: 'Basis Grotesque Pro', sans-serif;
     font-weight: var(--medium-weight);
     letter-spacing: 0.44px;
-    line-height: 2rem;
+    line-height: 32px;
   }
 
   .card {
@@ -37,11 +37,11 @@
   }
 
   &.with-card {
-    height: 37.5rem;
+    height: 600px;
     justify-content: flex-start;
     position: relative;
     h1 {
-      margin-top: 9.5rem;
+      margin-top: 152px;
     }
     .card {
       display: initial;
@@ -54,7 +54,7 @@
     border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
   .jumbotron {
-    margin: 1.25rem auto 2.5rem auto;
+    margin: 20px auto 40px auto;
     width: 92%;
     p {
       padding: 20px;

@@ -10,7 +10,7 @@
       background-color: var(--white);
       border-radius: 10px;
       height: 48px;
-      margin-bottom: 1rem;
+      margin-bottom: 16px;
       width: 48px;
     }
 
@@ -120,6 +120,9 @@
           &.comingSoon {
             padding: 7px 22px;
           }
+          &.longText {
+            padding: 7.8px 22px;
+          }
           &.withIcon {
             display: flex;
             flex-flow: row nowrap;
@@ -151,7 +154,7 @@
 
         .children {
           margin: 20px 30px;
-          min-height: 168px;
+          min-height: 191px;
         }
       }
     }

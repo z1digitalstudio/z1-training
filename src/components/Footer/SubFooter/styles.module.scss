@@ -7,10 +7,10 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-top: 1.1875rem;
+    margin-top: 19px;
     color: var(--gray-700);
-    font-size: 0.75rem;
-    line-height: 1.5rem;
+    font-size: 12px;
+    line-height: 24px;
 
     .items,
     .options {
@@ -20,7 +20,7 @@
 
       .item {
         cursor: pointer;
-        margin-right: 1.875rem;
+        margin-right: 30px;
       }
     }
     .items {

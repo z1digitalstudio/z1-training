@@ -2,7 +2,7 @@
   &.withBorder {
     border: 1px solid rgba(0, 0, 0, 0.05);
     .dropdownHeader {
-      padding: 0.2rem 0.5rem;
+      padding: 3.2px 8px;
     }
   }
   .dropdownHeader {
@@ -10,8 +10,8 @@
     align-items: center;
     justify-content: space-between;
     .dropdownHeaderIcon {
-      width: 0.5rem;
-      height: 0.5rem;
+      width: 8px;
+      height: 8px;
     }
   }
 }

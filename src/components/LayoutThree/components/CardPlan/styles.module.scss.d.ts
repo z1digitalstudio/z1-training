@@ -20,6 +20,7 @@ interface ILocals {
     "icon": string;
     "item": string;
     "itemsList": string;
+    "longText": string;
     "message": string;
     "plusMessage": string;
     "price": string;
