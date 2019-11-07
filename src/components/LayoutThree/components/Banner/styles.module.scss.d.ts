@@ -9,6 +9,7 @@
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
     "bannerWrapper": string;
+    "customButton": string;
     "title": string;
     [name: string]: string;
 }

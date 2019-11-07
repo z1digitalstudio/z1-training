@@ -15,7 +15,7 @@
     margin-bottom: 16px;
   }
   .descriptionWrapperItem {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-flow: row nowrap;
     &:not(:last-child) {
@@ -33,8 +33,8 @@
       letter-spacing: 0.44px;
       line-height: 22px;
     }
-    @include mq($until: tablet) {
-      align-items: flex-start;
+    @include mq($from: tablet) {
+      align-items: center;
     }
   }
 }

@@ -1,12 +1,13 @@
 .list {
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
-  align-items: initial;
   list-style: none;
   padding: 1.375rem 0;
-  justify-content: space-around;
+  justify-content: space-between;
 
-  a {
+  .item {
+    display: none;
     text-decoration: none;
     font-family: 'Basis Grotesque Pro', sans-serif;
 
@@ -20,31 +21,36 @@
         margin-right: 5.7rem;
       }
     }
+  }
+  .loginWrapper {
+    display: none;
+    background-color: var(--gray-150);
+    border-radius: 1.25rem;
+    text-decoration: none;
+    font-family: 'Basis Grotesque Pro', sans-serif;
 
-    &.loginWrapper {
-      background-color: var(--gray-150);
-      border-radius: 1.25rem;
-
-      span {
-        padding: 0.5rem 1rem;
-      }
+    span {
+      cursor: pointer;
+      color: var(--black);
+      font-size: 0.94rem;
+      text-transform: capitalize;
+      padding: 0.5rem 1rem;
     }
   }
 
   .hamburger {
     color: var(--black);
     cursor: pointer;
-    display: none;
   }
 
-  @include mq($until: tablet) {
-    justify-content: space-between;
+  @include mq($from: tablet) {
+    justify-content: space-around;
     .hamburger {
-      display: flex;
+      display: none;
     }
     .item,
-    .login-wrapper {
-      display: none;
+    .loginWrapper {
+      display: flex;
     }
   }
 }

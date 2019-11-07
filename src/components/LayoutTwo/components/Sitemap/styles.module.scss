@@ -13,9 +13,14 @@
 
     &.withBackground {
       background-color: var(--gray-150);
-      @include mq($until: tablet) {
-        margin: 0 auto;
-        width: 92%;
+      margin: 0 auto;
+      width: 92%;
+    }
+
+    @include mq($from: tablet) {
+      &.withBackground {
+        margin: 0;
+        width: 100%;
       }
     }
   }

@@ -9,7 +9,9 @@ export function Banner() {
       <div className={styles.bannerWrapper}>
         <div className={globalStyles.contentWrapper}>
           <p className={styles.title}>Looking for personal task management?</p>
-          <CustomButton text="Try Flow Solo" withIcon={true} />
+          <div className={styles.customButton}>
+            <CustomButton text="Try Flow Solo" withIcon={true} />
+          </div>
         </div>
       </div>
     </>

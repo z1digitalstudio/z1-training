@@ -10,17 +10,30 @@
     text-align: center;
   }
   .organizationsList {
-    display: flex;
-    flex-flow: row wrap;
     align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
     .icon {
-      height: 59px;
-      width: 92px;
-      &:not(:last-child) {
-        margin-right: 110px;
-      }
+      height: 79px;
+      width: 112px;
       &.yale {
+        margin-left: 36px;
+      }
+      &:not(:last-child) {
         margin-top: 16px;
+      }
+    }
+  }
+  @include mq($from: tablet) {
+    .organizationsList {
+      flex-flow: row;
+      .icon {
+        height: 59px;
+        width: 92px;
+        &:not(:last-child) {
+          margin-right: 110px;
+        }
       }
     }
   }

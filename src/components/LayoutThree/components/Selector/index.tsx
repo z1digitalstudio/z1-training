@@ -12,14 +12,14 @@ export function Selector() {
             [styles.selected]: yearlySelected,
           })}
         >
-          <p>Pay Yearly (Save 25%)</p>
+          <p className={styles.infoMsg}>Pay Yearly (Save 25%)</p>
         </div>
         <div
           className={classNames(styles.monthly, {
             [styles.selected]: !yearlySelected,
           })}
         >
-          <p>Pay Monthly</p>
+          <p className={styles.infoMsg}>Pay Monthly</p>
         </div>
       </div>
       <p className={styles.selectorWrapperText}>Save 25% by paying yearly!”</p>

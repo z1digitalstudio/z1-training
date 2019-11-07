@@ -7,9 +7,9 @@ import { ReactComponent as MinusIcon } from '@/assets/icons/minus.svg';
 import { ReactComponent as InformationMark } from '@/assets/icons/information-button.svg';
 
 export function Calculator() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(3);
   const operationNumber = (counter: number) => {
-    if (counter === 0) {
+    if (counter <= 0) {
       return '00';
     }
     return counter < 10 ? '0' + counter : counter + '';

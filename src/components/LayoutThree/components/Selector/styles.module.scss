@@ -1,22 +1,22 @@
 .selector-wrapper {
   margin: 0 auto;
-  max-width: 460px;
+  max-width: 400px;
   .selector-wrapper-options {
     align-items: center;
     background-color: var(--gray-300);
     border-radius: 8px;
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     justify-content: space-around;
     .yearly,
     .monthly {
       cursor: pointer;
       padding: 4px 2px;
       width: 226px;
-      p {
+      .infoMsg {
         color: var(--gray-700);
         font-family: 'Basis Grotesque Pro', sans-serif;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: var(--light-weight);
         letter-spacing: 0.44px;
         line-height: 28px;
@@ -25,7 +25,7 @@
       }
       &.selected {
         cursor: initial;
-        p {
+        .infoMsg {
           background-color: var(--gray-550);
           border-radius: 8px;
           color: var(--white);
@@ -43,4 +43,18 @@
     margin-top: 16px;
     text-align: center;
   }
+
+  @include mq($from: tablet) {
+    max-width: 460px;
+    .selector-wrapper-options {
+      .yearly,
+      .monthly {
+        .infoMsg {
+          font-size: 16px;
+        }
+      }
+
+    }
+  }
+
 }

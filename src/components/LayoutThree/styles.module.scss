@@ -1,3 +1,6 @@
 .sitemap {
-  margin-top: 366px;
+  margin-top: 440px;
+  @include mq($from: tablet) {
+    margin-top: 366px;
+  }
 }

@@ -11,6 +11,8 @@ interface ILocals {
     "borderBar": string;
     "card": string;
     "jumbotron": string;
+    "subtitle": string;
+    "title": string;
     "withCard": string;
     [name: string]: string;
 }

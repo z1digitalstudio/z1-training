@@ -5,14 +5,24 @@
   .container {
     align-items: center;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    justify-content: center;
     margin-top: 19px;
     color: var(--gray-700);
     font-size: 12px;
     line-height: 24px;
 
-    .items,
+    .items {
+      align-items: center;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      margin-top: 16px;
+      .item {
+        cursor: pointer;
+        margin-right: 16px;
+      }
+    }
     .options {
       display: flex;
       flex-flow: row wrap;
@@ -23,26 +33,23 @@
         margin-right: 30px;
       }
     }
-    .items {
-      justify-content: center;
+    .languageSelect {
+      margin-top: 16px;
+      width: 100%;
     }
 
-    @include mq($until: tablet) {
-      justify-content: center;
-    }
-    @include mq($until: mobile-big) {
+    @include mq($from: tablet) {
+      justify-content: space-between;
       .items {
-        flex-flow: column nowrap;
-        margin-top: 16px;
-
+        flex-flow: row nowrap;
+        margin-top: 0;
         .item {
-          margin-right: 1rem;
+          margin-right: 30px;
         }
-
-        .languageSelect {
-          margin-top: 16px;
-          width: 100%;
-        }
+      }
+      .languageSelect {
+        margin-top: 0;
+        width: 27%;
       }
     }
   }

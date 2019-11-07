@@ -154,7 +154,10 @@
 
         .children {
           margin: 20px 30px;
-          min-height: 191px;
+          min-height: 0;
+          @include mq($from: tablet) {
+            min-height: 191px;
+          }
         }
       }
     }

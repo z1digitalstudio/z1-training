@@ -27,8 +27,8 @@ export function Jumbotron({
           [styles['with-card']]: withCard,
         })}
       >
-        <h1>{title}</h1>
-        <p style={customStyle}>{subtitle}</p>
+        <h1 className={styles.title}>{title}</h1>
+        <p className={styles.subtitle} style={customStyle}>{subtitle}</p>
         <div className={styles.card}>
           <JumbotronCard />
         </div>
