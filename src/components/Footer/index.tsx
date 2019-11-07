@@ -24,7 +24,7 @@ export function Footer() {
               );
             })}
           </div>
-          <div className={styles['responsive-lists']}>
+          <div className={styles.responsiveLists}>
             {ITEMS_LIST.map((value, index) => {
               return (
                 <Collapse
