@@ -1,22 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './styles.module.scss';
 import classNames from 'classnames';
 
 export function Selector() {
-  const yearlySelected = true;
+  const [isYearlySelected, setIsYearlySelected] = useState(true);
+  const selectOption = (yearlySelect: boolean) => {
+    setIsYearlySelected(yearlySelect);
+  };
   return (
     <div className={styles.selectorWrapper}>
       <div className={styles.selectorWrapperOptions}>
         <div
+          onClick={() => selectOption(true)}
           className={classNames(styles.yearly, {
-            [styles.selected]: yearlySelected,
+            [styles.selected]: isYearlySelected,
           })}
         >
           <p className={styles.infoMsg}>Pay Yearly (Save 25%)</p>
         </div>
         <div
+          onClick={() => selectOption(false)}
           className={classNames(styles.monthly, {
-            [styles.selected]: !yearlySelected,
+            [styles.selected]: !isYearlySelected,
           })}
         >
           <p className={styles.infoMsg}>Pay Monthly</p>
