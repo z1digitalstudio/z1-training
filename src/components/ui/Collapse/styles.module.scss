@@ -4,6 +4,7 @@
   font-family: 'Basis Grotesque Pro', sans-serif;
   &.selected {
     .collapseBody {
+      display: flex;
       .items {
         display: flex;
         flex-flow: column;
@@ -59,8 +60,6 @@
     }
   }
   .collapseBody {
-    .items{
-      display: none;
-    }
+    display: none;
   }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './styles.module.scss';
 import classNames from 'classnames';
 import { ReactComponent as ArrowDown } from '@/assets/icons/arrow-down.svg';
@@ -25,20 +25,26 @@ export function Collapse({
   styleTitle,
   extraStyleIcon = {},
 }: ListParameters) {
+  const [isOpen, setIsOpen] = useState(selected);
+  const toggleCollapse = () => {
+    if ((message && message.length > 0) || (items && items.length > 0)) {
+      setIsOpen(!isOpen);
+    }
+  };
   return (
     <>
       <div
         className={classNames(styles.collapseWrapper, {
-          [styles.selected]: selected,
+          [styles.selected]: isOpen,
           [styles.withBorderTop]: withBorderTop,
         })}
       >
-        <div className={styles.collapseHeader}>
+        <div className={styles.collapseHeader} onClick={() => toggleCollapse()}>
           <div className={styles.collapseHeaderTitle} style={styleTitle}>
             {title}
           </div>
           <div className={styles.collapseHeaderIcon} style={extraStyleIcon}>
-            {selected ? <ArrowUp /> : <ArrowDown />}
+            {isOpen ? <ArrowUp /> : <ArrowDown />}
           </div>
         </div>
         <div className={styles.collapseBody}>
