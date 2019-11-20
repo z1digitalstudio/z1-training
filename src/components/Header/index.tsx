@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 import { ReactComponent as Logo } from './flow-logo-mono.svg';
 import { ReactComponent as DropdownIcon } from './caret-down-solid.svg';
 import { ReactComponent as Menu } from './equals-solid.svg';
+import { Link } from 'react-router-dom';
 
 export function Header() {
   return (
@@ -10,18 +11,18 @@ export function Header() {
       <nav className={styles.navBar}>
         <Logo className={styles.logo} />
         <div className={styles.linksHeader}>
-          <a href={''} className={styles.linkItem}>
+          <Link to="/layout-one" className={styles.linkItem}>
             Why Flow
-          </a>
-          <a href={''} className={styles.linkItem}>
+          </Link>
+          <Link to={'/layout-two'} className={styles.linkItem}>
             Overview
-          </a>
-          <a href={''} className={styles.linkItem}>
+          </Link>
+          <Link to={'/layout-three'} className={styles.linkItem}>
             Solutions
-          </a>
-          <a href={''} className={styles.linkItem}>
+          </Link>
+          <Link to={'/layout-four'} className={styles.linkItem}>
             Pricing
-          </a>
+          </Link>
           <div>
             <li>
               <div className={styles.more}>
