@@ -1,0 +1,30 @@
+.background {
+  background: #f8f9fa;
+  display: none;
+
+  @include mq($from: tablet) {
+    display: flex;
+    height: 480px;
+    width: 100%;
+  }
+
+  @include mq($from: desktop) {
+    display: flex;
+    height: 600px;
+    width: 960px;
+  }
+
+  .circulos {
+    padding-top: 30px;
+    padding-left: 25px;
+    display: flex;
+
+    .circulo {
+      height: 12px;
+      width: 12px;
+      border-radius: 7.5px;
+      background-color: #dee2e6;
+      margin-left: 10.5px;
+    }
+  }
+}

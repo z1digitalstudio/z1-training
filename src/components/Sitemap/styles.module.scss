@@ -1,0 +1,46 @@
+.divisorCorto {
+  height: 1px;
+  width: 100%;
+  background-color: #dee2e6;
+}
+
+.mainLink {
+  color: #495057;
+  font-family: 'Basis Grotesque Pro';
+  font-size: 16px;
+  letter-spacing: 0.44px;
+  line-height: 22px;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.grid {
+  padding-top: 30px;
+  columns: 1;
+  column-gap: 16px;
+
+  @include mq($from: tablet) {
+    columns: 3;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    -webkit-column-break-inside: avoid; /* Chrome, Safari */
+    page-break-inside: avoid; /* Theoretically FF 20+ */
+    break-inside: avoid-column; /* IE 11 */
+    margin-bottom: 32px;
+    .title {
+      margin-bottom: 12px;
+    }
+    a {
+      color: #495057;
+      font-family: 'Basis Grotesque Pro';
+      font-size: 16px;
+      letter-spacing: 0.44px;
+      line-height: 22px;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+  }
+}

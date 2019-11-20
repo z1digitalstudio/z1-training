@@ -1,0 +1,9 @@
+diff a/src/components/Header/styles.module.scss b/src/components/Header/styles.module.scss	(rejected hunks)
+@@ -26 +25 @@
+-   
++
+@@ -28,2 +27,2 @@
+-    page-break-inside: avoid;           /* Theoretically FF 20+ */
+-    break-inside: avoid-column;         /* IE 11 */
++    page-break-inside: avoid; /* Theoretically FF 20+ */
++    break-inside: avoid-column; /* IE 11 */

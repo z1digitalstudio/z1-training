@@ -8,6 +8,14 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
+    "arrowIcon": string;
+    "buttonText": string;
+    "caretIcon": string;
+    "changeButton": string;
+    "downloadButton": string;
+    "fold": string;
+    "link": string;
+    "links": string;
     "main": string;
     [name: string]: string;
 }

@@ -1,0 +1,43 @@
+.marginMobile {
+  margin-left: 12px;
+  margin-right: 12px;
+
+  @include mq($from: tablet) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.background {
+  background-color: #dee2e6;
+  min-height: 440px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    color: #495057;
+    font-family: Bookmania;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.44px;
+    line-height: 56px;
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    color: #495057;
+    font-family: 'Basis Grotesque Pro';
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.44px;
+    line-height: 32px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,173 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+
+  @include mq($from: tablet) {
+    margin-top: 90px;
+  }
+
+  @include mq($from: desktop) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .bigRectangle {
+    height: 400px;
+    width: 230px;
+    background-color: #ced4da;
+    position: relative;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    align-self: center;
+
+    @include mq($from: tablet) {
+      height: 513px;
+      width: 280px;
+      margin-right: 107px;
+    }
+
+    @include mq($from: desktop) {
+      min-width: 280px;
+      margin-bottom: 0px;
+    }
+
+    .smallRectangle {
+      height: 370px;
+      width: 200px;
+      background-color: #dee2e6;
+      position: absolute;
+      margin-left: 70px;
+      margin-top: 15px;
+
+      @include mq($from: tablet) {
+        height: 458px;
+        width: 259px;
+        margin-left: 128px;
+        margin-top: 29px;
+      }
+    }
+  }
+
+  .textSide {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    @include mq($from: tablet) {
+      align-self: center;
+    }
+
+    @include mq($from: desktop) {
+      margin-left: 50px;
+    }
+
+    .title {
+      color: #495057;
+      font-family: Bookmania;
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 0.44px;
+      line-height: 56px;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      color: #495057;
+      font-family: 'Basis Grotesque Pro';
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.44px;
+      line-height: 32px;
+      margin-bottom: 16px;
+    }
+
+    .smallText {
+      color: #495057;
+      font-family: 'Basis Grotesque Pro';
+      font-size: 16px;
+      letter-spacing: 0.44px;
+      line-height: 28px;
+      margin-bottom: 16px;
+    }
+
+    .phone {
+      display: flex;
+      flex-direction: column;
+
+      @include mq($from: tablet) {
+        flex-direction: row;
+      }
+
+      .countryCode {
+        border-color: #dee2e6;
+        height: 48px;
+        width: 171px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+        @include mq($from: tablet) {
+          margin-bottom: 0px;
+        }
+      }
+
+      .inputContainer {
+        border: 1px solid #dee2e6;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        width: 171px;
+        height: 48px;
+        margin-bottom: 20px;
+
+        @include mq($from: tablet) {
+          width: 187px;
+          margin-bottom: 0px;
+        }
+
+        input[type='number']::-webkit-outer-spin-button,
+        input[type='number']::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        input[type='number'] {
+          -moz-appearance: textfield;
+        }
+
+        .phoneInput {
+          border: none;
+          margin-left: 10px;
+          width: 130px;
+
+          @include mq($from: tablet) {
+            width: 150px;
+          }
+        }
+
+        .phoneIcon {
+          color: #dee2e6;
+          height: 15px;
+          width: 15px;
+          margin-right: 10px;
+        }
+      }
+
+      .sendButton {
+        border-radius: 24px;
+        background-color: #868e96;
+        border: none;
+        height: 48px;
+        width: 124px;
+
+        .buttonText {
+          color: #ffffff;
+          font-family: 'Basis Grotesque Pro';
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
