@@ -1,0 +1,43 @@
+.divColumnRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > img {
+    height: 15px;
+    width: 15px;
+    @include mq($from: tablet) {
+      display: none;
+    }
+  }
+}
+
+.columnTitle {
+  color: $gray-700;
+  font-family: $openSans;
+  font-size: 20px;
+  font-weight: $medium-weight;
+  letter-spacing: 0.44px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+
+.linksBox {
+  display: flex;
+  flex-direction: column;
+  @include mq($from: mobile, $until: tablet) {
+    display: none;
+  }
+}
+.linksBoxExpanded {
+  display: flex;
+  flex-direction: column;
+}
+
+.linksBox > span {
+  color: $gray-700;
+  font-family: $openSans;
+  font-size: 16px;
+  letter-spacing: 0.44px;
+  line-height: 22px;
+  margin: 10px 10px 10px 0px;
+}

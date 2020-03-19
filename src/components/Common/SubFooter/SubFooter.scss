@@ -1,0 +1,26 @@
+.subFooterContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  > span {
+    flex: 1;
+  }
+}
+
+.subFooterContainer > span:first-child {
+  flex: 100%;
+  @include mq($from: tablet) {
+    flex: 2;
+  }
+}
+
+.subFooterContainer > span,
+.subFooterContainer > div > span {
+  color: $gray-700;
+  font-family: $openSans;
+  font-size: 10px;
+  line-height: 24px;
+}

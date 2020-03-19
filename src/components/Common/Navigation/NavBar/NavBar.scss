@@ -1,0 +1,36 @@
+.background {
+  width: 100%;
+  background-color: $gray-300;
+}
+
+.loginItem {
+  margin-left: 15%;
+  font-weight: $medium-weight;
+}
+
+.navBar {
+  display: none;
+  @include mq($from: tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 64px;
+    width: 100%;
+    align-items: center;
+    margin-left: 50px;
+  }
+}
+
+.imgMenu {
+  width: 40px;
+  margin-top: 5px;
+  margin-left: auto;
+  align-self: center;
+  @include mq($from: tablet) {
+    display: none;
+  }
+}
+
+.divMenu {
+  display: flex;
+}

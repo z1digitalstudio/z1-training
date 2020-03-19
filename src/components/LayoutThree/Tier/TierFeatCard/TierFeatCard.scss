@@ -1,0 +1,11 @@
+.tierTitle {
+  color: $gray-700;
+  font-family: $openSans;
+  font-size: 16px;
+  font-weight: $bold-weight;
+  letter-spacing: 0.44px;
+  > img {
+    width: 15px;
+    height: 15px;
+  }
+}

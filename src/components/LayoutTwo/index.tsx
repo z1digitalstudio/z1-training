@@ -1,9 +1,19 @@
 import React from 'react';
-import globalStyles from '@/styles/global.scss'
-import styles from './styles.module.scss'
+import Updates from './Updates/Updates';
+import globalStyles from '@/styles/global.scss';
 
+import { Jumbotron } from '../Common/Jumbotron';
+import Header from '../Common/Header/Header';
+import Footer from '../Common/Footer/Footer';
 export function LayoutTwo() {
-  return <div className={globalStyles.contentWrapper}>
-    <h1 className={styles.title}>Soy el layout 2</h1>
-  </div>;
+  return (
+    <>
+      <Header />
+      <main>
+        <Jumbotron title="Updates" subtitle="Lorem ipsum" />
+        <Updates />
+      </main>
+      <Footer></Footer>
+    </>
+  );
 }

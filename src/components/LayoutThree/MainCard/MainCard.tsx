@@ -1,0 +1,23 @@
+import React from 'react';
+import { Card } from '@/components/LayoutThree/Card/Card';
+import styles from './MainCard.scss';
+import Button from '@/components/Common/Button/Button';
+
+interface Props {
+  children: React.ReactNode;
+  title: string;
+  subtitle: string;
+}
+
+export default function MainCard(props: Props) {
+  return (
+    <div className={styles.mainCard}>
+      <Card {...props}>
+        <div className={styles.bodyBox}>
+          <ul>{props.children}</ul>
+          <Button value="Try Flow for Free"></Button>
+        </div>
+      </Card>
+    </div>
+  );
+}

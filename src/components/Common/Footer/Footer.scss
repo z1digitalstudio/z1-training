@@ -1,0 +1,14 @@
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  @include mq($from: tablet) {
+    flex-direction: row;
+  }
+}
+
+.footerContainer > div {
+  margin-bottom: 50px;
+}
