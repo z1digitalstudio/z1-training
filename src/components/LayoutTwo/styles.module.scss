@@ -1,3 +1,54 @@
 .title {
   color: var(--primary);
 }
+
+.operatingSystemUpdate:not(:nth-child(2)) {
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.previousUpdates {
+  margin: 40px auto;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.44px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.operatingSystemUpdate {
+  &:nth-child(2) {
+    background-color: var(--gray-200);
+    padding-top: 20px;
+  }
+}
+
+.caretIcon,
+.angleIcon {
+  width: 10px;
+  margin-left: 10px;
+  margin-bottom: -2px;
+}
+
+.seeMore {
+  margin-top: 20px;
+  width: 50%;
+  margin-left: auto;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@include mq($until: tablet) {
+  .seeMore {
+    width: 100%;
+    margin: 0 0 40px 0;
+  }
+  main {
+    padding-bottom: 0;
+  }
+}
