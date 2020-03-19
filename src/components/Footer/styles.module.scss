@@ -1,0 +1,18 @@
+.footer {
+  border-top: 1px solid var(--gray-100);
+  width: 100%;
+
+  .columns {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    width: 100%;
+
+    @include mq($until: tablet) {
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+  }    
+}

@@ -93,3 +93,32 @@
   italic,
   otf
 );
+
+@include font-face(
+  $basisGrotesquePro,
+  $basisGrotesquePro-path + 'Light',
+  $light-weight,
+  null,
+  ttf
+);
+@include font-face(
+  $basisGrotesquePro,
+  $basisGrotesquePro-path + 'Regular',
+  $normal-weight,
+  null,
+  ttf
+);
+@include font-face(
+  $basisGrotesquePro,
+  $basisGrotesquePro-path + 'Medium',
+  $medium-weight,
+  null,
+  ttf
+);
+@include font-face(
+  $basisGrotesquePro,
+  $basisGrotesquePro-path + 'Bold',
+  $bold-weight,
+  null,
+  ttf
+);

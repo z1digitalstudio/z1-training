@@ -1,14 +1,15 @@
 // colors
 $primary: #294d9c;
 
-$gray-100: #fcfcfc;
-$gray-200: #f4f4f6;
-$gray-300: #eeeeee;
-$gray-500: #a5a7a6;
-$gray-400: #d8d9d9;
-$gray-600: #717372;
-$gray-700: #3f4040;
-$gray-800: #262726;
+$gray-000: #FFFFFF;
+$gray-100: rgba(0, 0, 0, 0.05);
+$gray-200: #F8F9FA;
+$gray-300: #DEE2E6;
+$gray-400: #a5a7a6;
+$gray-500: #868E96;
+$gray-600: #555555;
+$gray-700: #495057;
+$gray-800: #222222;
 
 // z-index
 $zBackground: -1;
@@ -35,3 +36,5 @@ $openSans: 'OpenSans';
 $openSans-path: '~@/styles/fonts/OpenSans/OpenSans-';
 $neoSans: 'NeoSans';
 $neoSans-path: '~@/styles/fonts/NeoSans/Monotype-NeoSansStd-';
+$basisGrotesquePro: 'Basis Grotesque Pro';
+$basisGrotesquePro-path: '~@/styles/fonts/BasisGrotesquePro/BasisGrotesquePro-';

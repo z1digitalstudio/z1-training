@@ -1,17 +1,21 @@
 import React from 'react';
-import globalStyles from '@/styles/global.scss';
-import styles from './styles.module.scss';
+import { NavBar } from '@/components/NavBar';
+import { Jumbotron } from '@/components/Jumbotron';
+import { Sitemap } from './Sitemap';
+import { Footer } from '@/components/Footer';
 
 export function LayoutOne() {
   return (
     <>
-      <div className={globalStyles.contentWrapper}>
-        <h1 className={styles.title}>Soy el layout 1</h1>
-      </div>
-      <div className={styles.background} />
-      <div className={globalStyles.contentWrapper}>
-        <p>Soy más contenido</p>
-      </div>
+      <NavBar></NavBar>
+      <main>
+        <Jumbotron
+          title="Flow Site Map"
+          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        ></Jumbotron>
+        <Sitemap></Sitemap>
+      </main>
+      <Footer></Footer>
     </>
   );
 }

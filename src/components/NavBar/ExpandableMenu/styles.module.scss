@@ -1,0 +1,111 @@
+.wrapper {
+  position: relative;
+
+  &:hover {
+
+    .menu-wrapper {
+      display: flex;
+      
+      @include mq($until: tablet) {
+        display: none;
+      }
+    }
+  }
+  
+  .text {
+    align-items: center;
+    color: var(--gray-800);
+    cursor: pointer;
+    display: flex;
+    font-size: 0.925rem;
+    font-weight: $medium-weight;
+    text-decoration: none;
+    
+    .icon {
+      margin-left: 1rem;
+      width: 0.5rem;
+    }
+
+    @include mq($until: tablet) {
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+  
+  .menu-wrapper {
+    display: none;
+    flex-direction: column;
+    left: -5px;
+    position: absolute;
+    width: max-content;
+    
+    .hover-helper {
+      height: 0.5rem;
+
+      @include mq($until: tablet) {
+        height: 0;
+      }
+    }
+
+    .menu-container {
+      background-color: var(--gray-000);
+      border: 1px solid var(--gray-200);
+      display: flex;
+      flex-direction: column;
+  
+      .menu-section {
+        border-bottom: 1px solid var(--gray-200);
+  
+        &:last-child {
+          border-bottom: none;
+        }
+  
+        .menu-section-title {
+          color: var(--gray-500);
+          font-family: 'Helvetica';
+          font-size: 0.625rem;
+          margin: 0.75rem 0.25rem 0.5rem;
+          text-transform: uppercase;
+        }
+  
+        .menu-link {
+          align-items: center;
+          color: var(--gray-700);
+          display: flex;
+          padding: 0.75rem 1rem 0.75rem 0.25rem;
+          text-decoration: none;
+  
+          .navigation-icon {
+            background-color: var(--gray-300);
+            border-radius: 0.25rem;
+            height: 1.25rem;
+            margin-right: 0.5rem;
+            width: 1.25rem;
+          }
+        }
+
+        @include mq($until: tablet) {
+          border-color: var(--gray-100);
+        }
+      }
+
+      @include mq($until: tablet) {
+        background-color: var(--gray-200);
+      }
+    }
+
+    @include mq($until: tablet) {
+      left: 0;
+      position: relative;
+      width: 100%;
+
+      &.expanded {
+        display: flex;
+      }
+    }
+  }
+
+  @include mq($until: tablet) {
+    width: 100%;
+  }
+}

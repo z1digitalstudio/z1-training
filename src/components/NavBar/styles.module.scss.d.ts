@@ -8,8 +8,14 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
-    "background": string;
-    "title": string;
+    "expanded": string;
+    "icon": string;
+    "link": string;
+    "login": string;
+    "loginWrapper": string;
+    "logo": string;
+    "menu": string;
+    "navbar": string;
     [name: string]: string;
 }
 declare const locals: ILocals;

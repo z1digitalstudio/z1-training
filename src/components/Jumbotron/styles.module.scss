@@ -1,0 +1,25 @@
+.jumbotron {
+  align-items: center;
+  background-color: var(--gray-300);
+  color: var(--gray-700);
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+  .jumbotron-title {
+    font-family: 'Bookmania';
+    font-size: 2.25rem;
+    font-weight: $bold-weight;
+    margin-bottom: 1.5rem;
+  }
+
+  .jumbotron-subtitle {
+    font-size: 1.25rem;
+    font-weight: $medium-weight;
+    line-height: 2rem;
+    max-width: 39.5rem;
+  }
+}

@@ -1,0 +1,86 @@
+.companies-cta-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+  width: 100%;
+
+  .companies-cta-text {
+    color: var(--gray-700);
+    font-family: 'Bookmania';
+    font-size: 1.25rem;
+    font-weight: $bold-weight;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .companies-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    width: 100%;
+
+    .companies-item {
+      align-items: center;
+      color: var(--gray-400);
+      display: flex;
+      height: auto;
+
+      &.apple-brand {
+        width: 2.5rem;
+
+        @include mq($until: tablet) {
+          width: 6.5rem;
+        }
+      }
+
+      &.ted-brand {
+        width: 5rem;
+
+        @include mq($until: tablet) {
+          width: 9rem;
+        }
+      }
+
+      &.redbull-brand {
+        width: 6rem;
+
+        @include mq($until: tablet) {
+          width: 10rem;
+        }
+      }
+
+      &.ogilvy-brand {
+        width: 6rem;
+
+        @include mq($until: tablet) {
+          width: 10rem;
+        }
+      }
+
+      &.yale-brand {
+        width: 5rem;
+
+        @include mq($until: tablet) {
+          width: 9rem;
+        }
+      }
+
+      @include mq($until: tablet) {
+        margin-bottom: 3rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @include mq($until: tablet) {
+      flex-direction: column;
+    }
+  }
+}
