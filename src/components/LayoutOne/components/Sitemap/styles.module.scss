@@ -1,0 +1,44 @@
+.container {
+  font-family: 'Basis Grotesque Pro', sans-serif;
+  margin: 0 0 60px 0;
+  .title {
+    border-bottom: 1px solid var(--gray-300);
+    display: none;
+    p {
+      color: var(--gray-700);
+      font-size: 16px;
+      letter-spacing: 0.44px;
+      line-height: 22px;
+      padding-bottom: 16px;
+    }
+  }
+  .lists {
+    display: none;
+    flex-flow: row wrap;
+    align-items: flex-start;
+
+    .first_column {
+      margin-right: 201.6px;
+    }
+
+    .second_column {
+      margin-right: 174.4px;
+    }
+  }
+
+  @include mq($from: tablet) {
+    margin-top: 60px;
+    .title {
+      display: flex;
+    }
+    .lists {
+      display: flex;
+    }
+  }
+  @include mq($from: tablet, $until: desktop) {
+    .first_column,
+    .second_column {
+      margin-right: 112px !important;
+    }
+  }
+}

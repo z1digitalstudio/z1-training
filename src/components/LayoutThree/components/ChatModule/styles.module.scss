@@ -1,0 +1,39 @@
+.ChatModuleWrapper {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Basis Grotesque Pro', sans-serif;
+
+  .title {
+    color: var(--gray-700);
+    font-family: Bookmania;
+    font-size: 21px;
+    font-weight: var(--bold-weight);
+    letter-spacing: 0.44px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 24px;
+  }
+
+  .subtitle {
+    color: var(--gray-700);
+    font-size: 20px;
+    font-weight: var(--medium-weight);
+    letter-spacing: 0.44px;
+    line-height: 32px;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .message {
+    color: var(--gray-700);
+    font-size: 16px;
+    letter-spacing: 0.44px;
+    line-height: 28px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    max-width: 460px;
+  }
+}

@@ -1,0 +1,40 @@
+.organizationsWrapper {
+  .title {
+    color: var(--gray-700);
+    font-family: Bookmania;
+    font-size: 21px;
+    font-weight: var(--bold-weight);
+    letter-spacing: 0.44px;
+    line-height: 29px;
+    margin-bottom: 33px;
+    text-align: center;
+  }
+  .organizationsList {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    .icon {
+      height: 79px;
+      width: 112px;
+      &.yale {
+        margin-left: 36px;
+      }
+      &:not(:last-child) {
+        margin-top: 16px;
+      }
+    }
+  }
+  @include mq($from: tablet) {
+    .organizationsList {
+      flex-flow: row;
+      .icon {
+        height: 59px;
+        width: 92px;
+        &:not(:last-child) {
+          margin-right: 110px;
+        }
+      }
+    }
+  }
+}

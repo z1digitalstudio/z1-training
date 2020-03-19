@@ -1,0 +1,56 @@
+.subFooter {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  font-family: 'Basis Grotesque Pro', sans-serif;
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-top: 19px;
+    color: var(--gray-700);
+    font-size: 12px;
+    line-height: 24px;
+
+    .items {
+      align-items: center;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      margin-top: 16px;
+      .item {
+        cursor: pointer;
+        margin-right: 16px;
+      }
+    }
+    .options {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+
+      .item {
+        cursor: pointer;
+        margin-right: 30px;
+      }
+    }
+    .languageSelect {
+      margin-top: 16px;
+      width: 100%;
+    }
+
+    @include mq($from: tablet) {
+      justify-content: space-between;
+      .items {
+        flex-flow: row nowrap;
+        margin-top: 0;
+        .item {
+          margin-right: 30px;
+        }
+      }
+      .languageSelect {
+        margin-top: 0;
+        width: 27%;
+      }
+    }
+  }
+}

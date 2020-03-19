@@ -1,0 +1,56 @@
+.list {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding: 1.375rem 0;
+  justify-content: space-between;
+
+  .item {
+    display: none;
+    text-decoration: none;
+    font-family: 'Basis Grotesque Pro', sans-serif;
+
+    span {
+      cursor: pointer;
+      color: var(--black);
+      font-size: 0.94rem;
+      text-transform: capitalize;
+
+      &:not(:last-child) {
+        margin-right: 5.7rem;
+      }
+    }
+  }
+  .loginWrapper {
+    display: none;
+    background-color: var(--gray-150);
+    border-radius: 1.25rem;
+    text-decoration: none;
+    font-family: 'Basis Grotesque Pro', sans-serif;
+
+    span {
+      cursor: pointer;
+      color: var(--black);
+      font-size: 0.94rem;
+      text-transform: capitalize;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .hamburger {
+    color: var(--black);
+    cursor: pointer;
+  }
+
+  @include mq($from: tablet) {
+    justify-content: space-around;
+    .hamburger {
+      display: none;
+    }
+    .item,
+    .loginWrapper {
+      display: flex;
+    }
+  }
+}

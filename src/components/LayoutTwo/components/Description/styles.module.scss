@@ -1,0 +1,40 @@
+.descriptionWrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  &:not(:first-child) {
+    margin-top: 26px;
+  }
+  .descriptionWrapperTitle {
+    color: var(--gray-700);
+    font-family: Bookmania;
+    font-size: 21px;
+    font-weight: var(--bold-weight);
+    letter-spacing: 0.44px;
+    line-height: 29px;
+    margin-bottom: 16px;
+  }
+  .descriptionWrapperItem {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    .icon {
+      margin-right: 6px;
+      height: 15px;
+      width: 15px;
+    }
+    .text {
+      color: var(--gray-700);
+      font-family: 'Basis Grotesque Pro', sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.44px;
+      line-height: 22px;
+    }
+    @include mq($from: tablet) {
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.sitemap {
+  .sections {
+    &:first-child {
+      padding-top: 80px;
+      padding-bottom: 94px;
+    }
+    &:not(:first-child) {
+      margin-top: 60px;
+    }
+    &:last-child {
+      margin-bottom: 60px;
+    }
+    width: 92%;
+    margin: 0 auto;
+    &.withBackground {
+      background-color: var(--gray-150);
+    }
+
+    @include mq($from: tablet) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+  .borderBar {
+    margin-top: 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .previousUpdates {
+    color: var(--gray-700);
+    font-family: 'Basis Grotesque Pro', sans-serif;
+    font-weight: var(--medium-weight);
+    font-size: 20px;
+    letter-spacing: 0.44px;
+    line-height: 32px;
+    margin: 0 auto;
+    max-width: 250px;
+    padding: 40px 0;
+  }
+}

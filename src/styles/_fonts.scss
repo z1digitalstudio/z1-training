@@ -1,4 +1,36 @@
 @include font-face(
+  $basisGrotesquePro,
+  $basisGrotesquePro-path + 'Light',
+  $light-weight,
+  null,
+  woff
+);
+
+@include font-face(
+  $basisGrotesquePro,
+  $basisGrotesquePro-path + 'Regular',
+  $normal-weight,
+  null,
+  woff
+);
+
+@include font-face(
+  $basisGrotesquePro,
+  $basisGrotesquePro-path + 'Bold',
+  $bold-weight,
+  null,
+  woff
+);
+
+@include font-face(
+  $basisGrotesquePro,
+  $basisGrotesquePro-path + 'Medium',
+  $medium-weight,
+  null,
+  woff
+);
+
+@include font-face(
   $openSans,
   $openSans-path + 'Light',
   $light-weight,

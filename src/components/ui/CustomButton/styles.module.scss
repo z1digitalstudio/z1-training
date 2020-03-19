@@ -1,0 +1,19 @@
+.customButton {
+  align-items: center;
+  background-color: var(--gray-550);
+  border-radius: 32px;
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 16px;
+  font-weight: var(--medium-weight);
+  line-height: 24px;
+  padding: 10px 32px;
+
+  .icon {
+    height: 13px;
+    margin-left: 16px;
+    width: 13px;
+  }
+}

@@ -1,0 +1,25 @@
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 16px;
+  margin-top: 0;
+  .container {
+    display: none;
+  }
+  .responsiveLists {
+    display: flex;
+    flex-flow: column;
+    margin-top: 30px;
+  }
+
+  @include mq($from: tablet) {
+    .container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      margin-bottom: 38.4px;
+    }
+    .responsiveLists {
+      display: none;
+    }
+  }
+}

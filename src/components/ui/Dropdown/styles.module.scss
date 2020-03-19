@@ -1,0 +1,17 @@
+.dropdownWrapper {
+  &.withBorder {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    .dropdownHeader {
+      padding: 3.2px 8px;
+    }
+  }
+  .dropdownHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .dropdownHeaderIcon {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
