@@ -1,3 +1,6 @@
-.title {
-  color: var(--primary);
+.main {
+  margin-bottom: 60px;
+  @include mq($from: tablet) {
+    margin-bottom: 120px;
+  }
 }

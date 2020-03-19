@@ -1,0 +1,68 @@
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .boxContent {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 50px;
+    width: 460px;
+    background-color: #f8f9fa;
+
+    .square {
+      min-height: 32px;
+      width: 32px;
+      border-radius: 8px;
+      background-color: #d8d9d9;
+    }
+
+    .title {
+      color: #495057;
+      font-family: Bookmania;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 0.44px;
+      line-height: 39px;
+      margin-top: 16px;
+    }
+
+    .description {
+      color: #495057;
+      font-family: 'Basis Grotesque Pro';
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.44px;
+      line-height: 32px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    .readMore {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+
+      .link {
+        color: #222222;
+        font-family: 'Basis Grotesque Pro';
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 24px;
+        text-decoration: none;
+      }
+
+      .arrow {
+        height: 14px;
+        width: 14px;
+        margin-left: 8px;
+      }
+    }
+  }
+}

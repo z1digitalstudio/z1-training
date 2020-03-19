@@ -42,10 +42,10 @@ export default function createStyleRule(env = 'dev') {
         loader: 'sass-loader',
         options: {
           data: `
-            @import '${context}/styles/variables.scss';
-            @import '${context}/styles/functions.scss';
-            @import '${context}/styles/responsive.scss';
-            @import '${context}/styles/transitions.scss';
+            @import '${context.replace(/\\/g, '/')}/styles/variables.scss';
+            @import '${context.replace(/\\/g, '/')}/styles/functions.scss';
+            @import '${context.replace(/\\/g, '/')}/styles/responsive.scss';
+            @import '${context.replace(/\\/g, '/')}/styles/transitions.scss';
           `,
           includePaths: ['./ui'],
           sourceMap,

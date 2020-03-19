@@ -8,7 +8,14 @@
 // The code is automated generator
 // https://github.com/NiceLabs/typed-css-modules
 interface ILocals {
-    "main": string;
+    "button": string;
+    "buttonText": string;
+    "buttons": string;
+    "buttonsLeftIpad": string;
+    "buttonsRightIpad": string;
+    "icon": string;
+    "title": string;
+    "wrapper": string;
     [name: string]: string;
 }
 declare const locals: ILocals;

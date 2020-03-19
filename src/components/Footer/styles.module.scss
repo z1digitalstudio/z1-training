@@ -1,0 +1,144 @@
+.divisor {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.divisorCorto {
+  display: none;
+
+  @include mq($from: tablet) {
+    display: flex;
+    height: 1px;
+    width: 100%;
+    background-color: #dee2e6;
+    margin-top: 40px;
+  }
+}
+
+.grid {
+  margin-top: 36px;
+
+  @include mq($from: tablet) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    -webkit-column-break-inside: avoid; /* Chrome, Safari */
+    page-break-inside: avoid; /* Theoretically FF 20+ */
+    break-inside: avoid-column; /* IE 11 */
+
+    .linksHeader {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 8px;
+      margin-bottom: 12px;
+      align-items: center;
+
+      .title {
+        color: #555555;
+        font-family: 'Basis Grotesque Pro';
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 0.8px;
+        line-height: 17px;
+      }
+
+      .arrowDown {
+        height: 15px;
+        width: 15px;
+        margin-right: 15px;
+
+        @include mq($from: tablet) {
+          display: none;
+        }
+      }
+    }
+
+    a {
+      color: #495057;
+      font-family: 'Basis Grotesque Pro';
+      font-size: 14px;
+      letter-spacing: 0.44px;
+      line-height: 24px;
+      text-decoration: none;
+      margin-bottom: 12px;
+    }
+
+    .divisorCortoMobile {
+      height: 1px;
+      width: 100%;
+      background-color: #dee2e6;
+
+      @include mq($from: tablet) {
+        display: none;
+      }
+    }
+  }
+}
+
+.subfooter {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 31px;
+  flex-direction: column;
+
+  @include mq($from: tablet) {
+    margin-top: 19px;
+    margin-bottom: 17px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .text {
+    color: #495057;
+    font-family: 'Basis Grotesque Pro';
+    font-size: 12px;
+    line-height: 24px;
+    text-decoration: none;
+  }
+
+  p {
+    color: #495057;
+    font-family: 'Basis Grotesque Pro';
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 16px;
+
+    @include mq($from: tablet) {
+      margin-right: auto;
+      margin-bottom: 0px;
+    }
+  }
+  .links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    @include mq($from: tablet) {
+      margin-bottom: 0px;
+      width: auto;
+      a {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .selector {
+    border-color: #eeeeee;
+    border-radius: 2px;
+    width: 100%;
+    height: 32px;
+
+    @include mq($from: tablet) {
+      width: auto;
+      padding-right: 44px;
+    }
+  }
+}
